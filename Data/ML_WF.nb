@@ -1,0 +1,101 @@
+(***************************************************************)
+(* Full Wolfram Language code equivalent to your Python neural network pipeline *)
+(***************************************************************)
+
+(* Step 1: Import dataset *)
+data = Import["/path/to/displaced_individuals_with_age.csv", "Dataset"];
+
+(* Step 2: Encode categorical variables *)
+shelterMap = <|"None" -> 1.0, "Partial" -> 0.5, "Full" -> 0.0|>;
+foodAccessMap = <|"None" -> 1.0, "Partial" -> 0.5, "Full" -> 0.0|>;
+locationMap = <|"Urban" -> 0.3, "Rural" -> 0.7|>;
+ageGroupMap = <|"Child (0-17)" -> 1.0, "Adult (18-59)" -> 0.0, "Elder (60+)" -> 0.7|>;
+
+(* Replace missing values *)
+data = data /. {"Shelter_Status" -> Missing[] -> "None", "Food_Water_Access" -> Missing[] -> "None", "Location_Type" -> Missing[] -> "Rural", "Age_Group" -> Missing[] -> "Child (0-17)"};
+
+(* Map to numeric values *)
+data = data[All, <|
+   "Shelter_Status_Num" -> (shelterMap[#Shelter_Status] &),
+   "Food_Water_Access_Num" -> (foodAccessMap[#Food_Water_Access] &),
+   "Location_Type_Num" -> (locationMap[#Location_Type] &),
+   "Age_Group_Num" -> (ageGroupMap[#Age_Group] &)
+|>];
+
+(* Step 3: Feature selection *)
+features = {"Event_Severity", "Economic_Loss_USD", "Shelter_Status_Num", 
+   "Food_Water_Access_Num", "Health_Severity_Score", "Family_Size", 
+   "Time_Since_Displacement_Days", "Location_Type_Num", "Age_Group_Num"};
+
+(* Fill missing numerical values *)
+Do[
+  data = data /. (col -> Missing[]) :> (col -> Max[data[col]]),
+  {col, {"Health_Severity_Score", "Event_Severity", "Economic_Loss_USD", "Family_Size", "Time_Since_Displacement_Days"}}
+];
+
+X = Normal[data[features]];
+
+(* Step 4: Normalize features *)
+Xnorm = Rescale[X, {Min /@ X, Max /@ X}];
+
+(* Step 5: Simulate urgency scores (rule-based) *)
+featureWeights = {0.30, 0.25, 0.20, 0.15, 0.10, 0.05, 0.05, 0.05, 0.05};
+ySimulated = Clip[Xnorm.featureWeights, {0, 1}] * 100;
+
+(* Step 6: Split data into train and test sets *)
+SeedRandom[42];
+trainFraction = 0.8;
+shuffle = RandomSample[Range[Length[Xnorm]]];
+trainIdx = Take[shuffle, Floor[trainFraction Length[Xnorm]]];
+testIdx = Complement[Range[Length[Xnorm]], trainIdx];
+
+Xtrain = Xnorm[[trainIdx]];
+ytrain = ySimulated[[trainIdx]];
+Xtest = Xnorm[[testIdx]];
+ytest = ySimulated[[testIdx]];
+
+(* Step 7: Define and tune Neural Network *)
+(* We'll test different L2 regularization (alpha) values *)
+alphas = {0.0001, 0.001, 0.01, 0.1, 1.0};
+results = Table[
+   Module[{net, trainedNet, trainR2, testR2},
+    net = NetChain[{
+       LinearLayer[16], Ramp,
+       LinearLayer[8], Ramp,
+       LinearLayer[1]
+       }, "Input" -> Length[features]];
+    trainedNet = NetTrain[net, Xtrain -> ytrain,
+      LossFunction -> MeanSquaredLossLayer[],
+      L2Regularization -> alpha,
+      ValidationSet -> Scaled[0.1],
+      MaxTrainingRounds -> 500,
+      TrainingProgressReporting -> "Panel"
+      ];
+    trainR2 = 1 - Total[(trainedNet[Xtrain] - ytrain)^2]/Total[(ytrain - Mean[ytrain])^2];
+    testR2 = 1 - Total[(trainedNet[Xtest] - ytest)^2]/Total[(ytest - Mean[ytest])^2];
+    <|"Alpha" -> alpha, "TrainR2" -> trainR2, "TestR2" -> testR2, "TrainedNet" -> trainedNet|>
+    ],
+   {alpha, alphas}
+];
+
+(* Step 8: Select best model (smallest train/test gap) *)
+modelSelected = First[SortBy[results, Abs[#TrainR2 - #TestR2] &]];
+finalModel = modelSelected["TrainedNet"];
+
+(* Step 9: Evaluate final model *)
+trainR2Final = modelSelected["TrainR2"];
+testR2Final = modelSelected["TestR2"];
+
+Print["Final Train R²: ", trainR2Final];
+Print["Final Test R²: ", testR2Final];
+
+(* Step 10: Predict urgency scores *)
+predictedScores = finalModel[Xnorm];
+
+(* Step 11: Save results *)
+Export["/path/to/final_dataset_with_regularized_NN_scores.csv", 
+ Dataset[Append[Normal[data], "NN_Predicted_Urgency_Score" -> predictedScores]]];
+
+(***************************************************************)
+(* End of code                                                 *)
+(***************************************************************)
