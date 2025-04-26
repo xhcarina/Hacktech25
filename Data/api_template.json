@@ -1,0 +1,58 @@
+{
+  "endpoint": "/api/urgency-assessment",
+  "method": "POST",
+  "request_format": {
+    "individuals": [
+      {
+        "name": "John Doe",
+        "origin": "Syria",
+        "location_type": "Urban",
+        "event_severity": 75.0,
+        "economic_loss_usd": 3500.0,
+        "shelter_status": "Partial",
+        "food_water_access": "Partial",
+        "health_risk": "Low Risk",
+        "health_severity_score": 25.0,
+        "family_size": 4,
+        "time_since_displacement_days": 120,
+        "displacement_start_date": "2024-01-15",
+        "displacement_end_date": null,
+        "age": 34,
+        "age_group": "Adult (18-59)"
+      }
+    ]
+  },
+  "response_format": {
+    "status": "success",
+    "results": [
+      {
+        "name": "John Doe",
+        "rule_based_score": 65.78,
+        "ml_predicted_score": 63.42,
+        "priority_level": "High",
+        "feature_contributions": {
+          "event_severity": 22.5,
+          "economic_loss": 8.75,
+          "shelter_status": 10.0,
+          "food_water_access": 7.5,
+          "health_severity": 2.5,
+          "family_size": 2.0,
+          "time_since_displacement": 3.0,
+          "location_type": 1.5,
+          "age_group": 0.0
+        },
+        "feature_importance": {
+          "shelter_status": 0.4037,
+          "event_severity": 0.2359,
+          "food_water_access": 0.1774,
+          "economic_loss": 0.0791,
+          "time_since_displacement": 0.0360,
+          "age_group": 0.0190,
+          "location_type": 0.0188,
+          "health_severity": 0.0155,
+          "family_size": 0.0145
+        }
+      }
+    ]
+  }
+} 

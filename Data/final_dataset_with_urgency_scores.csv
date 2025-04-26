@@ -1,0 +1,1001 @@
+Name,Origin,Location_Type,Event_Severity,Economic_Loss_USD,Shelter_Status,Food_Water_Access,Health_Risk,Health_Severity_Score,Family_Size,Time_Since_Displacement_Days,Displacement_Start_Date,Displacement_End_Date,Age,Age_Group,Shelter_Status_Num,Food_Water_Access_Num,Location_Type_Num,Age_Group_Num,Urgency_Score_0_to_100
+Christina Ward,Mexico,Urban,66.38669849037136,2231.75,None,Partial,No Risk,0.0,5,190,2024-10-18,2025-12-06,6,Child (0-17),1.0,0.5,0.3,1.0,56.7373803401311
+Bradley Jackson,Bhutan,Urban,71.14382328837071,2183.45,Partial,Partial,No Risk,0.0,8,438,2024-02-13,2025-05-01,36,Adult (18-59),0.5,0.5,0.3,0.0,47.5671003598194
+Charles Simmons,Botswana,Rural,76.79023024504636,2481.9,Partial,Partial,No Risk,0.0,7,32,2025-03-25,2026-03-18,10,Child (0-17),0.5,0.5,0.7,1.0,55.567492128773864
+Zachary Holmes,South Sudan,Urban,51.10686749016529,4435.45,Partial,Partial,No Risk,0.0,2,411,2024-03-11,2024-05-04,77,Elder (60+),0.5,0.5,0.3,0.7,43.934733607734636
+Tanya Jones,Côte d'Ivoire,Rural,79.90731916930041,2081.95,Full,None,No Risk,0.0,2,220,2024-09-18,2025-03-10,53,Adult (18-59),0.0,1.0,0.7,0.0,47.63249826125278
+Nicole Gray,Monaco,Rural,73.80531775104038,4343.94,Partial,Full,No Risk,0.0,5,486,2023-12-27,2024-03-30,41,Adult (18-59),0.5,0.0,0.7,0.0,48.62349782231608
+Caleb Powell,Cook Islands,Urban,68.12125363487631,2975.67,Partial,Partial,No Risk,0.0,5,390,2024-04-01,2024-07-27,38,Adult (18-59),0.5,0.5,0.3,0.0,45.674440856017405
+Katelyn Cox,Martinique,Urban,45.272909963730655,3698.18,Partial,None,No Risk,0.0,5,179,2024-10-29,2025-05-13,54,Adult (18-59),0.5,1.0,0.3,0.0,43.833212175064205
+Danielle Mcdonald,Martinique,Rural,50.329952182164746,3806.44,Partial,Full,No Risk,0.0,3,335,2024-05-26,2024-09-23,27,Adult (18-59),0.5,0.0,0.7,0.0,36.348624246081755
+Jeffery Ellis,United Kingdom,Urban,69.00072877814766,2781.82,Partial,Full,Serious Injuries,0.7,3,224,2024-09-14,2025-08-07,61,Elder (60+),0.5,0.0,0.3,0.7,45.89313184568356
+Kristina Cole,Georgia,Rural,68.38603714905469,2633.91,None,None,No Risk,0.0,4,434,2024-02-17,2024-08-24,23,Adult (18-59),1.0,1.0,0.7,0.0,67.56332957838035
+Courtney Rojas,Malta,Urban,80.60882388242487,4621.17,Full,Partial,Minor Injuries,0.3,10,400,2024-03-22,2024-09-04,56,Adult (18-59),0.0,0.5,0.3,0.0,49.05014046950641
+Whitney Pham,Burkina Faso,Rural,50.522332243571086,3109.37,Full,None,No Risk,0.0,4,453,2024-01-29,2025-01-15,67,Elder (60+),0.0,1.0,0.7,0.7,45.444276425743595
+Craig Torres,Cuba,Urban,88.14769237527364,6331.26,None,None,No Risk,0.0,3,297,2024-07-03,2024-07-18,2,Child (0-17),1.0,1.0,0.3,1.0,79.40326922668595
+William Mcpherson,Palestinian,Rural,100.0,3769.23,Partial,Partial,Minor Injuries,0.3,2,207,2024-10-01,2025-02-18,62,Elder (60+),0.5,0.5,0.7,0.7,66.89787068774228
+Scott Smith,Hungary,Urban,71.438641185787,3493.69,Full,Partial,No Risk,0.0,5,365,2024-04-26,2025-01-04,7,Child (0-17),0.0,0.5,0.3,1.0,42.55686265237358
+John Murphy,France,Rural,49.10969320620215,2484.74,None,Partial,No Risk,0.0,3,104,2025-01-12,2026-02-13,2,Child (0-17),1.0,0.5,0.7,1.0,53.788533960959214
+Molly Palmer,Norway,Urban,88.32315044448391,1026.92,Partial,Partial,No Risk,0.0,2,216,2024-09-22,2025-06-02,18,Adult (18-59),0.5,0.5,0.3,0.0,46.38505811947445
+David Love,Poland,Rural,94.06143418935022,1313.93,None,Full,Minor Injuries,0.3,4,362,2024-04-29,2025-01-04,48,Adult (18-59),1.0,0.0,0.7,0.0,62.08636299614927
+Rachel Solis,Ukraine,Rural,57.86200563435712,4699.44,Partial,None,No Risk,0.0,4,23,2025-04-03,2026-06-02,51,Adult (18-59),0.5,1.0,0.7,0.0,53.133735424569636
+Samantha Stone,Czech Rep.,Rural,86.83711327833404,2709.7,Partial,Partial,No Risk,0.0,7,473,2024-01-09,2024-03-07,35,Adult (18-59),0.5,0.5,0.7,0.0,59.105179441698155
+Kathy Mccoy,Grenada,Urban,74.75426411217013,1020.61,Partial,None,No Risk,0.0,3,164,2024-11-13,2025-05-30,16,Child (0-17),0.5,1.0,0.3,1.0,53.869614910350016
+Laura Ochoa,Monaco,Urban,71.76446815297294,1677.15,None,Partial,Minor Injuries,0.3,2,251,2024-08-18,2025-05-15,25,Adult (18-59),1.0,0.5,0.3,0.0,54.71445667788741
+Benjamin Floyd,Iran (Islamic Rep. of),Urban,72.97544443817802,7311.66,Full,Partial,Minor Injuries,0.3,8,305,2024-06-25,2025-10-01,7,Child (0-17),0.0,0.5,0.3,1.0,53.82918941773666
+Michelle Hamilton,Micronesia (Federated States of),Rural,52.56003847798448,1916.04,None,Partial,Minor Injuries,0.3,3,66,2025-02-19,2025-09-02,54,Adult (18-59),1.0,0.5,0.7,0.0,51.70185073721885
+Nicole Johnson,Honduras,Urban,63.891598653362045,3664.0,Partial,Partial,No Risk,0.0,4,124,2024-12-23,2025-09-17,58,Adult (18-59),0.5,0.5,0.3,0.0,42.083993161057535
+Denise Hamilton,Norfolk Island,Urban,50.46196993610371,3420.22,Full,Partial,No Risk,0.0,3,99,2025-01-17,2025-07-11,19,Adult (18-59),0.0,0.5,0.3,0.0,25.86649181655243
+Jacqueline Douglas,Greece,Rural,58.45552073182788,4765.76,Full,Partial,No Risk,0.0,3,16,2025-04-10,2026-01-10,20,Adult (18-59),0.0,0.5,0.7,0.0,35.34388560418358
+Amber Adams,Angola,Rural,74.72669837523988,2912.4,Partial,Partial,No Risk,0.0,7,359,2024-05-02,2025-01-28,54,Adult (18-59),0.5,0.5,0.7,0.0,53.81913140744915
+Mary Sanchez,Sudan,Rural,66.90662834929296,5482.87,Partial,None,No Risk,0.0,3,58,2025-02-27,2025-05-15,0,Child (0-17),0.5,1.0,0.7,1.0,62.64915528205724
+Patrick Harris,Nigeria,Urban,56.22251189336788,3893.78,None,Partial,No Risk,0.0,5,130,2024-12-17,2026-03-04,18,Adult (18-59),1.0,0.5,0.3,0.0,50.25024897493938
+William Thomas,Somalia,Urban,61.17394083385245,1814.37,Partial,Full,Serious Injuries,0.7,5,408,2024-03-14,2025-03-21,18,Adult (18-59),0.5,0.0,0.3,0.0,40.7558325718428
+Frank Everett,Serbia and Kosovo (S/RES/1244 (1999)),Urban,67.13304297525353,3700.97,Partial,Full,No Risk,0.0,4,58,2025-02-27,2026-03-30,55,Adult (18-59),0.5,0.0,0.3,0.0,35.19224280210466
+Joseph Douglas,Micronesia (Federated States of),Urban,76.4631167601217,5454.22,Partial,None,Serious Injuries,0.7,5,96,2025-01-20,2025-12-25,76,Elder (60+),0.5,1.0,0.3,0.7,68.14014511852386
+Wesley Moody,Svalbard and Jan Mayen,Urban,45.13088793047748,13200.6,Full,Partial,No Risk,0.0,5,335,2024-05-26,2024-06-09,45,Adult (18-59),0.0,0.5,0.3,0.0,44.353667691341016
+Jonathan Pham,Estonia,Rural,95.46622075855446,2911.7,None,Full,No Risk,0.0,7,18,2025-04-08,2025-11-07,39,Adult (18-59),1.0,0.0,0.7,0.0,60.611412582290804
+Joseph Sutton,Monaco,Urban,97.43476952898224,2809.96,Partial,Partial,Minor Injuries,0.3,6,271,2024-07-29,2025-09-08,51,Adult (18-59),0.5,0.5,0.3,0.0,58.64025294646961
+Christopher Good,Chad,Rural,71.17682032630492,4644.59,Partial,Partial,No Risk,0.0,5,287,2024-07-13,2025-02-01,49,Adult (18-59),0.5,0.5,0.7,0.0,53.67963403694422
+Jennifer Mcmahon,United Arab Emirates,Urban,77.14397560176049,1686.76,None,None,Serious Injuries,0.7,4,170,2024-11-07,2025-10-15,0,Child (0-17),1.0,1.0,0.3,1.0,73.53043464237786
+Laura Flores,Uzbekistan,Urban,72.03321585417288,3302.88,None,Partial,No Risk,0.0,7,5,2025-04-21,2026-01-17,16,Child (0-17),1.0,0.5,0.3,1.0,59.95723518317407
+Anthony Sullivan,Equatorial Guinea,Rural,91.95318670224172,5076.36,Partial,Partial,No Risk,0.0,5,377,2024-04-14,2024-12-15,68,Elder (60+),0.5,0.5,0.7,0.7,66.54714250202534
+Holly Hernandez,Western Sahara,Urban,78.44386212574082,2281.15,Partial,Partial,No Risk,0.0,4,154,2024-11-23,2025-09-11,58,Adult (18-59),0.5,0.5,0.3,0.0,45.38618994416988
+Dr. Sandra Golden,Gambia,Urban,79.21922460871257,1993.58,Full,Partial,Minor Injuries,0.3,5,411,2024-03-11,2024-08-26,14,Child (0-17),0.0,0.5,0.3,1.0,46.30001028957013
+Mariah Medina,Solomon Islands,Urban,70.75786273058071,3764.9,Partial,None,No Risk,0.0,4,319,2024-06-11,2025-07-10,46,Adult (18-59),0.5,1.0,0.3,0.0,54.259744400668744
+Brandon Perez,Ireland,Rural,79.13052215416445,3318.67,None,None,No Risk,0.0,5,178,2024-10-30,2025-07-27,10,Child (0-17),1.0,1.0,0.7,1.0,75.73979045285965
+Austin Cuevas,"China, Hong Kong SAR",Rural,83.25528669383758,6506.44,Partial,None,No Risk,0.0,3,226,2024-09-12,2025-08-15,51,Adult (18-59),0.5,1.0,0.7,0.0,67.18045784651918
+Lisa Warner,Tuvalu,Urban,55.99171335571636,3156.11,None,None,Minor Injuries,0.3,4,143,2024-12-04,2025-03-21,24,Adult (18-59),1.0,1.0,0.3,0.0,58.95705012759736
+David Owens,Saint-Pierre-et-Miquelon,Rural,56.90715071332471,1351.92,Partial,Partial,No Risk,0.0,3,222,2024-09-16,2024-09-30,41,Adult (18-59),0.5,0.5,0.7,0.0,40.89622211946395
+Eric Mueller,New Caledonia,Urban,100.0,4089.92,Partial,Full,Serious Injuries,0.7,6,406,2024-03-16,2025-03-17,21,Adult (18-59),0.5,0.0,0.3,0.0,59.66738471058578
+Teresa Hall,Antigua and Barbuda,Rural,73.38622202582968,1098.21,None,Full,No Risk,0.0,5,338,2024-05-23,2025-03-25,56,Adult (18-59),1.0,0.0,0.7,0.0,51.34743233261824
+Lori Morrow,Curaçao,Urban,65.2016180077872,2639.63,Partial,Full,Minor Injuries,0.3,2,209,2024-09-29,2025-08-23,40,Adult (18-59),0.5,0.0,0.3,0.0,36.02933653043713
+Gregory Lam,Canada,Rural,68.87841285434531,4018.77,Partial,Partial,No Risk,0.0,6,440,2024-02-11,2025-01-09,31,Adult (18-59),0.5,0.5,0.7,0.0,53.82392448320055
+Rachael Sellers,Turks and Caicos Islands,Rural,83.57363656411495,4453.72,None,Partial,No Risk,0.0,6,40,2025-03-17,2026-01-12,45,Adult (18-59),1.0,0.5,0.7,0.0,66.03817672174125
+Cory Willis,Nigeria,Rural,75.69060281892975,2577.33,None,None,No Risk,0.0,6,188,2024-10-20,2025-03-09,42,Adult (18-59),1.0,1.0,0.7,0.0,68.82932773941967
+Julie Hernandez,Rwanda,Rural,66.27491725352806,3876.11,Partial,Partial,Minor Injuries,0.3,6,341,2024-05-20,2024-07-14,13,Child (0-17),0.5,0.5,0.7,1.0,59.61896780473387
+Emily Coleman,Mexico,Urban,70.98486496759939,2097.46,Full,Partial,Minor Injuries,0.3,5,257,2024-08-12,2025-06-20,29,Adult (18-59),0.0,0.5,0.3,0.0,36.881957600052104
+Robin Adams,Spain,Urban,52.76441963099741,2054.32,Full,Partial,No Risk,0.0,4,411,2024-03-11,2024-04-02,78,Elder (60+),0.0,0.5,0.3,0.7,31.523623290299867
+Carolyn Boyd,Lebanon,Urban,92.9805911652042,4043.6,Partial,Partial,No Risk,0.0,2,263,2024-08-06,2025-06-06,82,Elder (60+),0.5,0.5,0.3,0.7,57.327375655862234
+Philip Parker,Kiribati,Rural,90.26506682906204,1702.46,None,Full,Serious Injuries,0.7,2,27,2025-03-30,2026-01-31,34,Adult (18-59),1.0,0.0,0.7,0.0,60.89031092437522
+Michelle Martinez,Australia,Urban,79.93420112989052,6029.34,None,Partial,No Risk,0.0,8,403,2024-03-19,2024-06-02,46,Adult (18-59),1.0,0.5,0.3,0.0,67.16555059359301
+Janet Goodwin,French Polynesia,Urban,68.2491221874011,2405.55,Partial,Partial,No Risk,0.0,4,285,2024-07-15,2025-05-18,11,Child (0-17),0.5,0.5,0.3,1.0,48.12563215138182
+Jennifer Warren,Armenia,Urban,74.82376816335832,2655.74,None,None,No Risk,0.0,5,421,2024-03-01,2024-10-21,0,Child (0-17),1.0,1.0,0.3,1.0,70.41805482079818
+Sarah Dixon,Saint-Pierre-et-Miquelon,Urban,100.0,4162.15,Partial,None,No Risk,0.0,5,394,2024-03-28,2024-04-07,77,Elder (60+),0.5,1.0,0.3,0.7,70.61734970995516
+Justin Smith,Uzbekistan,Urban,69.66736352566458,3933.24,None,Partial,Minor Injuries,0.3,5,165,2024-11-12,2025-06-10,16,Child (0-17),1.0,0.5,0.3,1.0,63.66278396502744
+Jack Miller,Cyprus,Rural,62.36112531381301,2193.31,None,None,No Risk,0.0,2,96,2025-01-20,2025-11-23,16,Child (0-17),1.0,1.0,0.7,1.0,65.06865230301084
+Amber Rhodes,Jamaica,Urban,69.2995069720757,3846.74,Partial,Full,No Risk,0.0,1,80,2025-02-05,2026-01-28,54,Adult (18-59),0.5,0.0,0.3,0.0,34.803606122305396
+Matthew Robinson,Liberia,Urban,79.75990800886709,4260.21,Partial,Partial,Serious Injuries,0.7,1,342,2024-05-19,2024-06-13,1,Child (0-17),0.5,0.5,0.3,1.0,61.52754617672376
+Cody Chavez,Cook Islands,Urban,68.41507320241375,2579.45,Partial,None,Minor Injuries,0.3,1,414,2024-03-08,2024-12-08,3,Child (0-17),0.5,1.0,0.3,1.0,58.61280804582884
+Sarah Hines,Finland,Urban,84.9746059671884,3132.84,None,Partial,No Risk,0.0,5,138,2024-12-09,2025-09-21,38,Adult (18-59),1.0,0.5,0.3,0.0,59.68758613007906
+Robert Larsen,Myanmar,Urban,47.04011303865192,1723.44,Partial,Full,No Risk,0.0,4,215,2024-09-23,2025-12-11,0,Child (0-17),0.5,0.0,0.3,1.0,30.86238436751477
+Alan Mejia,Uruguay,Urban,82.20784546761897,3023.71,Partial,Partial,No Risk,0.0,5,55,2025-03-02,2026-05-03,0,Child (0-17),0.5,0.5,0.3,1.0,52.640254354269665
+Eduardo Rosario,Poland,Urban,89.65793365773791,1875.3,Partial,Full,Minor Injuries,0.3,10,492,2023-12-21,2024-02-16,73,Elder (60+),0.5,0.0,0.3,0.7,54.55960113095997
+Laurie Benson,Sweden,Urban,70.21398100867587,2776.55,None,Partial,No Risk,0.0,2,379,2024-04-12,2024-05-27,38,Adult (18-59),1.0,0.5,0.3,0.0,54.32906909842169
+Mike Lloyd Jr.,Malawi,Rural,69.64176299429724,3425.15,Partial,None,No Risk,0.0,6,221,2024-09-17,2025-12-15,88,Elder (60+),0.5,1.0,0.7,0.7,61.885876844468655
+Heather Barrera,South Africa,Urban,75.78357116469743,789.46,None,Full,Minor Injuries,0.3,2,476,2024-01-06,2025-03-07,8,Child (0-17),1.0,0.0,0.3,1.0,54.41469552976134
+Jeffrey Massey,Indonesia,Urban,88.28831066340084,3366.96,None,Partial,No Risk,0.0,5,371,2024-04-20,2025-08-13,51,Adult (18-59),1.0,0.5,0.3,0.0,63.65528145014532
+Sandy Sparks,Rwanda,Urban,65.93605075682274,3663.19,None,Partial,No Risk,0.0,4,297,2024-07-03,2024-08-05,11,Child (0-17),1.0,0.5,0.3,1.0,59.57197777059867
+Kimberly Allen,San Marino,Urban,83.44610368716808,2322.85,Full,Partial,No Risk,0.0,5,11,2025-04-15,2025-09-24,36,Adult (18-59),0.0,0.5,0.3,0.0,36.44224621394696
+Johnny Roberts,China,Urban,56.44167845247503,2814.72,Partial,Partial,No Risk,0.0,6,405,2024-03-17,2024-04-09,32,Adult (18-59),0.5,0.5,0.3,0.0,41.76203243010672
+Melissa Solomon,Nigeria,Urban,84.00386798044879,4545.58,Full,Partial,No Risk,0.0,2,98,2025-01-18,2025-05-23,72,Elder (60+),0.0,0.5,0.3,0.7,43.215393220563946
+Samuel Mitchell,Croatia,Urban,58.25763709893176,3327.78,Partial,Partial,No Risk,0.0,7,198,2024-10-10,2025-04-01,2,Child (0-17),0.5,0.5,0.3,1.0,46.81369890955704
+Charles Le,Mozambique,Urban,75.81265913763126,3250.71,None,Partial,No Risk,0.0,3,291,2024-07-09,2025-07-28,47,Adult (18-59),1.0,0.5,0.3,0.0,56.908190601101005
+Allison Nelson,British Virgin Islands,Rural,51.849031338926736,7516.0,Full,None,No Risk,0.0,1,372,2024-04-19,2024-05-10,11,Child (0-17),0.0,1.0,0.7,1.0,52.618195998802285
+Michelle Bates,Thailand,Rural,97.90249197343024,1691.65,Partial,Partial,No Risk,0.0,4,27,2025-03-30,2026-06-04,5,Child (0-17),0.5,0.5,0.7,1.0,60.31948519769554
+Kara Roberts,Nigeria,Urban,59.20058479538886,1421.39,Full,None,Minor Injuries,0.3,1,333,2024-05-28,2024-08-13,49,Adult (18-59),0.0,1.0,0.3,0.0,37.3677094621567
+George Taylor,Congo,Urban,57.340948798901614,4246.45,None,Full,No Risk,0.0,5,225,2024-09-13,2025-02-08,55,Adult (18-59),1.0,0.0,0.3,0.0,44.72854800525938
+Jeremy Cochran,Bangladesh,Urban,56.959088569304555,1894.8,None,Full,No Risk,0.0,5,218,2024-09-20,2025-03-24,68,Elder (60+),1.0,0.0,0.3,0.7,43.930036360543504
+Joshua Wilkins,Morocco,Urban,94.74849619446114,2674.36,None,Partial,No Risk,0.0,4,270,2024-07-30,2024-12-30,46,Adult (18-59),1.0,0.5,0.3,0.0,63.28570695359276
+Sarah Morrow,San Marino,Rural,85.71937870700373,3211.82,Partial,Partial,No Risk,0.0,6,167,2024-11-10,2025-03-13,33,Adult (18-59),0.5,0.5,0.7,0.0,55.94703104673771
+Angela Avery,Holy See (the),Urban,75.24817059400394,1460.39,Full,Partial,No Risk,0.0,7,31,2025-03-26,2026-03-15,86,Elder (60+),0.0,0.5,0.3,0.7,36.709539164907085
+William Brown,French Polynesia,Urban,66.98149819682405,4987.53,Full,Partial,No Risk,0.0,4,340,2024-05-21,2024-06-03,70,Elder (60+),0.0,0.5,0.3,0.7,41.19172374427549
+Stephanie Webb,Lesotho,Urban,66.99459993350426,5798.98,Partial,Partial,No Risk,0.0,3,308,2024-06-22,2025-06-17,20,Adult (18-59),0.5,0.5,0.3,0.0,48.23116421079658
+Rebecca Herman,United Arab Emirates,Urban,39.36244375236525,3630.96,None,Partial,No Risk,0.0,1,331,2024-05-30,2024-10-17,6,Child (0-17),1.0,0.5,0.3,1.0,48.318789466657435
+Ashley Smith,Yemen,Rural,72.23882319116589,2622.19,None,None,No Risk,0.0,6,123,2024-12-24,2025-10-28,37,Adult (18-59),1.0,1.0,0.7,0.0,66.97515439338113
+Jennifer Mcclure,Cameroon,Rural,94.6032435697504,1209.35,None,Partial,No Risk,0.0,4,174,2024-11-03,2024-11-07,57,Adult (18-59),1.0,0.5,0.7,0.0,64.72587486494182
+Albert Lewis,Dominican Rep.,Rural,51.91613438163238,4105.58,Full,Partial,Minor Injuries,0.3,2,184,2024-10-24,2025-04-16,14,Child (0-17),0.0,0.5,0.7,1.0,40.89208335931664
+Jacob Brown,Slovakia,Urban,69.0016593329171,1784.38,Partial,Partial,No Risk,0.0,1,297,2024-07-03,2024-08-23,49,Adult (18-59),0.5,0.5,0.3,0.0,40.779025354309915
+Courtney Parrish,Cuba,Rural,57.830171713638535,1941.04,Partial,None,No Risk,0.0,2,27,2025-03-30,2025-11-23,60,Elder (60+),0.5,1.0,0.7,0.7,50.75728061209186
+Sally Gates,Tonga,Urban,47.61238845022061,2308.85,None,Partial,Minor Injuries,0.3,5,382,2024-04-09,2024-05-18,57,Adult (18-59),1.0,0.5,0.3,0.0,49.817825670191105
+Matthew Reed,French Guiana,Urban,71.57409748347234,3264.14,None,Partial,No Risk,0.0,5,333,2024-05-28,2025-02-12,4,Child (0-17),1.0,0.5,0.3,1.0,61.88826696001163
+Carl Klein,Palau,Urban,70.4438258719838,4222.56,Partial,None,No Risk,0.0,5,458,2024-01-24,2024-05-15,29,Adult (18-59),0.5,1.0,0.3,0.0,56.88397082773429
+Patricia Smith,Cayman Islands,Urban,62.515966434813045,7539.12,Full,None,No Risk,0.0,6,58,2025-02-27,2025-06-12,1,Child (0-17),0.0,1.0,0.3,1.0,51.258282700010064
+Douglas Woods,China,Rural,76.97304172796711,2299.76,Partial,Full,No Risk,0.0,4,47,2025-03-10,2026-05-28,24,Adult (18-59),0.5,0.0,0.7,0.0,41.302208014178404
+Krista Fletcher,"China, Hong Kong SAR",Urban,74.58843112743058,3968.95,Full,Full,Serious Injuries,0.7,8,271,2024-07-29,2025-11-14,50,Adult (18-59),0.0,0.0,0.3,0.0,39.77939069270726
+Kelli Nguyen,Puerto Rico,Urban,66.71005418734515,3624.68,Partial,Partial,Minor Injuries,0.3,9,466,2024-01-16,2025-02-04,22,Adult (18-59),0.5,0.5,0.3,0.0,52.26032945071821
+Timothy Andrews,Ethiopia,Urban,67.71823790660245,4869.84,Partial,Partial,No Risk,0.0,3,477,2024-01-05,2024-07-07,50,Adult (18-59),0.5,0.5,0.3,0.0,48.57530264386787
+Lori Parrish,Dem. Rep. of the Congo,Rural,55.03801507256387,4349.63,Partial,None,Minor Injuries,0.3,6,184,2024-10-24,2025-03-21,39,Adult (18-59),0.5,1.0,0.7,0.0,57.19800595822394
+Kyle Mitchell,Iraq,Urban,91.2452903482812,2036.16,Full,Partial,No Risk,0.0,2,188,2024-10-20,2026-01-10,30,Adult (18-59),0.0,0.5,0.3,0.0,38.9443060397202
+Richard Rodriguez,Malawi,Rural,76.95029624173281,2476.37,None,Full,No Risk,0.0,5,88,2025-01-28,2025-02-28,4,Child (0-17),1.0,0.0,0.7,1.0,57.56622602686422
+Monica Gibson,Tajikistan,Urban,46.41694115735726,819.04,Partial,Partial,Serious Injuries,0.7,2,376,2024-04-15,2024-07-27,8,Child (0-17),0.5,0.5,0.3,1.0,44.058144943400904
+Nicholas Burton,Israel,Rural,89.76238248470706,7590.21,Partial,Full,No Risk,0.0,5,94,2025-01-22,2025-06-26,39,Adult (18-59),0.5,0.0,0.7,0.0,56.27193199462114
+Melinda Hernandez,Saint Lucia,Urban,59.61055413117559,1961.88,None,Partial,No Risk,0.0,4,417,2024-03-05,2024-06-22,37,Adult (18-59),1.0,0.5,0.3,0.0,50.46591331696126
+Anthony Lopez,Ecuador,Rural,100.0,2281.43,Partial,Full,No Risk,0.0,2,345,2024-05-16,2024-07-01,49,Adult (18-59),0.5,0.0,0.7,0.0,51.69238707127665
+Courtney Flynn,Puerto Rico,Rural,63.847227474984344,5183.58,Partial,None,No Risk,0.0,5,438,2024-02-13,2024-04-05,31,Adult (18-59),0.5,1.0,0.7,0.0,60.9037780412186
+Jennifer Richardson,Sweden,Urban,59.24167397043013,1891.03,Partial,None,No Risk,0.0,4,91,2025-01-25,2026-05-22,61,Elder (60+),0.5,1.0,0.3,0.7,47.94577389721897
+Misty Williams,Swaziland,Urban,68.40554051963167,5399.41,None,Partial,Minor Injuries,0.3,1,194,2024-10-14,2025-05-14,38,Adult (18-59),1.0,0.5,0.3,0.0,58.809764855278104
+Laura Smith,Cameroon,Rural,71.93900452269678,4857.95,None,None,No Risk,0.0,2,107,2025-01-09,2025-10-14,53,Adult (18-59),1.0,1.0,0.7,0.0,68.36684823972216
+Ernest Padilla,Ethiopia,Urban,59.55627855239174,1661.16,Full,None,Minor Injuries,0.3,4,124,2024-12-23,2025-04-12,26,Adult (18-59),0.0,1.0,0.3,0.0,37.49316503233066
+Michelle Adams,United States of America,Urban,72.53190900511376,985.05,None,Full,No Risk,0.0,2,237,2024-09-01,2025-05-10,18,Adult (18-59),1.0,0.0,0.3,0.0,43.15679095882317
+Allison Hernandez,Maldives,Urban,71.77077179106617,2115.17,Full,None,No Risk,0.0,3,362,2024-04-29,2025-07-21,32,Adult (18-59),0.0,1.0,0.3,0.0,41.64354033371557
+Travis Holmes,Maldives,Urban,78.79786865207588,1455.99,None,Partial,No Risk,0.0,4,292,2024-07-08,2024-10-18,61,Elder (60+),1.0,0.5,0.3,0.7,58.96372768457532
+Jennifer Rodriguez,Grenada,Urban,64.64047145091517,2640.39,Partial,Partial,No Risk,0.0,4,157,2024-11-20,2025-04-03,55,Adult (18-59),0.5,0.5,0.3,0.0,40.91333582944293
+Carlos Brooks,Nepal,Urban,88.29825151495302,10592.28,None,Partial,No Risk,0.0,1,262,2024-08-07,2024-11-18,13,Child (0-17),1.0,0.5,0.3,1.0,77.90283882709966
+Daniel Bryant,United Arab Emirates,Urban,45.52782557797144,1809.44,None,Partial,No Risk,0.0,3,235,2024-09-03,2025-02-23,29,Adult (18-59),1.0,0.5,0.3,0.0,42.594553989708885
+Stacey Cooper,Togo,Rural,66.88582129869285,3459.54,Partial,Partial,No Risk,0.0,3,469,2024-01-13,2024-11-07,25,Adult (18-59),0.5,0.5,0.7,0.0,50.73530453092662
+Kristin Anderson,Qatar,Rural,77.1976703892696,2140.16,None,None,No Risk,0.0,2,143,2024-12-04,2025-01-17,52,Adult (18-59),1.0,1.0,0.7,0.0,65.95718182826288
+Jaime Baldwin,Rep. of Korea,Urban,29.86603979437252,1603.82,None,Full,No Risk,0.0,6,386,2024-04-05,2024-08-08,44,Adult (18-59),1.0,0.0,0.3,0.0,32.09647548891854
+Christopher Davenport,Morocco,Urban,86.10321117874355,1672.53,Partial,None,Serious Injuries,0.7,2,181,2024-10-27,2025-02-03,50,Adult (18-59),0.5,1.0,0.3,0.0,60.832417320802016
+Jason Reid,Hungary,Rural,82.67421989613608,3033.81,Partial,Partial,Minor Injuries,0.3,3,13,2025-04-13,2026-06-09,40,Adult (18-59),0.5,0.5,0.7,0.0,54.29992524967731
+Richard Williams,Niue,Rural,73.26789228576826,2452.01,Full,Partial,Serious Injuries,0.7,5,418,2024-03-04,2025-07-05,67,Elder (60+),0.0,0.5,0.7,0.7,52.456099667732595
+Matthew Gilmore,Rwanda,Rural,56.2793316379784,2005.61,Partial,Partial,No Risk,0.0,1,235,2024-09-03,2025-05-22,77,Elder (60+),0.5,0.5,0.7,0.7,44.317889398718805
+Phillip Powers,Russian Federation,Rural,51.27121273427916,2149.22,Full,None,No Risk,0.0,2,298,2024-07-02,2025-07-14,29,Adult (18-59),0.0,1.0,0.7,0.0,37.89279097922858
+Brian Richardson,Palestinian,Urban,65.82268805499024,3859.98,None,Partial,No Risk,0.0,2,71,2025-02-14,2026-01-08,0,Child (0-17),1.0,0.5,0.3,1.0,56.50073881435098
+Phyllis Hayes,Dominican Rep.,Urban,70.67981495311382,1939.6,None,Partial,No Risk,0.0,9,334,2024-05-27,2024-08-10,25,Adult (18-59),1.0,0.5,0.3,0.0,56.48654441340037
+John Martinez,Switzerland,Urban,75.23406589275994,2465.4,Partial,None,No Risk,0.0,3,2,2025-04-24,2026-07-28,47,Adult (18-59),0.5,1.0,0.3,0.0,49.93857398053038
+Colton Wong,South Africa,Rural,70.09205235034639,2789.82,Full,None,Critical Condition,1.0,6,76,2025-02-09,2026-01-04,72,Elder (60+),0.0,1.0,0.7,0.7,59.49906255455141
+Amber Torres,Slovakia,Urban,100.0,4075.71,Partial,None,Minor Injuries,0.3,10,31,2025-03-26,2026-04-01,39,Adult (18-59),0.5,1.0,0.3,0.0,69.11491294020821
+Julie Grant,Mongolia,Rural,63.21594752092245,6040.94,None,Full,No Risk,0.0,4,222,2024-09-16,2025-07-27,78,Elder (60+),1.0,0.0,0.7,0.7,57.9436510076633
+Suzanne Mcclain,Turkey,Rural,71.93020433035826,6638.33,Partial,Partial,No Risk,0.0,4,437,2024-02-14,2024-08-10,40,Adult (18-59),0.5,0.5,0.7,0.0,58.3686167501035
+Larry Molina,South Sudan,Urban,65.83077781983623,5515.37,Full,Full,No Risk,0.0,3,347,2024-05-14,2025-07-11,25,Adult (18-59),0.0,0.0,0.3,0.0,30.196019039484316
+James Rios,Bangladesh,Urban,57.95208069304434,4046.14,None,Full,No Risk,0.0,1,462,2024-01-20,2024-08-04,0,Child (0-17),1.0,0.0,0.3,1.0,49.75522822339924
+Karen Barber,Bosnia and Herzegovina,Urban,69.72829453718406,3990.56,Partial,Full,Minor Injuries,0.3,4,288,2024-07-12,2025-06-26,52,Adult (18-59),0.5,0.0,0.3,0.0,41.959470761593586
+Michael Logan,Holy See (the),Urban,69.83027997204348,3148.74,Partial,Partial,No Risk,0.0,5,0,2025-04-26,2025-11-27,55,Adult (18-59),0.5,0.5,0.3,0.0,42.71000165117126
+Robin Bailey,Stateless,Urban,47.24879864238871,2749.98,Partial,Partial,Serious Injuries,0.7,3,96,2025-01-20,2026-05-23,11,Child (0-17),0.5,0.5,0.3,1.0,45.4782537957254
+Darren Lewis,Lithuania,Urban,87.82163150759418,3195.78,None,None,No Risk,0.0,3,230,2024-09-08,2025-02-08,33,Adult (18-59),1.0,1.0,0.3,0.0,68.16335196868249
+William Dominguez,Turks and Caicos Islands,Urban,77.51435716143835,2566.62,Partial,None,No Risk,0.0,4,498,2023-12-15,2024-12-27,50,Adult (18-59),0.5,1.0,0.3,0.0,56.47702104243385
+Lisa Hill,Nicaragua,Rural,82.31256580867283,1808.34,None,Partial,No Risk,0.0,7,465,2024-01-17,2024-10-03,30,Adult (18-59),1.0,0.5,0.7,0.0,65.77820528645896
+Brittany Wilson,Portugal,Urban,78.46447884711797,6576.83,None,Partial,No Risk,0.0,5,275,2024-07-25,2025-05-19,86,Elder (60+),1.0,0.5,0.3,0.7,68.12439213364057
+Andrea Miller,Pakistan,Urban,71.95755508196375,4592.17,None,None,No Risk,0.0,6,215,2024-09-23,2025-09-06,22,Adult (18-59),1.0,1.0,0.3,0.0,66.21409112564255
+Samantha Ramsey,Rep. of Korea,Rural,64.45059325807054,3012.92,Partial,Partial,No Risk,0.0,2,9,2025-04-17,2026-02-28,53,Adult (18-59),0.5,0.5,0.7,0.0,43.89907509819494
+Ryan Mcclain,French Guiana,Urban,76.62104129332326,2806.81,Full,Full,No Risk,0.0,4,104,2025-01-12,2026-02-10,27,Adult (18-59),0.0,0.0,0.3,0.0,27.622607114362758
+Rhonda Zimmerman,Curaçao,Urban,75.59319480129761,6984.95,Full,Partial,No Risk,0.0,4,336,2024-05-25,2025-04-05,51,Adult (18-59),0.0,0.5,0.3,0.0,44.32155228608358
+Sabrina Mcintyre,Slovenia,Rural,37.984501015488114,5085.62,None,Partial,No Risk,0.0,2,118,2024-12-29,2026-04-20,88,Elder (60+),1.0,0.5,0.7,0.7,52.26041460881577
+Michael Lee,Jordan,Rural,87.29747095328284,12029.71,Partial,None,No Risk,0.0,5,336,2024-05-25,2024-07-07,30,Adult (18-59),0.5,1.0,0.7,0.0,80.49128180814186
+Devin Hampton,The former Yugoslav Republic of Macedonia,Urban,58.898234695239,3124.55,Partial,Partial,Serious Injuries,0.7,5,472,2024-01-10,2025-01-04,12,Child (0-17),0.5,0.5,0.3,1.0,55.32736064650099
+Donna White,Sudan,Urban,71.73730820855319,1063.43,None,None,No Risk,0.0,4,485,2023-12-28,2025-03-05,32,Adult (18-59),1.0,1.0,0.3,0.0,61.588963150622746
+Michael Gonzalez,Maldives,Rural,62.344613062535615,3336.91,Partial,Partial,No Risk,0.0,4,373,2024-04-18,2025-01-01,39,Adult (18-59),0.5,0.5,0.7,0.0,48.43096647440107
+Tammy Wood,San Marino,Urban,81.84798109178836,1797.62,Full,None,No Risk,0.0,9,271,2024-07-29,2025-11-30,16,Child (0-17),0.0,1.0,0.3,1.0,52.258121732698235
+Crystal Rodriguez,Luxembourg,Rural,83.302441198121,2292.08,Full,None,No Risk,0.0,2,83,2025-02-02,2025-12-06,5,Child (0-17),0.0,1.0,0.7,1.0,52.888745695848215
+Joseph Jackson,Rwanda,Urban,68.23006744731872,3508.22,Full,Partial,No Risk,0.0,4,29,2025-03-28,2025-08-20,53,Adult (18-59),0.0,0.5,0.3,0.0,32.474763093268564
+Christopher Diaz,Bosnia and Herzegovina,Urban,82.08511404899956,4945.6,Partial,Partial,No Risk,0.0,4,151,2024-11-26,2025-11-03,2,Child (0-17),0.5,0.5,0.3,1.0,56.3389521615066
+Erica Flores,Morocco,Rural,92.31511569353364,4883.96,Full,Partial,No Risk,0.0,6,32,2025-03-25,2026-01-25,39,Adult (18-59),0.0,0.5,0.7,0.0,49.95278237541808
+Ashley Jackson,Latvia,Urban,91.4722933099151,10794.67,Partial,None,No Risk,0.0,1,39,2025-03-18,2025-04-26,56,Adult (18-59),0.5,1.0,0.3,0.0,69.70351762626727
+Denise Silva,Timor-Leste,Rural,68.11138141345623,3346.61,Partial,Partial,No Risk,0.0,3,427,2024-02-24,2025-04-04,42,Adult (18-59),0.5,0.5,0.7,0.0,50.57427853894251
+Bobby Matthews,Central African Rep.,Rural,95.89550305701071,4133.54,Full,None,No Risk,0.0,6,23,2025-04-03,2025-05-04,11,Child (0-17),0.0,1.0,0.7,1.0,62.38861088877161
+Misty Smith,Bosnia and Herzegovina,Rural,78.30632749600262,4230.3,Partial,None,No Risk,0.0,3,374,2024-04-17,2024-06-12,34,Adult (18-59),0.5,1.0,0.7,0.0,62.8667613890044
+Summer Simmons,Zambia,Urban,64.26848334119052,2992.06,Partial,Partial,No Risk,0.0,5,72,2025-02-13,2026-03-09,18,Adult (18-59),0.5,0.5,0.3,0.0,41.09184847994543
+Matthew Tran,Timor-Leste,Rural,49.538022404056086,2790.25,Partial,None,No Risk,0.0,3,340,2024-05-21,2025-05-17,18,Adult (18-59),0.5,1.0,0.7,0.0,49.33854490498753
+Robert Jacobs,Guatemala,Rural,51.89773887298861,2877.75,None,Partial,No Risk,0.0,3,75,2025-02-10,2026-01-21,58,Adult (18-59),1.0,0.5,0.7,0.0,50.217095668231735
+Gregory Davis,United Kingdom,Urban,71.21432416351941,3850.82,None,Partial,Minor Injuries,0.3,5,291,2024-07-09,2024-12-13,42,Adult (18-59),1.0,0.5,0.3,0.0,60.354159095347505
+Richard Deleon,Oman,Urban,76.72137132806454,3736.85,None,Partial,Minor Injuries,0.3,4,154,2024-11-23,2026-03-28,27,Adult (18-59),1.0,0.5,0.3,0.0,60.27608774370607
+Lisa Harrison,Trinidad and Tobago,Rural,83.05217691322753,2177.92,Partial,Partial,No Risk,0.0,4,189,2024-10-19,2025-07-12,4,Child (0-17),0.5,0.5,0.7,1.0,57.26851244725593
+Robert Williams,Central African Rep.,Urban,70.74605331645454,2093.5,None,Partial,No Risk,0.0,2,222,2024-09-16,2025-08-01,35,Adult (18-59),1.0,0.5,0.3,0.0,51.76970497757753
+Elizabeth Lee,Barbados,Rural,63.79376178852843,5379.65,Partial,Full,No Risk,0.0,6,403,2024-03-19,2025-05-23,10,Child (0-17),0.5,0.0,0.7,1.0,51.43020271764113
+Maria Conrad,"China, Hong Kong SAR",Rural,73.00287516992357,3533.65,None,Full,Minor Injuries,0.3,5,233,2024-09-05,2025-06-28,20,Adult (18-59),1.0,0.0,0.7,0.0,57.38732451407136
+John Dominguez,Turkey,Urban,46.89527055727278,2541.82,None,None,Serious Injuries,0.7,3,75,2025-02-10,2026-01-19,46,Adult (18-59),1.0,1.0,0.3,0.0,57.27520084492759
+Randy Hernandez,Guatemala,Urban,79.19184864865842,3950.79,Full,Full,Minor Injuries,0.3,4,293,2024-07-07,2024-08-03,28,Adult (18-59),0.0,0.0,0.3,0.0,35.45550570630721
+Mindy Cervantes,Venezuela (Bolivarian Republic of),Urban,82.4499371494478,2063.35,Partial,Partial,Minor Injuries,0.3,8,169,2024-11-08,2025-01-16,25,Adult (18-59),0.5,0.5,0.3,0.0,51.86793988399213
+Patricia Nixon,Cabo Verde,Urban,32.93386767622562,4959.53,Partial,None,Minor Injuries,0.3,2,65,2025-02-20,2025-09-25,28,Adult (18-59),0.5,1.0,0.3,0.0,41.63528715212271
+Joyce Thompson,Afghanistan,Urban,93.83730757397036,2506.49,Partial,Partial,No Risk,0.0,2,396,2024-03-26,2024-05-16,36,Adult (18-59),0.5,0.5,0.3,0.0,52.80442075850846
+Daniel Martin,Seychelles,Urban,49.883418529437606,5679.45,Partial,Full,No Risk,0.0,8,365,2024-04-26,2024-06-15,50,Adult (18-59),0.5,0.0,0.3,0.0,37.515438973681825
+Julie Garcia,Honduras,Rural,52.04898959332689,5860.62,Full,Partial,No Risk,0.0,1,437,2024-02-14,2024-11-14,69,Elder (60+),0.0,0.5,0.7,0.7,41.46576615802412
+Sarah Lopez,Haiti,Urban,71.24240761700844,5565.19,Partial,Partial,No Risk,0.0,9,25,2025-04-01,2026-07-22,25,Adult (18-59),0.5,0.5,0.3,0.0,49.90602729245362
+Carlos Miller,Equatorial Guinea,Urban,92.82427363814952,4017.0,Partial,Full,Serious Injuries,0.7,1,188,2024-10-20,2025-03-07,19,Adult (18-59),0.5,0.0,0.3,0.0,51.9175322391323
+Justin Benjamin,Lebanon,Rural,69.51902607356658,1830.65,Full,None,Minor Injuries,0.3,4,237,2024-09-01,2025-02-16,41,Adult (18-59),0.0,1.0,0.7,0.0,47.618270491007905
+Robin Shaw MD,Svalbard and Jan Mayen,Rural,40.64528699805008,2382.94,None,None,No Risk,0.0,5,427,2024-02-24,2025-01-07,55,Adult (18-59),1.0,1.0,0.7,0.0,57.30871518162011
+Renee Fletcher,Sao Tome and Principe,Urban,73.53137516248285,3422.66,Full,Partial,No Risk,0.0,3,473,2024-01-09,2025-04-30,14,Child (0-17),0.0,0.5,0.3,1.0,43.17964239426792
+Mary Benitez,Sierra Leone,Urban,57.00359450568444,2703.2,Partial,Full,No Risk,0.0,5,323,2024-06-07,2025-04-18,75,Elder (60+),0.5,0.0,0.3,0.7,36.401396914049506
+Mr. Derek Hernandez,Lesotho,Urban,70.30221515298764,3442.32,Partial,Partial,Minor Injuries,0.3,9,10,2025-04-16,2026-03-29,20,Adult (18-59),0.5,0.5,0.3,0.0,48.71770001168622
+Allison Floyd,Barbados,Urban,83.71936470655118,1235.16,None,Full,Minor Injuries,0.3,6,113,2025-01-03,2025-02-21,52,Adult (18-59),1.0,0.0,0.3,0.0,51.729125414348985
+Daniel Glenn,Lebanon,Urban,66.58468548808021,3988.01,Full,Partial,No Risk,0.0,1,235,2024-09-03,2025-04-25,6,Child (0-17),0.0,0.5,0.3,1.0,38.090709155911696
+Christopher Weaver,Central African Rep.,Rural,74.50997198809834,2718.28,Partial,Partial,No Risk,0.0,5,483,2023-12-30,2024-03-15,47,Adult (18-59),0.5,0.5,0.7,0.0,53.53017959880102
+Latoya Norris,Ireland,Urban,47.305590945814714,2234.34,Partial,Partial,Minor Injuries,0.3,3,277,2024-07-23,2025-09-10,38,Adult (18-59),0.5,0.5,0.3,0.0,37.41327483889753
+Melissa Lambert,Haiti,Rural,68.43662828373802,5271.79,None,Full,No Risk,0.0,3,302,2024-06-28,2025-08-24,6,Child (0-17),1.0,0.0,0.7,1.0,60.29064648946865
+John Lopez,Vanuatu,Urban,83.18960197918018,2796.45,Partial,Partial,No Risk,0.0,2,485,2023-12-28,2024-05-17,14,Child (0-17),0.5,0.5,0.3,1.0,55.243321670201084
+Courtney Ramos,Tajikistan,Rural,65.58107160320154,1307.24,Partial,Full,Minor Injuries,0.3,2,367,2024-04-24,2024-04-29,29,Adult (18-59),0.5,0.0,0.7,0.0,40.43486723785799
+Brian Valenzuela,Germany,Urban,55.061104853111715,1698.27,None,Partial,No Risk,0.0,4,446,2024-02-05,2024-10-28,56,Adult (18-59),1.0,0.5,0.3,0.0,48.60796504706775
+Victoria Fuller,Madagascar,Urban,82.25849258894645,3753.81,Partial,None,No Risk,0.0,3,447,2024-02-04,2024-07-12,35,Adult (18-59),0.5,1.0,0.3,0.0,59.23671594237969
+Neil Rivera,United Arab Emirates,Urban,40.641385103151336,5718.69,None,Partial,No Risk,0.0,2,111,2025-01-05,2025-06-10,58,Adult (18-59),1.0,0.5,0.3,0.0,45.777431411125576
+Mark Reynolds,Dem. People's Rep. of Korea,Urban,63.494986639761215,2311.4,None,Partial,Serious Injuries,0.7,7,6,2025-04-20,2025-06-22,2,Child (0-17),1.0,0.5,0.3,1.0,62.072807641123404
+Kathryn Benton,Martinique,Urban,54.86009076685748,1105.27,None,Partial,Serious Injuries,0.7,3,464,2024-01-18,2024-12-08,41,Adult (18-59),1.0,0.5,0.3,0.0,54.127235395601645
+Tyrone Vega,Slovakia,Rural,79.65361972615861,3828.84,Partial,Partial,Minor Injuries,0.3,6,368,2024-04-23,2024-10-05,50,Adult (18-59),0.5,0.5,0.7,0.0,59.7762138143094
+Michelle Robinson,Trinidad and Tobago,Urban,42.82418472153351,2444.64,None,Partial,No Risk,0.0,4,416,2024-03-06,2024-12-06,73,Elder (60+),1.0,0.5,0.3,0.7,48.559712016243495
+Justin Ware,Solomon Islands,Rural,79.48091684526405,5685.12,None,Partial,No Risk,0.0,1,469,2024-01-13,2024-01-30,48,Adult (18-59),1.0,0.5,0.7,0.0,68.17011158998409
+Amy Adams,Mexico,Urban,100.0,2130.59,Partial,Partial,Minor Injuries,0.3,5,325,2024-06-05,2024-12-06,2,Child (0-17),0.5,0.5,0.3,1.0,63.39692552937518
+Elizabeth Hartman,Cayman Islands,Rural,58.73766554042695,1714.44,None,None,No Risk,0.0,6,58,2025-02-27,2026-06-24,43,Adult (18-59),1.0,1.0,0.7,0.0,59.7327995927476
+Karen Silva,Kuwait,Urban,80.03307998206458,1624.69,Partial,Partial,No Risk,0.0,3,425,2024-02-26,2024-07-21,41,Adult (18-59),0.5,0.5,0.3,0.0,46.9901447211017
+Dennis Castillo II,Jamaica,Rural,66.76611693525899,3922.84,None,Partial,Serious Injuries,0.7,1,281,2024-07-19,2025-11-28,68,Elder (60+),1.0,0.5,0.7,0.7,69.00484837601347
+Frank Ramirez,Lesotho,Urban,74.51618258783839,1291.28,None,Partial,Minor Injuries,0.3,2,53,2025-03-04,2026-01-04,29,Adult (18-59),1.0,0.5,0.3,0.0,53.085993801540624
+Keith Hernandez,Zambia,Urban,95.6406783844547,4542.72,None,Partial,No Risk,0.0,5,169,2024-11-08,2025-10-12,65,Elder (60+),1.0,0.5,0.3,0.7,69.9094719581017
+Marie Wagner,Peru,Urban,69.76736022452336,2975.29,Partial,Partial,No Risk,0.0,5,440,2024-02-11,2025-06-17,54,Adult (18-59),0.5,0.5,0.3,0.0,46.7852110763155
+Kristopher Lopez,French Guiana,Urban,61.05572136390493,2323.43,None,Full,No Risk,0.0,2,156,2024-11-21,2025-03-15,73,Elder (60+),1.0,0.0,0.3,0.7,43.90989367065855
+Melissa Kennedy,Curaçao,Rural,65.47651589050756,1555.32,Partial,None,No Risk,0.0,3,400,2024-03-22,2024-09-16,40,Adult (18-59),0.5,1.0,0.7,0.0,53.7126974575167
+Jacob Norton,"China, Hong Kong SAR",Rural,52.28284707769011,1990.57,None,Partial,Minor Injuries,0.3,5,407,2024-03-15,2024-07-11,2,Child (0-17),1.0,0.5,0.7,1.0,61.24951921991154
+Lauren Winters,Andorra,Rural,91.53904576231184,1412.74,None,None,No Risk,0.0,1,293,2024-07-07,2024-07-28,48,Adult (18-59),1.0,1.0,0.7,0.0,70.96449023175666
+Joseph Cole,Timor-Leste,Urban,78.33067690537419,5452.17,Partial,Full,No Risk,0.0,2,113,2025-01-03,2025-09-18,8,Child (0-17),0.5,0.0,0.3,1.0,46.83360337266802
+Maria Jackson,United States of America,Urban,53.51747454189834,3512.42,Partial,Partial,Serious Injuries,0.7,6,436,2024-02-15,2024-05-01,53,Adult (18-59),0.5,0.5,0.3,0.0,49.1983207204154
+Brian Chase,Mali,Urban,64.26354019923569,4987.22,Partial,None,Minor Injuries,0.3,5,88,2025-01-28,2025-04-21,41,Adult (18-59),0.5,1.0,0.3,0.0,55.21718103008302
+Robert Herrera,Armenia,Urban,49.27289543263674,1604.42,None,None,No Risk,0.0,3,478,2024-01-04,2024-12-29,13,Child (0-17),1.0,1.0,0.3,1.0,58.55934278183065
+Thomas Madden,Bahrain,Urban,63.80887320653037,1458.09,Partial,Full,Minor Injuries,0.3,9,350,2024-05-11,2025-05-11,12,Child (0-17),0.5,0.0,0.3,1.0,43.757635534647434
+Michael Fisher,Curaçao,Urban,66.23491800065622,2566.08,Full,None,No Risk,0.0,5,171,2024-11-06,2025-03-11,7,Child (0-17),0.0,1.0,0.3,1.0,44.57199817904559
+Miss Emily Phillips,New Caledonia,Urban,84.30691887994439,3570.48,Partial,Partial,Critical Condition,1.0,5,370,2024-04-21,2024-05-01,19,Adult (18-59),0.5,0.5,0.3,0.0,62.52010644864788
+Brittney Wilson,South Sudan,Urban,49.60965906892024,2814.3,Full,Partial,Critical Condition,1.0,3,268,2024-08-01,2025-01-18,58,Adult (18-59),0.0,0.5,0.3,0.0,36.18694750428397
+Drew Carter,Saint-Pierre-et-Miquelon,Urban,97.0253786505902,3130.53,Full,Full,No Risk,0.0,6,322,2024-06-08,2024-06-25,0,Child (0-17),0.0,0.0,0.3,1.0,44.05527187823248
+Maurice Cortez,San Marino,Urban,86.13204392221039,2443.85,None,None,No Risk,0.0,3,473,2024-01-09,2024-12-08,72,Elder (60+),1.0,1.0,0.3,0.7,72.15907452737046
+Taylor Romero,Croatia,Urban,76.79734326740726,1306.7,Full,Partial,No Risk,0.0,3,493,2023-12-20,2024-01-21,13,Child (0-17),0.0,0.5,0.3,1.0,40.91566143574734
+Erin Collins,Kazakhstan,Rural,88.76722957247817,4793.58,Partial,Partial,No Risk,0.0,5,326,2024-06-04,2024-07-24,15,Child (0-17),0.5,0.5,0.7,1.0,65.86233694604941
+William Shields,Chad,Urban,73.63037679043973,2924.4,Full,None,No Risk,0.0,1,218,2024-09-20,2024-11-28,42,Adult (18-59),0.0,1.0,0.3,0.0,41.18943336319567
+Ruben Miller,Jamaica,Rural,89.5629354104992,2414.53,None,None,No Risk,0.0,3,12,2025-04-14,2026-03-09,25,Adult (18-59),1.0,1.0,0.7,0.0,70.27249442637206
+Erin Kirk,Tonga,Rural,56.974129805447966,7591.18,Partial,Partial,No Risk,0.0,3,201,2024-10-07,2025-09-03,30,Adult (18-59),0.5,0.5,0.7,0.0,51.553623050270424
+Michael Duke,Kenya,Rural,96.66167107383646,3597.89,None,Partial,Minor Injuries,0.3,4,104,2025-01-12,2025-02-09,34,Adult (18-59),1.0,0.5,0.7,0.0,71.9412384852331
+Joseph Gibbs,Côte d'Ivoire,Rural,59.43108152669611,4186.04,Partial,Full,No Risk,0.0,5,456,2024-01-26,2024-07-28,11,Child (0-17),0.5,0.0,0.7,1.0,47.70992797652326
+James Whitney,South Africa,Urban,62.43089123764437,1715.41,None,None,No Risk,0.0,2,99,2025-01-17,2025-08-10,0,Child (0-17),1.0,1.0,0.3,1.0,59.29407645948257
+Jason Clark,Germany,Rural,54.429588175475686,2426.5,Full,None,No Risk,0.0,3,41,2025-03-16,2026-02-27,7,Child (0-17),0.0,1.0,0.7,1.0,42.533349292090215
+Trevor Watson,Stateless,Rural,59.98156003439572,4292.6,None,None,No Risk,0.0,5,393,2024-03-29,2024-04-08,16,Child (0-17),1.0,1.0,0.7,1.0,72.46957684146693
+Samuel Davis,South Africa,Rural,91.67825732298316,3861.41,Partial,None,No Risk,0.0,2,164,2024-11-13,2025-11-10,14,Child (0-17),0.5,1.0,0.7,1.0,69.53702826333823
+Tiffany Hall,Madagascar,Rural,54.374096437284635,1820.34,Partial,Partial,No Risk,0.0,4,46,2025-03-11,2025-09-12,43,Adult (18-59),0.5,0.5,0.7,0.0,39.56491432554874
+Andrea Page,Bahrain,Urban,99.46091321524555,1855.04,None,Full,Minor Injuries,0.3,4,32,2025-03-25,2025-10-14,81,Elder (60+),1.0,0.0,0.3,0.7,60.2322833627755
+Jamie Nelson,Angola,Urban,53.21774640345944,3502.61,None,None,No Risk,0.0,3,163,2024-11-14,2025-10-10,22,Adult (18-59),1.0,1.0,0.3,0.0,55.17327518005036
+Thomas Harrison,Malaysia,Urban,88.70975709331653,3157.82,None,Partial,No Risk,0.0,4,138,2024-12-09,2026-01-25,45,Adult (18-59),1.0,0.5,0.3,0.0,60.56282679618937
+Elizabeth Hughes,Guyana,Urban,65.91662740601737,5402.66,Partial,Partial,No Risk,0.0,2,260,2024-08-09,2024-11-18,10,Child (0-17),0.5,0.5,0.3,1.0,51.10648520854595
+Evan Evans,Uganda,Rural,60.84739282008697,2789.9,None,Partial,Minor Injuries,0.3,2,252,2024-08-17,2024-12-29,34,Adult (18-59),1.0,0.5,0.7,0.0,57.603138814546675
+Brandon Dudley,Turkey,Rural,39.3362776049115,1413.52,Full,None,No Risk,0.0,6,412,2024-03-10,2024-12-10,58,Adult (18-59),0.0,1.0,0.7,0.0,35.54340353611275
+Shannon Allen,Afghanistan,Urban,95.28161495893018,3172.44,Full,Partial,Serious Injuries,0.7,4,307,2024-06-23,2025-01-10,58,Adult (18-59),0.0,0.5,0.3,0.0,51.71928715748593
+Jesus Oneal,Sierra Leone,Urban,70.20050893723625,2634.15,Partial,None,Minor Injuries,0.3,3,328,2024-06-02,2024-08-22,11,Child (0-17),0.5,1.0,0.3,1.0,59.62215931870549
+Barbara Walker,Bermuda,Urban,71.8225856429988,5174.6,None,None,No Risk,0.0,4,240,2024-08-29,2024-09-26,49,Adult (18-59),1.0,1.0,0.3,0.0,66.31498779916328
+Suzanne Dorsey,Serbia and Kosovo (S/RES/1244 (1999)),Rural,87.55578799286269,2373.45,None,None,No Risk,0.0,3,296,2024-07-04,2025-05-18,36,Adult (18-59),1.0,1.0,0.7,0.0,72.2955702729307
+Anthony Kennedy,Greece,Urban,76.32024072210082,4877.74,Partial,Partial,No Risk,0.0,2,118,2024-12-29,2025-06-22,43,Adult (18-59),0.5,0.5,0.3,0.0,47.638607465990525
+Jonathan Jordan,Greece,Urban,80.59732480085471,2870.92,Partial,Partial,No Risk,0.0,5,266,2024-08-03,2025-07-26,32,Adult (18-59),0.5,0.5,0.3,0.0,48.88652492662685
+Vanessa Rose,Burundi,Urban,63.57769386013223,5403.17,Partial,Full,No Risk,0.0,8,257,2024-08-12,2025-09-25,44,Adult (18-59),0.5,0.0,0.3,0.0,41.04193027448527
+Ruben Yu,Belarus,Urban,80.52925532174899,3301.28,Full,None,Minor Injuries,0.3,3,346,2024-05-15,2024-06-21,34,Adult (18-59),0.0,1.0,0.3,0.0,49.798005261685454
+Erica Miller,El Salvador,Urban,80.67678559867275,3497.39,Partial,Full,Minor Injuries,0.3,3,109,2025-01-07,2025-07-28,30,Adult (18-59),0.5,0.0,0.3,0.0,42.82360192620633
+David Rodriguez,Trinidad and Tobago,Rural,93.57269458825124,1891.24,Partial,None,No Risk,0.0,2,379,2024-04-12,2024-06-10,26,Adult (18-59),0.5,1.0,0.7,0.0,63.96695763611942
+Dylan Gomez,United Kingdom,Urban,69.37085063869996,1395.7,Partial,Partial,No Risk,0.0,4,255,2024-08-14,2025-12-25,23,Adult (18-59),0.5,0.5,0.3,0.0,41.48738048059672
+Tiffany Anderson,Togo,Rural,65.73487892052889,2095.8,Full,None,No Risk,0.0,1,392,2024-03-30,2024-07-25,19,Adult (18-59),0.0,1.0,0.7,0.0,43.55679344147236
+Katelyn Robinson,Mexico,Urban,82.00452247050289,1564.44,None,Full,No Risk,0.0,4,118,2024-12-29,2025-04-18,53,Adult (18-59),1.0,0.0,0.3,0.0,47.603271937789835
+Julie Stanley,Argentina,Rural,57.03408743362041,6923.2,Full,None,Serious Injuries,0.7,4,322,2024-06-08,2024-12-18,47,Adult (18-59),0.0,1.0,0.7,0.0,56.68064048544193
+Rachel Morales,Svalbard and Jan Mayen,Urban,62.64619180946126,3143.61,Partial,Partial,Minor Injuries,0.3,1,278,2024-07-22,2025-08-06,8,Child (0-17),0.5,0.5,0.3,1.0,48.59040359256217
+Stacey Brown,Cuba,Urban,83.1981806174375,1150.74,Full,Partial,No Risk,0.0,5,258,2024-08-11,2025-02-09,25,Adult (18-59),0.0,0.5,0.3,0.0,36.783276791472346
+Patrick Murray,Poland,Urban,82.07585062468992,2297.01,None,Partial,No Risk,0.0,3,271,2024-07-29,2025-11-20,10,Child (0-17),1.0,0.5,0.3,1.0,62.37726319443413
+Susan Ramos,Dem. People's Rep. of Korea,Urban,65.36813385893113,4157.83,Partial,None,No Risk,0.0,5,93,2025-01-23,2026-02-02,40,Adult (18-59),0.5,1.0,0.3,0.0,51.2361663459998
+Christopher Stevens,Puerto Rico,Urban,72.03492932961551,4497.38,None,Partial,No Risk,0.0,6,354,2024-05-07,2024-09-28,2,Child (0-17),1.0,0.5,0.3,1.0,64.96810595929946
+Diana Rivas,Antigua and Barbuda,Rural,31.88442290827053,1878.6,Partial,Partial,No Risk,0.0,6,428,2024-02-23,2025-01-19,86,Elder (60+),0.5,0.5,0.7,0.7,39.74369450321427
+Katie Briggs,Dominican Rep.,Rural,69.05211922568772,2632.38,Full,None,No Risk,0.0,5,392,2024-03-30,2024-11-16,34,Adult (18-59),0.0,1.0,0.7,0.0,47.94363614511124
+Russell Smith,Canada,Urban,79.72000644975503,2847.99,Partial,Partial,No Risk,0.0,6,475,2024-01-07,2024-09-21,42,Adult (18-59),0.5,0.5,0.3,0.0,51.16636143541654
+James Lambert,Cayman Islands,Rural,54.13307470517819,2397.4,None,Partial,No Risk,0.0,7,89,2025-01-27,2025-05-12,11,Child (0-17),1.0,0.5,0.7,1.0,57.57486473379076
+Patrick Martinez,Kazakhstan,Urban,78.42741480261887,5781.16,None,None,Minor Injuries,0.3,6,190,2024-10-18,2025-04-03,3,Child (0-17),1.0,1.0,0.3,1.0,78.43347341913888
+Austin Brown,Cameroon,Urban,83.40301527866391,5828.16,None,Partial,No Risk,0.0,6,494,2023-12-19,2024-04-17,33,Adult (18-59),1.0,0.5,0.3,0.0,67.90328884225711
+Michael Macdonald,Monaco,Rural,68.33160121983889,3372.43,Partial,Partial,No Risk,0.0,3,311,2024-06-19,2025-02-01,46,Adult (18-59),0.5,0.5,0.7,0.0,49.54094681579833
+Candace Douglas,United Arab Emirates,Rural,87.89282644838994,4043.07,Full,Partial,No Risk,0.0,7,205,2024-10-03,2024-11-27,45,Adult (18-59),0.0,0.5,0.7,0.0,49.13443076441876
+Emily Petty,South Sudan,Rural,67.34185726137966,2550.64,Partial,Full,No Risk,0.0,5,262,2024-08-07,2024-09-12,65,Elder (60+),0.5,0.0,0.7,0.7,44.366328727539184
+Matthew Martinez,Armenia,Rural,64.09980288839674,5656.61,Partial,Full,Serious Injuries,0.7,3,6,2025-04-20,2026-05-03,69,Elder (60+),0.5,0.0,0.7,0.7,51.8885103503934
+Emma Ramirez,Barbados,Urban,59.63889021988358,2130.13,Full,None,Minor Injuries,0.3,3,147,2024-11-30,2025-08-24,18,Adult (18-59),0.0,1.0,0.3,0.0,38.013266059509164
+Samuel Wright,American Samoa,Rural,85.16936807256485,3192.56,Full,None,Serious Injuries,0.7,5,286,2024-07-14,2024-08-21,45,Adult (18-59),0.0,1.0,0.7,0.0,60.84370946002028
+Patricia Richmond,Japan,Rural,77.79316187621019,4121.72,None,Partial,No Risk,0.0,3,498,2023-12-15,2024-01-22,10,Child (0-17),1.0,0.5,0.7,1.0,71.22746170478635
+Jacqueline Chung,Uzbekistan,Urban,68.5716872476512,2266.78,None,Full,No Risk,0.0,3,167,2024-11-10,2025-02-09,43,Adult (18-59),1.0,0.0,0.3,0.0,43.76873722245682
+Mary Smith,Kuwait,Urban,74.03183270047585,7093.77,None,Partial,No Risk,0.0,5,232,2024-09-06,2025-05-11,22,Adult (18-59),1.0,0.5,0.3,0.0,63.44626107523268
+Kerri Elliott,Lao People's Dem. Rep.,Rural,68.95723438899532,11726.12,None,None,Serious Injuries,0.7,3,99,2025-01-17,2026-01-03,89,Elder (60+),1.0,1.0,0.7,0.7,90.17028928972235
+Rachel Butler,Sudan,Rural,81.65537300224855,1255.89,None,Full,No Risk,0.0,2,487,2023-12-26,2024-11-03,37,Adult (18-59),1.0,0.0,0.7,0.0,54.51627755653475
+Christina Walker,Western Sahara,Urban,78.10395092047622,2975.12,None,None,No Risk,0.0,2,4,2025-04-22,2025-08-18,27,Adult (18-59),1.0,1.0,0.3,0.0,61.354796025491396
+Debra Barrett,Cuba,Rural,60.78941624101817,3518.56,Partial,Partial,No Risk,0.0,4,353,2024-05-08,2025-07-30,15,Child (0-17),0.5,0.5,0.7,1.0,52.96897297092935
+Joshua Sanchez,Guatemala,Rural,71.98999507490652,2025.0,Partial,Full,Minor Injuries,0.3,6,180,2024-10-28,2025-12-21,18,Adult (18-59),0.5,0.0,0.7,0.0,44.41493889328979
+Thomas Bush,Cyprus,Urban,81.52977552646227,1592.9,Full,None,No Risk,0.0,3,373,2024-04-18,2025-04-06,31,Adult (18-59),0.0,1.0,0.3,0.0,44.47083365818579
+Harold Foster,Maldives,Urban,61.207805643121574,4259.31,Full,Full,Serious Injuries,0.7,2,103,2025-01-13,2026-02-05,3,Child (0-17),0.0,0.0,0.3,1.0,35.30053638010935
+Amanda Anderson,Sri Lanka,Urban,53.712543886979034,2691.47,None,None,No Risk,0.0,3,15,2025-04-11,2025-12-21,25,Adult (18-59),1.0,1.0,0.3,0.0,52.467472190176814
+Mikayla Price,Anguilla,Urban,74.02702086239816,3313.49,None,Partial,Serious Injuries,0.7,6,271,2024-07-29,2025-04-30,7,Child (0-17),1.0,0.5,0.3,1.0,69.82069741621572
+Chad Day,Sierra Leone,Rural,80.10519045932122,6411.5,None,None,Serious Injuries,0.7,6,470,2024-01-12,2024-12-30,47,Adult (18-59),1.0,1.0,0.7,0.0,86.95206557442737
+Antonio Young,Dominican Rep.,Urban,60.796182233605535,5103.49,None,Partial,Minor Injuries,0.3,1,279,2024-07-21,2025-03-07,74,Elder (60+),1.0,0.5,0.3,0.7,59.81909460423459
+Audrey Jones,Myanmar,Urban,66.5478511917958,2933.25,Partial,None,Minor Injuries,0.3,7,5,2025-04-21,2025-10-06,60,Elder (60+),0.5,1.0,0.3,0.7,56.27740960604154
+Candice Smith,Nicaragua,Urban,71.16279858156614,8917.36,Full,None,No Risk,0.0,7,0,2025-04-26,2026-04-23,14,Child (0-17),0.0,1.0,0.3,1.0,56.84071289078139
+Jason Chase,Papua New Guinea,Urban,82.25720449529224,2763.56,Partial,Full,Minor Injuries,0.3,8,94,2025-01-22,2025-12-04,40,Adult (18-59),0.5,0.0,0.3,0.0,44.763168952545435
+Craig Allen,Marshall Islands,Urban,67.27383597681401,2716.32,None,Full,Minor Injuries,0.3,2,18,2025-04-08,2026-01-15,72,Elder (60+),1.0,0.0,0.3,0.7,48.52231321271477
+Jason Lewis,Senegal,Urban,79.20072988138122,3795.29,Partial,Partial,Minor Injuries,0.3,7,460,2024-01-22,2025-05-27,7,Child (0-17),0.5,0.5,0.3,1.0,61.02524491321029
+Janice Beck,Russian Federation,Urban,60.74310444090074,7073.89,Partial,None,No Risk,0.0,3,113,2025-01-03,2025-02-10,51,Adult (18-59),0.5,1.0,0.3,0.0,53.674631434264455
+Robert Jenkins,Togo,Urban,65.5812113832605,1939.08,Partial,Partial,Serious Injuries,0.7,5,436,2024-02-15,2024-12-30,51,Adult (18-59),0.5,0.5,0.3,0.0,50.38959091135155
+Jennifer Lynch,Costa Rica,Urban,89.96697499143943,6860.35,None,Partial,No Risk,0.0,4,480,2024-01-02,2024-03-02,36,Adult (18-59),1.0,0.5,0.3,0.0,70.88402713293408
+Brett Wilkinson,Ireland,Urban,40.40920168839121,1015.44,Full,Partial,Serious Injuries,0.7,1,250,2024-08-19,2024-12-10,74,Elder (60+),0.0,0.5,0.3,0.7,28.852373817187228
+Jennifer Coleman,Dem. People's Rep. of Korea,Urban,83.87903913672952,2003.24,Full,None,No Risk,0.0,6,132,2024-12-15,2025-04-02,44,Adult (18-59),0.0,1.0,0.3,0.0,45.31319652214138
+Kimberly Rowland DDS,Various/Unknown,Rural,53.75595490065667,4351.3,None,Partial,No Risk,0.0,1,152,2024-11-25,2025-04-28,12,Child (0-17),1.0,0.5,0.7,1.0,58.126921275944646
+Karen Hayden,Tunisia,Urban,75.6893298195895,2503.68,None,None,No Risk,0.0,3,211,2024-09-27,2025-06-05,2,Child (0-17),1.0,1.0,0.3,1.0,67.26420001290387
+Megan Giles,Syrian Arab Rep.,Urban,50.816760706473616,2254.16,Partial,None,No Risk,0.0,3,51,2025-03-06,2025-09-16,34,Adult (18-59),0.5,1.0,0.3,0.0,40.99190832509128
+Brian Carter,Kazakhstan,Urban,91.4285935879714,3924.72,Full,None,No Risk,0.0,6,29,2025-03-28,2025-12-24,84,Elder (60+),0.0,1.0,0.3,0.7,53.9265347444617
+Mindy Gentry,Wallis and Futuna Islands ,Urban,37.15320914607395,748.66,Full,Full,Serious Injuries,0.7,2,461,2024-01-21,2024-11-19,26,Adult (18-59),0.0,0.0,0.3,0.0,18.844914467555537
+Logan Walker,Qatar,Urban,71.11396857736094,2103.07,Full,None,No Risk,0.0,1,288,2024-07-12,2024-09-21,27,Adult (18-59),0.0,1.0,0.3,0.0,39.52743868196113
+Stephen Banks,Comoros,Urban,67.07436690847989,2249.5,Partial,Partial,No Risk,0.0,3,181,2024-10-27,2025-12-29,31,Adult (18-59),0.5,0.5,0.3,0.0,40.8225428674141
+James Wood,Martinique,Urban,93.65155762076598,1836.8,Partial,None,No Risk,0.0,2,41,2025-03-16,2025-07-17,44,Adult (18-59),0.5,1.0,0.3,0.0,55.5216452818319
+Sheila White,"China, Macao SAR",Rural,49.28760728763439,5216.1,Partial,None,No Risk,0.0,4,67,2025-02-18,2025-11-02,32,Adult (18-59),0.5,1.0,0.7,0.0,51.28670346390314
+Steven Hanna,Cambodia,Urban,78.75126731276647,4821.37,None,Partial,No Risk,0.0,3,335,2024-05-26,2024-12-29,33,Adult (18-59),1.0,0.5,0.3,0.0,61.16918543495622
+Amanda Adams,Andorra,Urban,100.0,1931.38,Partial,Full,No Risk,0.0,6,251,2024-08-18,2025-11-25,36,Adult (18-59),0.5,0.0,0.3,0.0,47.36629598529629
+Christian Adams,Grenada,Urban,76.17159289414835,4684.86,None,Full,No Risk,0.0,3,378,2024-04-13,2025-02-22,31,Adult (18-59),1.0,0.0,0.3,0.0,52.90376431431263
+Brady Richmond,Cambodia,Urban,64.25270394885621,2623.38,Partial,None,No Risk,0.0,4,263,2024-08-06,2025-06-10,7,Child (0-17),0.5,1.0,0.3,1.0,54.29974348814793
+Dominic Foley,Guyana,Rural,47.79525148628083,4551.44,Partial,None,No Risk,0.0,2,296,2024-07-04,2025-06-06,9,Child (0-17),0.5,1.0,0.7,1.0,55.75623168808538
+Autumn Cuevas,Kuwait,Rural,81.32629139610647,2731.2,None,Partial,No Risk,0.0,7,278,2024-07-22,2024-11-16,5,Child (0-17),1.0,0.5,0.7,1.0,70.14559973510679
+Pamela Estrada,Colombia,Urban,54.899588517861375,4567.43,Partial,Partial,No Risk,0.0,4,101,2025-01-15,2025-10-07,35,Adult (18-59),0.5,0.5,0.3,0.0,40.08396823608615
+Jessica Cortez,Liberia,Urban,79.18172044090113,5278.09,Partial,None,No Risk,0.0,6,446,2024-02-05,2025-01-12,68,Elder (60+),0.5,1.0,0.3,0.7,65.89942315006299
+Timothy Bishop,Cuba,Rural,52.147931681524625,4216.03,Partial,Partial,No Risk,0.0,6,55,2025-03-02,2026-03-24,31,Adult (18-59),0.5,0.5,0.7,0.0,44.10234335589515
+William Lopez,Spain,Urban,71.62705196325656,3601.88,Full,Full,No Risk,0.0,2,38,2025-03-19,2026-04-15,52,Adult (18-59),0.0,0.0,0.3,0.0,25.378190845564507
+Jordan Silva,Ethiopia,Urban,70.80942660707535,3239.87,Partial,Partial,No Risk,0.0,4,455,2024-01-27,2024-05-03,52,Adult (18-59),0.5,0.5,0.3,0.0,47.226505548644035
+Jennifer Brown,Sweden,Rural,96.5179377034964,8814.41,None,None,Minor Injuries,0.3,3,410,2024-03-12,2024-03-14,44,Adult (18-59),1.0,1.0,0.7,0.0,90.95750962050799
+Brian Holmes,Brunei Darussalam,Rural,70.82131995900846,7174.24,Partial,None,No Risk,0.0,4,17,2025-04-09,2025-04-18,27,Adult (18-59),0.5,1.0,0.7,0.0,62.18803114925746
+Katherine Davis,Philippines,Urban,75.16207359667466,3080.8,None,None,No Risk,0.0,2,209,2024-09-29,2025-09-28,0,Child (0-17),1.0,1.0,0.3,1.0,67.49571339684667
+Timothy Ramsey,Mozambique,Rural,54.76939721598117,4139.8,None,Partial,No Risk,0.0,4,486,2023-12-27,2024-12-28,52,Adult (18-59),1.0,0.5,0.7,0.0,58.142478881311696
+Lisa Anderson,Turkmenistan,Rural,79.97412838420227,2153.08,None,None,Serious Injuries,0.7,6,202,2024-10-06,2025-08-28,49,Adult (18-59),1.0,1.0,0.7,0.0,76.82314511482751
+Thomas Harvey,Guyana,Urban,82.01760007107566,3090.32,None,Partial,Minor Injuries,0.3,7,295,2024-07-05,2024-11-17,65,Elder (60+),1.0,0.5,0.3,0.7,67.69645480518349
+Jonathan Waters,Côte d'Ivoire,Urban,50.09425300455749,2264.19,None,None,No Risk,0.0,5,153,2024-11-24,2025-04-05,43,Adult (18-59),1.0,1.0,0.3,0.0,52.872080878131946
+Kimberly Russo,Central African Rep.,Rural,65.43039295494957,6734.79,Partial,Partial,No Risk,0.0,5,98,2025-01-18,2025-05-10,22,Adult (18-59),0.5,0.5,0.7,0.0,53.28750661285765
+Mark Conley,China,Urban,96.3764742916552,4312.6,Partial,None,Minor Injuries,0.3,4,4,2025-04-22,2026-07-02,9,Child (0-17),0.5,1.0,0.3,1.0,69.57732058764657
+Ian Ramos,Suriname,Rural,55.6710201790348,5444.49,None,None,No Risk,0.0,7,328,2024-06-02,2025-05-05,56,Adult (18-59),1.0,1.0,0.7,0.0,68.33132172358108
+Theodore Santiago,Dominican Rep.,Rural,69.10757687526103,3800.26,None,Full,No Risk,0.0,2,252,2024-08-17,2025-10-14,55,Adult (18-59),1.0,0.0,0.7,0.0,51.92709860699316
+Stephen Nolan,Uruguay,Urban,50.92234724757144,2491.98,Partial,Partial,Critical Condition,1.0,4,97,2025-01-19,2026-05-24,34,Adult (18-59),0.5,0.5,0.3,0.0,44.95996415606697
+Christopher Cox,Uzbekistan,Rural,50.39072878612714,2753.98,Partial,None,No Risk,0.0,6,89,2025-01-27,2025-05-09,77,Elder (60+),0.5,1.0,0.7,0.7,52.24891158319793
+Charlene Hancock,Azerbaijan,Rural,86.1260885143308,2076.95,Full,Partial,Minor Injuries,0.3,1,108,2025-01-08,2025-03-15,81,Elder (60+),0.0,0.5,0.7,0.7,47.25815627105842
+Carol Armstrong,Libya,Rural,76.28199209702834,2095.67,Partial,Partial,No Risk,0.0,5,203,2024-10-05,2026-01-29,26,Adult (18-59),0.5,0.5,0.7,0.0,50.30641426678477
+Olivia Mercado,Mauritius,Rural,76.95626051698166,4066.17,None,Partial,No Risk,0.0,2,370,2024-04-21,2024-12-04,21,Adult (18-59),1.0,0.5,0.7,0.0,63.984512906085534
+Allison Saunders,Liberia,Rural,64.01142999412184,2116.49,Partial,Partial,No Risk,0.0,2,120,2024-12-27,2025-02-14,13,Child (0-17),0.5,0.5,0.7,1.0,48.2881452141667
+Christopher Abbott,Rwanda,Rural,43.57833211075794,2172.79,Partial,Partial,Serious Injuries,0.7,6,482,2023-12-31,2024-11-03,46,Adult (18-59),0.5,0.5,0.7,0.0,48.638525828276975
+Tonya Diaz,Australia,Urban,61.364564648485256,2400.14,Partial,Full,No Risk,0.0,7,265,2024-08-04,2024-10-12,55,Adult (18-59),0.5,0.0,0.3,0.0,34.5256941916264
+Samantha Cooper,Ukraine,Rural,19.23335326749627,2629.62,None,Partial,No Risk,0.0,3,118,2024-12-29,2025-12-25,13,Child (0-17),1.0,0.5,0.7,1.0,43.08302364606675
+Michael Mathews,Sri Lanka,Urban,50.71085912212705,2778.74,None,None,No Risk,0.0,4,127,2024-12-20,2025-04-29,82,Elder (60+),1.0,1.0,0.3,0.7,56.67973750435537
+Jason Bennett,Morocco,Urban,91.78763186800398,1125.65,None,Full,No Risk,0.0,3,500,2023-12-13,2024-10-05,43,Adult (18-59),1.0,0.0,0.3,0.0,53.7390342146137
+Ryan Moore,Swaziland,Urban,55.54427356362472,2824.31,Partial,Partial,No Risk,0.0,3,355,2024-05-06,2024-06-27,43,Adult (18-59),0.5,0.5,0.3,0.0,39.278698687202876
+Curtis Mcguire,Gibraltar,Rural,66.6062335273022,2504.26,Full,Full,No Risk,0.0,3,487,2023-12-26,2025-04-29,5,Child (0-17),0.0,0.0,0.7,1.0,36.651378512606584
+Tammy Navarro,Maldives,Urban,83.75394575475637,1635.54,Partial,None,No Risk,0.0,2,434,2024-02-17,2024-07-05,1,Child (0-17),0.5,1.0,0.3,1.0,60.42552425961539
+Taylor Humphrey,Tajikistan,Urban,82.50628168575537,5006.27,None,Full,No Risk,0.0,3,470,2024-01-12,2025-04-02,15,Child (0-17),1.0,0.0,0.3,1.0,61.73526700973046
+Steven Potter,Norfolk Island,Urban,77.17801580051545,5019.12,Full,None,No Risk,0.0,6,97,2025-01-19,2025-09-15,16,Child (0-17),0.0,1.0,0.3,1.0,52.71513077087355
+Sarah Crosby,Morocco,Urban,64.95638739779726,3074.44,None,Partial,No Risk,0.0,3,68,2025-02-17,2025-11-20,31,Adult (18-59),1.0,0.5,0.3,0.0,50.3394118855894
+Patrick Zamora,Haiti,Urban,55.407290927982295,5957.75,Partial,Partial,Minor Injuries,0.3,4,140,2024-12-07,2025-07-02,2,Child (0-17),0.5,0.5,0.3,1.0,51.07863332014089
+Fernando Powell,Tunisia,Rural,38.2779137629499,5550.14,Partial,Partial,No Risk,0.0,4,183,2024-10-25,2025-05-18,22,Adult (18-59),0.5,0.5,0.7,0.0,41.43774918722388
+Elizabeth Alvarado,Serbia and Kosovo (S/RES/1244 (1999)),Rural,79.88874251226373,6671.68,Full,Partial,Minor Injuries,0.3,9,490,2023-12-23,2024-04-04,58,Adult (18-59),0.0,0.5,0.7,0.0,57.69047285895951
+Dylan Hill,Seychelles,Rural,81.43140156794921,2669.83,None,Partial,No Risk,0.0,8,449,2024-02-02,2025-04-13,43,Adult (18-59),1.0,0.5,0.7,0.0,67.34354930265512
+Austin Howard,Western Sahara,Rural,61.74110873603257,5336.28,Full,Partial,No Risk,0.0,5,54,2025-03-03,2025-08-12,13,Child (0-17),0.0,0.5,0.7,1.0,44.04684083636511
+Brittany Shelton,Italy,Urban,47.446164289789266,2406.39,None,Partial,No Risk,0.0,2,237,2024-09-01,2024-11-10,57,Adult (18-59),1.0,0.5,0.3,0.0,43.808920639711566
+Lisa Huang,Iraq,Rural,86.14288739033543,1574.56,None,Full,Serious Injuries,0.7,2,428,2024-02-23,2024-04-21,40,Adult (18-59),1.0,0.0,0.7,0.0,63.14690340733598
+Mary Sellers,Aruba,Urban,66.15161553565731,4203.84,Partial,None,Serious Injuries,0.7,4,77,2025-02-08,2025-03-01,77,Elder (60+),0.5,1.0,0.3,0.7,61.391583288037864
+David Santiago,Western Sahara,Urban,52.53975427966903,3069.23,None,Partial,No Risk,0.0,2,53,2025-03-04,2026-01-24,53,Adult (18-59),1.0,0.5,0.3,0.0,45.01276259209167
+Melissa Riley,Micronesia (Federated States of),Urban,40.89323838963699,3178.14,Partial,Full,Minor Injuries,0.3,1,247,2024-08-22,2024-09-17,42,Adult (18-59),0.5,0.0,0.3,0.0,27.760482560391225
+Deanna Russell,Bahrain,Urban,77.45542865624068,1940.06,None,Full,No Risk,0.0,4,286,2024-07-14,2024-10-18,12,Child (0-17),1.0,0.0,0.3,1.0,53.24630305477442
+Abigail Smith,Angola,Rural,71.6753307068408,3471.39,None,Partial,Serious Injuries,0.7,4,326,2024-06-04,2025-01-02,25,Adult (18-59),1.0,0.5,0.7,0.0,68.66047044835838
+Brad Frederick,Cabo Verde,Urban,82.01205818003828,10343.47,Partial,None,Minor Injuries,0.3,5,221,2024-09-17,2024-09-21,62,Elder (60+),0.5,1.0,0.3,0.7,75.94773506553557
+Timothy Martinez,Qatar,Rural,75.97483530334888,2630.22,None,Partial,No Risk,0.0,6,490,2023-12-23,2024-05-14,32,Adult (18-59),1.0,0.5,0.7,0.0,64.54681488353542
+Jeffrey Hamilton,Somalia,Rural,51.45653494995193,5817.08,None,Full,No Risk,0.0,1,38,2025-03-19,2026-02-11,9,Child (0-17),1.0,0.0,0.7,1.0,51.18004116931577
+Charles Mccullough,Czech Rep.,Urban,55.751291674864085,3432.73,Partial,Partial,No Risk,0.0,4,63,2025-02-22,2025-03-01,37,Adult (18-59),0.5,0.5,0.3,0.0,38.04845519465923
+Joel Smith,Cayman Islands,Urban,60.80706761595811,1056.22,Full,Partial,No Risk,0.0,5,273,2024-07-27,2024-10-18,34,Adult (18-59),0.0,0.5,0.3,0.0,28.45205570448812
+Stephen Kemp,Costa Rica,Urban,43.06538869123252,3377.6,None,Partial,No Risk,0.0,4,124,2024-12-23,2026-02-03,47,Adult (18-59),1.0,0.5,0.3,0.0,43.85059327018755
+Tiffany Taylor,Algeria,Urban,70.47560791328902,4328.93,Partial,None,Minor Injuries,0.3,6,163,2024-11-14,2025-06-13,21,Adult (18-59),0.5,1.0,0.3,0.0,57.68618021676478
+James Gallagher,Viet Nam,Rural,100.0,1876.34,None,None,No Risk,0.0,1,425,2024-02-26,2025-03-24,43,Adult (18-59),1.0,1.0,0.7,0.0,76.2328702587013
+Lisa Edwards,Montenegro,Urban,66.09487907636348,2669.9,None,None,No Risk,0.0,5,407,2024-03-15,2025-01-09,50,Adult (18-59),1.0,1.0,0.3,0.0,62.060399390996224
+Amy Powell,Anguilla,Urban,51.56960024152731,2793.94,None,Partial,Serious Injuries,0.7,5,225,2024-09-13,2025-05-24,31,Adult (18-59),1.0,0.5,0.3,0.0,54.56067865637954
+Jimmy Garcia,Grenada,Rural,98.06996016778248,2948.26,Full,Partial,No Risk,0.0,9,300,2024-06-30,2025-06-09,49,Adult (18-59),0.0,0.5,0.7,0.0,53.073191437816824
+Deborah Schroeder,Tuvalu,Rural,100.0,2375.71,Partial,Full,No Risk,0.0,3,96,2025-01-20,2025-08-14,52,Adult (18-59),0.5,0.0,0.7,0.0,49.92178144613612
+Jonathan Manning,Cabo Verde,Urban,85.75471916544541,5413.71,Partial,None,No Risk,0.0,2,132,2024-12-15,2026-01-10,54,Adult (18-59),0.5,1.0,0.3,0.0,59.71435761219577
+Andrew Owens,Cayman Islands,Urban,87.47013585433376,1745.71,None,Full,No Risk,0.0,4,49,2025-03-08,2025-04-01,55,Adult (18-59),1.0,0.0,0.3,0.0,49.25843101038075
+Susan Hill,Venezuela (Bolivarian Republic of),Urban,73.34155214636972,4955.23,None,Full,No Risk,0.0,3,351,2024-05-10,2024-08-13,52,Adult (18-59),1.0,0.0,0.3,0.0,52.052418911187594
+Amanda Roman,Bosnia and Herzegovina,Urban,49.27330884244221,2763.21,Partial,None,No Risk,0.0,3,285,2024-07-15,2025-05-17,10,Child (0-17),0.5,1.0,0.3,1.0,48.64322974393344
+Terry Meadows,French Polynesia,Urban,81.4763551513742,1786.98,Full,Partial,Minor Injuries,0.3,4,259,2024-08-10,2024-11-11,23,Adult (18-59),0.0,0.5,0.3,0.0,39.70381696344558
+Natasha Turner,Saint-Pierre-et-Miquelon,Urban,62.09392391001146,4825.76,None,None,Minor Injuries,0.3,3,158,2024-11-19,2025-06-09,52,Adult (18-59),1.0,1.0,0.3,0.0,63.719603121724745
+Nicole Reid,Mauritania,Urban,94.89206560451962,3102.89,Partial,Partial,No Risk,0.0,5,131,2024-12-16,2025-09-22,41,Adult (18-59),0.5,0.5,0.3,0.0,53.24928504530067
+Anthony Padilla,Slovenia,Urban,50.82802955598723,7839.96,None,Full,Minor Injuries,0.3,3,442,2024-02-09,2024-06-30,38,Adult (18-59),1.0,0.0,0.3,0.0,52.61304011640529
+Scott Clark,Bhutan,Urban,84.99552965115483,7378.71,None,Partial,Minor Injuries,0.3,1,191,2024-10-17,2025-07-09,33,Adult (18-59),1.0,0.5,0.3,0.0,68.3815652517639
+Andre Hodges,Honduras,Urban,73.93836021586424,4259.98,Partial,Partial,No Risk,0.0,5,315,2024-06-15,2024-08-14,4,Child (0-17),0.5,0.5,0.3,1.0,54.31701034706552
+Nancy Saunders,Palau,Rural,72.47594194005188,6947.46,Partial,Full,No Risk,0.0,9,370,2024-04-21,2024-08-26,53,Adult (18-59),0.5,0.0,0.7,0.0,53.71630650476723
+Johnny Wallace,Angola,Urban,71.46887310602288,2890.12,Full,Partial,Minor Injuries,0.3,8,439,2024-02-12,2024-07-08,88,Elder (60+),0.0,0.5,0.3,0.7,45.42588090712023
+Jeffrey Cameron,Tibetan,Urban,66.09566055179984,2908.67,Full,Partial,No Risk,0.0,2,171,2024-11-06,2025-12-17,3,Child (0-17),0.0,0.5,0.3,1.0,35.948955058767915
+Jack Roberts,Guinea-Bissau,Rural,70.50628309818667,1998.94,Partial,Full,No Risk,0.0,6,26,2025-03-31,2025-06-30,58,Adult (18-59),0.5,0.0,0.7,0.0,39.27854144042507
+Jasmine Bryant,Gabon,Urban,88.36404896171541,2944.77,Partial,None,Minor Injuries,0.3,6,435,2024-02-16,2025-03-14,21,Adult (18-59),0.5,1.0,0.3,0.0,64.64529181162891
+Zachary Reilly,New Caledonia,Rural,82.92198241674913,2992.94,None,None,Minor Injuries,0.3,5,87,2025-01-29,2025-12-15,41,Adult (18-59),1.0,1.0,0.7,0.0,73.67204191633454
+Ian Howard,Morocco,Urban,64.00924451933071,9054.75,Partial,Full,Minor Injuries,0.3,4,169,2024-11-08,2025-12-16,56,Adult (18-59),0.5,0.0,0.3,0.0,47.44568178554988
+Mary Anderson,Iran (Islamic Rep. of),Urban,58.22330102519252,3346.72,Full,Partial,No Risk,0.0,5,310,2024-06-20,2025-08-12,78,Elder (60+),0.0,0.5,0.3,0.7,35.34274772979932
+Karen Edwards,Switzerland,Urban,62.34783078421552,3131.38,Partial,Full,No Risk,0.0,3,23,2025-04-03,2025-10-21,43,Adult (18-59),0.5,0.0,0.3,0.0,31.519438179883274
+Susan Thomas,Sierra Leone,Rural,59.216390698187816,2055.11,Partial,Full,No Risk,0.0,4,288,2024-07-12,2025-11-21,14,Child (0-17),0.5,0.0,0.7,1.0,41.69151921217009
+Gregory Tucker,Turkey,Urban,60.96840974868514,2312.88,None,Partial,Minor Injuries,0.3,4,285,2024-07-15,2025-11-24,51,Adult (18-59),1.0,0.5,0.3,0.0,53.260240033647875
+Crystal Reed,Equatorial Guinea,Urban,64.74646246389216,1825.57,None,Partial,No Risk,0.0,4,479,2024-01-03,2025-04-07,36,Adult (18-59),1.0,0.5,0.3,0.0,52.756719320952406
+Donna Hall,Belize,Urban,78.12415173337679,3580.97,Partial,None,No Risk,0.0,2,98,2025-01-18,2026-03-15,42,Adult (18-59),0.5,1.0,0.3,0.0,53.35513935541803
+Dawn Sanchez,Burkina Faso,Rural,100.0,5198.8,None,Partial,Minor Injuries,0.3,5,105,2025-01-11,2026-01-27,44,Adult (18-59),1.0,0.5,0.7,0.0,76.5288294726982
+Brandy Garza,Dem. People's Rep. of Korea,Rural,70.55158038405526,3119.7,Partial,Full,No Risk,0.0,6,135,2024-12-12,2025-11-28,19,Adult (18-59),0.5,0.0,0.7,0.0,42.33301194500102
+Kathy Taylor,Spain,Urban,88.72640021226238,1978.5,Partial,None,No Risk,0.0,4,193,2024-10-15,2025-11-29,45,Adult (18-59),0.5,1.0,0.3,0.0,56.56959849495233
+Amanda Martin,Bolivia (Plurinational State of),Rural,69.47022073024124,8061.27,None,Partial,No Risk,0.0,3,498,2023-12-15,2025-03-15,31,Adult (18-59),1.0,0.5,0.7,0.0,69.98209433929644
+Amanda Ford,Mali,Rural,74.4811592341549,5289.85,Full,Full,No Risk,0.0,2,385,2024-04-06,2025-02-11,64,Elder (60+),0.0,0.0,0.7,0.7,41.34165874276904
+Cory Warren,Palau,Rural,53.744629149717476,1866.03,None,None,Minor Injuries,0.3,7,417,2024-03-05,2024-07-26,49,Adult (18-59),1.0,1.0,0.7,0.0,65.28717099108944
+Daniel Thompson,Belize,Urban,69.87492791905315,3391.97,None,Partial,Serious Injuries,0.7,3,357,2024-05-04,2025-04-25,78,Elder (60+),1.0,0.5,0.3,0.7,66.10815719901706
+Colleen Bell,Russian Federation,Rural,68.44523842033286,1063.62,None,Partial,Minor Injuries,0.3,2,85,2025-01-31,2025-02-28,44,Adult (18-59),1.0,0.5,0.7,0.0,55.75537431999348
+Kathy Compton,Curaçao,Urban,42.176097391835974,2024.17,Full,Full,No Risk,0.0,2,491,2023-12-22,2024-05-31,40,Adult (18-59),0.0,0.0,0.3,0.0,16.227186588951355
+Robert Jensen,Albania,Urban,65.32988725192331,1573.49,Full,Full,No Risk,0.0,3,115,2025-01-01,2026-04-19,61,Elder (60+),0.0,0.0,0.3,0.7,24.33980928938527
+Daniel Sullivan,Tuvalu,Urban,53.48486264071572,3748.36,Partial,None,No Risk,0.0,6,103,2025-01-13,2025-02-26,0,Child (0-17),0.5,1.0,0.3,1.0,51.76622145881029
+Gina Day,Brazil,Urban,73.87379466047012,5777.19,None,Partial,No Risk,0.0,6,476,2024-01-06,2025-02-27,13,Child (0-17),1.0,0.5,0.3,1.0,69.09517565689237
+James Zhang,Svalbard and Jan Mayen,Urban,41.75567206983061,2501.85,Full,None,No Risk,0.0,4,229,2024-09-09,2025-11-07,75,Elder (60+),0.0,1.0,0.3,0.7,33.892242143482406
+Jordan Davis,Angola,Urban,67.49074600153608,1925.39,None,Full,Minor Injuries,0.3,1,497,2023-12-16,2024-10-19,38,Adult (18-59),1.0,0.0,0.3,0.0,47.962856754395794
+Shannon Gross,The former Yugoslav Republic of Macedonia,Urban,87.15180688307817,2558.72,None,Full,No Risk,0.0,4,96,2025-01-20,2025-10-03,73,Elder (60+),1.0,0.0,0.3,0.7,54.52303121158417
+Lauren Odonnell,Estonia,Rural,83.90736504626237,3679.33,None,None,Minor Injuries,0.3,2,117,2024-12-30,2025-02-18,36,Adult (18-59),1.0,1.0,0.7,0.0,73.86418774047662
+Allison Robinson,Tuvalu,Urban,84.12219286138021,2174.85,Full,Partial,No Risk,0.0,4,200,2024-10-08,2025-02-14,78,Elder (60+),0.0,0.5,0.3,0.7,41.27062464316033
+Mario Nash,Estonia,Urban,79.68323059263109,3853.61,Partial,None,Minor Injuries,0.3,5,63,2025-02-22,2025-06-13,65,Elder (60+),0.5,1.0,0.3,0.7,62.22470198501253
+Robert Jensen,Belize,Urban,41.61503500340831,1087.11,Partial,Full,No Risk,0.0,1,263,2024-08-06,2025-03-17,79,Elder (60+),0.5,0.0,0.3,0.7,25.054816484859927
+Holly Norton,Micronesia (Federated States of),Rural,73.13867724886747,5249.04,Partial,Full,No Risk,0.0,9,379,2024-04-12,2024-11-18,38,Adult (18-59),0.5,0.0,0.7,0.0,51.10097631197665
+Patrick Zuniga,Gibraltar,Urban,94.42571672623184,1444.3,None,Partial,No Risk,0.0,5,473,2024-01-09,2025-05-07,38,Adult (18-59),1.0,0.5,0.3,0.0,63.61378347492461
+Barbara Williams,Iraq,Rural,96.63960458025774,4755.59,None,Partial,Minor Injuries,0.3,7,201,2024-10-07,2026-01-13,10,Child (0-17),1.0,0.5,0.7,1.0,81.58154797761745
+Chris Johnson,Denmark,Urban,76.40753643140019,5171.42,Partial,Partial,No Risk,0.0,3,237,2024-09-01,2025-09-27,56,Adult (18-59),0.5,0.5,0.3,0.0,49.92694227850998
+Nicholas Hall,Indonesia,Urban,57.5287802725972,2490.08,Partial,Partial,No Risk,0.0,3,329,2024-06-01,2024-08-29,58,Adult (18-59),0.5,0.5,0.3,0.0,39.17500328778362
+Kristina Ward,Ethiopia,Urban,80.31078789296446,4323.73,Partial,Partial,Minor Injuries,0.3,6,445,2024-02-06,2024-12-26,64,Elder (60+),0.5,0.5,0.3,0.7,60.15032743527278
+Darryl Johnston,Slovakia,Rural,70.72001924253539,5658.34,Partial,None,Serious Injuries,0.7,6,99,2025-01-17,2025-08-21,38,Adult (18-59),0.5,1.0,0.7,0.0,68.44719956722443
+Gregory Tran,Guadeloupe,Urban,44.89965067686438,4437.06,None,None,No Risk,0.0,8,188,2024-10-20,2025-01-02,25,Adult (18-59),1.0,1.0,0.3,0.0,56.73525334603448
+Christopher Hill,Somalia,Urban,70.38861157654688,3891.33,None,Partial,No Risk,0.0,1,273,2024-07-27,2024-08-06,72,Elder (60+),1.0,0.5,0.3,0.7,58.21563167772666
+Mario Miller,Brunei Darussalam,Urban,55.08483583366636,5141.31,Full,None,No Risk,0.0,1,189,2024-10-19,2025-01-03,37,Adult (18-59),0.0,1.0,0.3,0.0,37.86339270858319
+Maria Solis,Malaysia,Urban,39.83826000259455,4605.83,Partial,Partial,Serious Injuries,0.7,3,68,2025-02-17,2025-03-22,14,Child (0-17),0.5,0.5,0.3,1.0,45.67075709307559
+Joshua Leonard,Angola,Urban,47.94504830595447,7014.9,Full,Partial,No Risk,0.0,2,321,2024-06-09,2025-02-26,44,Adult (18-59),0.0,0.5,0.3,0.0,32.842847868195136
+Elizabeth Nelson,Czech Rep.,Rural,52.76505320489504,4456.66,Partial,Partial,Minor Injuries,0.3,4,224,2024-09-14,2025-08-12,55,Adult (18-59),0.5,0.5,0.7,0.0,48.328620495944726
+Crystal Harvey,Tajikistan,Urban,92.840708195264,4834.27,None,None,No Risk,0.0,4,431,2024-02-20,2024-08-04,45,Adult (18-59),1.0,1.0,0.3,0.0,75.44054680866202
+Elizabeth Silva,United Arab Emirates,Urban,50.17157415969734,3247.06,Partial,None,Serious Injuries,0.7,2,422,2024-02-29,2025-04-01,54,Adult (18-59),0.5,1.0,0.3,0.0,52.63215584553406
+Crystal Brennan,Argentina,Urban,67.41074306316014,1891.44,None,Partial,No Risk,0.0,5,126,2024-12-21,2024-12-29,55,Adult (18-59),1.0,0.5,0.3,0.0,50.886364686182084
+Matthew Mccarthy,Zambia,Urban,96.4600639183017,3004.48,Partial,Partial,Critical Condition,1.0,3,483,2023-12-30,2024-10-13,44,Adult (18-59),0.5,0.5,0.3,0.0,66.06957605003888
+Kayla Sanchez,American Samoa,Urban,89.27260252324811,2441.71,None,Partial,No Risk,0.0,5,21,2025-04-05,2026-07-19,78,Elder (60+),1.0,0.5,0.3,0.7,62.41299728366882
+Loretta Oconnor MD,Dominican Rep.,Rural,69.51216331657756,1423.82,None,Partial,No Risk,0.0,7,77,2025-02-08,2025-06-16,20,Adult (18-59),1.0,0.5,0.7,0.0,56.475403040881275
+Kenneth Koch,Lesotho,Urban,67.33147788381613,3011.94,None,Partial,No Risk,0.0,4,260,2024-08-09,2025-07-02,9,Child (0-17),1.0,0.5,0.3,1.0,58.58856027112556
+William Mccall,Tibetan,Rural,67.03410643283217,2006.89,None,Partial,Minor Injuries,0.3,3,325,2024-06-05,2024-10-24,45,Adult (18-59),1.0,0.5,0.7,0.0,59.825983322471544
+Richard Mathews,Georgia,Rural,61.21678302106757,2524.74,None,Partial,No Risk,0.0,3,432,2024-02-19,2024-06-08,8,Child (0-17),1.0,0.5,0.7,1.0,61.635108499558164
+Brandon Jimenez,Finland,Urban,65.48553820113975,6919.6,Partial,Partial,No Risk,0.0,5,478,2024-01-04,2024-06-20,58,Adult (18-59),0.5,0.5,0.3,0.0,52.42915071516479
+Anne Gomez,Lithuania,Rural,80.23796833345574,6360.92,Partial,Partial,No Risk,0.0,2,360,2024-05-01,2024-06-20,58,Adult (18-59),0.5,0.5,0.7,0.0,59.091265019716246
+Mikayla Ramos,Timor-Leste,Rural,70.20451459285438,1827.82,None,Partial,No Risk,0.0,4,364,2024-04-27,2024-06-18,29,Adult (18-59),1.0,0.5,0.7,0.0,58.63797071337211
+Laura Koch,Israel,Urban,100.0,3052.34,Partial,Full,Minor Injuries,0.3,3,389,2024-04-02,2025-04-29,30,Adult (18-59),0.5,0.0,0.3,0.0,52.027622136692074
+Natasha Perez,Nicaragua,Urban,81.80495438557183,4964.52,Partial,Partial,No Risk,0.0,6,40,2025-03-17,2026-07-23,31,Adult (18-59),0.5,0.5,0.3,0.0,51.26887962220603
+Rebecca Stanley,French Guiana,Urban,60.08856945114142,4353.59,None,Partial,No Risk,0.0,8,105,2025-01-11,2026-01-26,51,Adult (18-59),1.0,0.5,0.3,0.0,53.90197893249948
+Terry Cooper,Tonga,Urban,58.3342368298889,3248.3,Partial,Partial,No Risk,0.0,4,155,2024-11-22,2025-04-14,22,Adult (18-59),0.5,0.5,0.3,0.0,39.60736495105825
+Mary Wang,Luxembourg,Urban,61.15414323809537,3651.8,Full,Partial,Serious Injuries,0.7,7,133,2024-12-14,2026-04-28,38,Adult (18-59),0.0,0.5,0.3,0.0,39.80265710794647
+Taylor Williams,Palau,Urban,54.99808096193975,4404.25,Partial,None,No Risk,0.0,6,435,2024-02-16,2024-08-30,3,Child (0-17),0.5,1.0,0.3,1.0,56.78809089112398
+Brian Anderson,Gabon,Rural,73.70624352496476,4538.42,Partial,Full,Minor Injuries,0.3,7,274,2024-07-26,2025-09-26,44,Adult (18-59),0.5,0.0,0.7,0.0,50.91577411186152
+Dana Lawrence,Stateless,Urban,99.5997788892508,1005.12,Partial,Full,No Risk,0.0,5,361,2024-04-30,2025-04-08,3,Child (0-17),0.5,0.0,0.3,1.0,51.152436968038096
+Rodney Lane,Norfolk Island,Urban,87.65410701077913,1699.35,None,Partial,No Risk,0.0,1,30,2025-03-27,2026-06-29,57,Adult (18-59),1.0,0.5,0.3,0.0,54.88953474011253
+Scott Zamora,Benin,Urban,78.70871076742267,1959.19,Partial,None,No Risk,0.0,1,449,2024-02-02,2024-09-29,43,Adult (18-59),0.5,1.0,0.3,0.0,53.70839998381276
+Drew Le,"China, Hong Kong SAR",Urban,63.49478018020081,3663.34,Partial,None,No Risk,0.0,1,4,2025-04-22,2025-05-15,9,Child (0-17),0.5,1.0,0.3,1.0,51.56878511897549
+Darrell Delgado,Aruba,Urban,77.612535244291,2531.17,Partial,Partial,No Risk,0.0,4,496,2023-12-17,2024-04-02,18,Adult (18-59),0.5,0.5,0.3,0.0,48.9318837069192
+Natasha Jones,Peru,Rural,87.60263409911784,5161.06,None,Partial,No Risk,0.0,5,146,2024-12-01,2025-12-30,58,Adult (18-59),1.0,0.5,0.7,0.0,69.26836205754874
+Elizabeth Lam,Lesotho,Urban,57.16395310588962,8085.25,Full,Partial,Minor Injuries,0.3,6,80,2025-02-05,2025-03-19,51,Adult (18-59),0.0,0.5,0.3,0.0,40.93938756055117
+Mr. John Henry,Lesotho,Urban,63.50951215552185,5982.96,None,Partial,No Risk,0.0,2,310,2024-06-20,2024-08-10,22,Adult (18-59),1.0,0.5,0.3,0.0,56.72082462722475
+Melissa Rivera,Tonga,Rural,72.80714462642287,1692.5,None,Partial,No Risk,0.0,7,394,2024-03-28,2024-12-16,68,Elder (60+),1.0,0.5,0.7,0.7,64.8362017521724
+Jonathan Brown,Sierra Leone,Urban,73.94668444553145,6103.34,Partial,Partial,Minor Injuries,0.3,2,278,2024-07-22,2025-09-14,10,Child (0-17),0.5,0.5,0.3,1.0,58.48680778234135
+Elizabeth Hart,Ghana,Urban,31.85587675515479,3464.56,Full,Partial,No Risk,0.0,3,95,2025-01-21,2025-03-31,65,Elder (60+),0.0,0.5,0.3,0.7,22.492489700518174
+Martin Brady,Angola,Rural,71.0089532578202,2978.99,None,Full,No Risk,0.0,4,175,2024-11-02,2025-05-15,49,Adult (18-59),1.0,0.0,0.7,0.0,51.54726322394192
+Daniel Morgan,Senegal,Rural,80.01852165367572,2397.88,None,None,No Risk,0.0,6,357,2024-05-04,2025-07-03,22,Adult (18-59),1.0,1.0,0.7,0.0,71.81504550617993
+Jeremy Stone,Uzbekistan,Rural,100.0,990.3,None,None,No Risk,0.0,4,417,2024-03-05,2024-06-30,43,Adult (18-59),1.0,1.0,0.7,0.0,76.27978567954648
+Julie Morales,Iraq,Urban,61.90573098765452,3925.94,None,Full,Serious Injuries,0.7,7,225,2024-09-13,2024-09-27,0,Child (0-17),1.0,0.0,0.3,1.0,58.978224890443755
+Kelly Robertson,Dem. Rep. of the Congo,Urban,65.17548931781083,1580.55,Full,Full,No Risk,0.0,4,222,2024-09-16,2025-10-10,51,Adult (18-59),0.0,0.0,0.3,0.0,22.42028400182468
+Adam Crawford,Rwanda,Rural,82.39529676884256,6118.38,None,Partial,No Risk,0.0,5,41,2025-03-16,2025-10-01,55,Adult (18-59),1.0,0.5,0.7,0.0,67.94776721143846
+Felicia Gregory,Western Sahara,Urban,55.48142423087762,2798.88,None,Full,No Risk,0.0,5,123,2024-12-24,2025-10-18,43,Adult (18-59),1.0,0.0,0.3,0.0,40.502273019776624
+David Hawkins,Guyana,Urban,66.53392944270863,3120.93,None,None,Minor Injuries,0.3,6,220,2024-09-18,2026-01-09,10,Child (0-17),1.0,1.0,0.3,1.0,69.69283133328481
+Jill Burnett,Iraq,Urban,82.89914312216757,3171.95,None,Full,No Risk,0.0,4,138,2024-12-09,2026-04-15,32,Adult (18-59),1.0,0.0,0.3,0.0,50.92908466913667
+Curtis Lee,Bermuda,Rural,72.62039330000694,3767.45,None,Partial,No Risk,0.0,5,488,2023-12-25,2024-02-16,0,Child (0-17),1.0,0.5,0.7,1.0,69.70155052203414
+Alicia Dixon,Somalia,Urban,67.28364711813667,1916.31,Full,None,No Risk,0.0,2,425,2024-02-26,2025-06-05,21,Adult (18-59),0.0,1.0,0.3,0.0,39.70570827540884
+Nathan Curtis,Brazil,Urban,88.20841924224995,2379.0,Partial,Partial,No Risk,0.0,6,495,2023-12-18,2024-06-09,38,Adult (18-59),0.5,0.5,0.3,0.0,53.704295320937966
+Katelyn Young,Senegal,Rural,92.96933996615368,3397.89,Full,Partial,No Risk,0.0,8,26,2025-03-31,2025-11-08,39,Adult (18-59),0.0,0.5,0.7,0.0,48.664421607765526
+Edwin Acevedo,Nauru,Urban,70.82901771154319,1790.48,None,Full,Minor Injuries,0.3,2,119,2024-12-28,2026-03-13,62,Elder (60+),1.0,0.0,0.3,0.7,49.24393625480154
+Christine Buckley,Costa Rica,Urban,57.49854018140382,1104.5,None,Partial,No Risk,0.0,4,299,2024-07-01,2025-05-16,0,Child (0-17),1.0,0.5,0.3,1.0,52.0114797037055
+Brian Guerrero,Papua New Guinea,Rural,69.88822765202025,5387.29,Partial,None,No Risk,0.0,2,332,2024-05-29,2025-01-23,41,Adult (18-59),0.5,1.0,0.7,0.0,60.77498838172092
+Michael Miller,Montenegro,Urban,85.74143077971056,4018.23,Full,Partial,No Risk,0.0,3,155,2024-11-22,2025-01-22,23,Adult (18-59),0.0,0.5,0.3,0.0,40.56992645860309
+Lacey Nelson,Grenada,Urban,68.03761365250422,1548.65,None,Partial,Serious Injuries,0.7,7,256,2024-08-13,2025-06-12,29,Adult (18-59),1.0,0.5,0.3,0.0,59.93462393965009
+Jessica Solomon,Burkina Faso,Urban,100.0,2012.33,Partial,Partial,No Risk,0.0,1,321,2024-06-09,2025-04-13,62,Elder (60+),0.5,0.5,0.3,0.7,56.429192289218264
+Valerie Torres,Burkina Faso,Urban,67.91605181511278,2108.35,Partial,Full,No Risk,0.0,3,281,2024-07-19,2025-07-16,13,Child (0-17),0.5,0.0,0.3,1.0,39.38988966626571
+Travis Caldwell,British Virgin Islands,Urban,52.51656745857342,2488.63,Partial,Partial,No Risk,0.0,9,500,2023-12-13,2024-08-12,27,Adult (18-59),0.5,0.5,0.3,0.0,42.35407821844754
+Dawn Huber,Afghanistan,Urban,51.222810549883405,4373.36,Partial,Partial,No Risk,0.0,4,16,2025-04-10,2025-10-08,34,Adult (18-59),0.5,0.5,0.3,0.0,37.53101129500564
+Jeremy Green,Lithuania,Urban,76.23495146350929,6011.83,None,None,No Risk,0.0,7,328,2024-06-02,2024-07-03,44,Adult (18-59),1.0,1.0,0.3,0.0,71.9555153604753
+Lori Robinson,Burundi,Urban,76.64104947284297,3561.35,Partial,Full,Serious Injuries,0.7,1,423,2024-02-28,2025-01-29,5,Child (0-17),0.5,0.0,0.3,1.0,52.46460418635957
+Jason Williamson,Pakistan,Rural,70.61397899563953,1073.17,None,Partial,No Risk,0.0,2,77,2025-02-08,2025-09-26,53,Adult (18-59),1.0,0.5,0.7,0.0,53.49752819804513
+Mackenzie Taylor,Equatorial Guinea,Urban,76.55026463954748,1260.16,Partial,Partial,Minor Injuries,0.3,9,169,2024-11-08,2025-08-20,70,Elder (60+),0.5,0.5,0.3,0.7,52.33634303537045
+Dr. James Gonzalez,United States of America,Urban,77.82186727449036,3478.69,Partial,None,No Risk,0.0,5,432,2024-02-19,2025-06-14,54,Adult (18-59),0.5,1.0,0.3,0.0,58.07178420773225
+James White,Kuwait,Urban,47.76410403113981,1496.31,None,None,Serious Injuries,0.7,4,63,2025-02-22,2025-12-02,22,Adult (18-59),1.0,1.0,0.3,0.0,56.21659972113031
+Stephen Reed,Iceland,Urban,85.02688657242693,3555.03,None,Partial,No Risk,0.0,3,177,2024-10-31,2024-12-02,58,Adult (18-59),1.0,0.5,0.3,0.0,59.71957161280661
+Mrs. Cynthia Anderson,Swaziland,Urban,97.06654311253828,2360.77,None,None,No Risk,0.0,3,167,2024-11-10,2025-11-10,46,Adult (18-59),1.0,1.0,0.3,0.0,69.51621430640901
+Thomas Garcia,Belarus,Urban,73.70030858278464,3755.49,None,Partial,No Risk,0.0,2,340,2024-05-21,2025-06-17,6,Child (0-17),1.0,0.5,0.3,1.0,61.935224113592504
+Amber Jackson DVM,Djibouti,Urban,48.86068635105873,1821.53,Partial,Partial,No Risk,0.0,2,293,2024-07-07,2025-09-05,21,Adult (18-59),0.5,0.5,0.3,0.0,33.877967633992746
+Samantha Stein,Norfolk Island,Urban,93.1788069699185,2612.78,Partial,Partial,Minor Injuries,0.3,4,185,2024-10-23,2024-11-01,30,Adult (18-59),0.5,0.5,0.3,0.0,54.745647780138306
+Randall Thompson,South Sudan,Urban,90.84387768549732,4513.21,None,None,Minor Injuries,0.3,6,386,2024-04-05,2024-04-16,48,Adult (18-59),1.0,1.0,0.3,0.0,77.8020195041077
+Jaclyn Goodwin,Zimbabwe,Urban,79.51981877641549,4113.89,None,None,No Risk,0.0,3,241,2024-08-28,2024-10-20,14,Child (0-17),1.0,1.0,0.3,1.0,71.7852050353077
+Alyssa Browning,Kazakhstan,Rural,85.26336473725291,5416.53,None,Partial,No Risk,0.0,4,469,2024-01-13,2025-02-06,65,Elder (60+),1.0,0.5,0.7,0.7,75.01786037814567
+Cody Rojas,Bahrain,Rural,72.77110787463499,2098.26,None,Full,No Risk,0.0,4,467,2024-01-15,2024-01-18,6,Child (0-17),1.0,0.0,0.7,1.0,58.591275154194086
+Mary Wallace,Finland,Urban,71.27996861100272,2940.21,None,None,No Risk,0.0,4,348,2024-05-13,2025-01-29,54,Adult (18-59),1.0,1.0,0.3,0.0,63.310537802809094
+Christina Hess,Jordan,Rural,90.77589054779328,4903.44,Full,Partial,No Risk,0.0,5,304,2024-06-26,2025-11-07,64,Elder (60+),0.0,0.5,0.7,0.7,55.079348476269566
+Jay Johnson,Kuwait,Urban,47.95411339011036,4315.22,Partial,Full,No Risk,0.0,2,232,2024-09-06,2025-01-20,33,Adult (18-59),0.5,0.0,0.3,0.0,29.764738726965014
+David Moore,Belize,Rural,73.69250854709864,3470.6,Full,Partial,No Risk,0.0,3,320,2024-06-10,2024-07-20,84,Elder (60+),0.0,0.5,0.7,0.7,45.29280349340923
+Michael Robinson,"China, Hong Kong SAR",Urban,65.66833640106037,3792.43,Partial,Partial,No Risk,0.0,3,214,2024-09-24,2024-12-03,12,Child (0-17),0.5,0.5,0.3,1.0,48.311574222550284
+Allison Guzman,New Caledonia,Urban,82.70116287048293,12628.6,Full,Partial,Minor Injuries,0.3,2,126,2024-12-21,2026-03-14,14,Child (0-17),0.0,0.5,0.3,1.0,61.558105290524765
+Gregory Bryant,Hungary,Urban,94.8337808882184,2852.29,None,None,No Risk,0.0,5,218,2024-09-20,2024-12-24,42,Adult (18-59),1.0,1.0,0.3,0.0,71.1621456279669
+Rebecca Jacobs,China,Urban,69.06477245133622,1432.21,None,Full,No Risk,0.0,8,494,2023-12-19,2024-07-30,6,Child (0-17),1.0,0.0,0.3,1.0,53.54935958610195
+Dawn Cohen,Saint Lucia,Rural,70.44787450762283,3148.83,None,Partial,No Risk,0.0,6,343,2024-05-18,2025-08-13,37,Adult (18-59),1.0,0.5,0.7,0.0,61.925113203021795
+Alexander Case,Mexico,Rural,80.9170589136092,2624.7,Partial,None,Minor Injuries,0.3,4,451,2024-01-31,2024-07-14,86,Elder (60+),0.5,1.0,0.7,0.7,68.87185295873114
+Summer Greene,Oman,Rural,77.26955644743093,6361.84,Full,None,No Risk,0.0,1,150,2024-11-27,2025-12-02,8,Child (0-17),0.0,1.0,0.7,1.0,57.83471996958419
+Amy Reed,Bahrain,Urban,83.13037473442435,5663.78,None,Full,No Risk,0.0,2,470,2024-01-12,2024-05-22,40,Adult (18-59),1.0,0.0,0.3,0.0,57.554139010245194
+Phillip White,Nigeria,Urban,79.80301807539647,4859.62,Partial,None,Serious Injuries,0.7,3,150,2024-11-27,2026-01-25,42,Adult (18-59),0.5,1.0,0.3,0.0,64.27631867524559
+James Peterson,Svalbard and Jan Mayen,Urban,87.4814383231962,2256.12,Full,None,No Risk,0.0,2,33,2025-03-24,2026-07-16,54,Adult (18-59),0.0,1.0,0.3,0.0,43.87850336880471
+Kenneth Morales,Kyrgyzstan,Rural,60.09348943310764,6075.79,None,None,No Risk,0.0,3,234,2024-09-04,2025-06-05,68,Elder (60+),1.0,1.0,0.7,0.7,71.40885017308851
+Susan Macdonald,Western Sahara,Urban,83.34629086132082,1481.96,None,Full,No Risk,0.0,6,370,2024-04-21,2024-07-18,35,Adult (18-59),1.0,0.0,0.3,0.0,51.5894372102614
+Cassidy Jackson,Cambodia,Rural,29.98043094381461,2519.23,Full,Partial,No Risk,0.0,5,463,2024-01-19,2025-05-13,12,Child (0-17),0.0,0.5,0.7,1.0,31.444199565244386
+James Stanley,Sri Lanka,Rural,100.0,3817.23,Full,None,No Risk,0.0,4,88,2025-01-28,2026-04-26,62,Elder (60+),0.0,1.0,0.7,0.7,61.40239570770562
+Jeremy Woods,Norfolk Island,Urban,76.83521466597615,2611.24,None,None,Serious Injuries,0.7,3,435,2024-02-16,2024-04-13,28,Adult (18-59),1.0,1.0,0.3,0.0,72.1167446688849
+Jacqueline Miles,Mozambique,Urban,76.80539019520361,6563.3,Partial,None,Minor Injuries,0.3,6,44,2025-03-13,2026-04-25,42,Adult (18-59),0.5,1.0,0.3,0.0,62.730182750114935
+Charles Flores,Dem. Rep. of the Congo,Rural,68.29514611491877,6188.96,Full,Full,No Risk,0.0,5,68,2025-02-17,2025-09-10,19,Adult (18-59),0.0,0.0,0.7,0.0,35.603054040730356
+Nicole Barrett,Portugal,Urban,83.45237216962548,2415.32,None,Full,No Risk,0.0,5,77,2025-02-08,2025-04-16,53,Adult (18-59),1.0,0.0,0.3,0.0,49.76526800174653
+Christine Wallace,Andorra,Urban,63.3062045572313,5394.61,Partial,Full,Minor Injuries,0.3,7,77,2025-02-08,2025-06-05,49,Adult (18-59),0.5,0.0,0.3,0.0,41.57065712835803
+Yolanda Carroll,Cambodia,Rural,52.72234457205734,5859.61,None,Full,No Risk,0.0,7,143,2024-12-04,2025-12-18,76,Elder (60+),1.0,0.0,0.7,0.7,54.607455603275255
+Jennifer Johnson,Lao People's Dem. Rep.,Rural,77.54009526753963,1877.52,None,Full,No Risk,0.0,3,368,2024-04-23,2024-12-05,23,Adult (18-59),1.0,0.0,0.7,0.0,53.433514731755984
+Sarah Wallace,United States of America,Urban,77.2092509827884,2116.88,Partial,Partial,No Risk,0.0,5,483,2023-12-30,2024-08-12,45,Adult (18-59),0.5,0.5,0.3,0.0,48.4876942500604
+Kyle Scott,Morocco,Rural,51.922171357648295,5054.61,Partial,None,Minor Injuries,0.3,4,496,2023-12-17,2024-07-22,36,Adult (18-59),0.5,1.0,0.7,0.0,59.27465147083747
+Ryan Dean,Sierra Leone,Rural,66.56545668543941,3170.69,None,Partial,No Risk,0.0,4,200,2024-10-08,2025-11-17,16,Child (0-17),1.0,0.5,0.7,1.0,62.97990313439765
+Robert Martin,Maldives,Rural,76.03091235502288,1539.25,Partial,None,No Risk,0.0,4,16,2025-04-10,2026-08-11,6,Child (0-17),0.5,1.0,0.7,1.0,59.32065655507793
+Janet Lee,Angola,Rural,68.11643486526587,3184.94,None,Partial,Serious Injuries,0.7,5,261,2024-08-08,2025-10-04,45,Adult (18-59),1.0,0.5,0.7,0.0,66.74631823473949
+Gregory Dixon,Bhutan,Rural,83.84526095587017,6986.92,Full,None,No Risk,0.0,4,69,2025-02-16,2025-06-30,38,Adult (18-59),0.0,1.0,0.7,0.0,57.220126937931845
+Brian Palmer,Palestinian,Urban,89.98278053744664,2386.31,Partial,None,No Risk,0.0,1,234,2024-09-04,2025-07-05,25,Adult (18-59),0.5,1.0,0.3,0.0,56.48829035293987
+Brianna Patel,Nauru,Urban,57.18901690399574,3630.17,None,Partial,No Risk,0.0,9,68,2025-02-17,2026-01-25,46,Adult (18-59),1.0,0.5,0.3,0.0,51.75337149725778
+Dylan Lee,Gabon,Urban,71.29783875104354,3360.69,None,None,No Risk,0.0,4,113,2025-01-03,2025-07-14,89,Elder (60+),1.0,1.0,0.3,0.7,65.19788133729985
+Benjamin Morgan,Senegal,Urban,73.694036639161,2846.85,Partial,Full,No Risk,0.0,3,415,2024-03-07,2024-08-24,23,Adult (18-59),0.5,0.0,0.3,0.0,39.15942472098287
+Melanie Gonzalez,Saint-Pierre-et-Miquelon,Urban,58.007262925064026,4026.7,None,Full,No Risk,0.0,7,313,2024-06-17,2025-08-20,37,Adult (18-59),1.0,0.0,0.3,0.0,46.58527583700911
+Ruth Sparks,Croatia,Rural,80.63806200743771,3050.84,None,Partial,No Risk,0.0,3,111,2025-01-05,2025-08-26,55,Adult (18-59),1.0,0.5,0.7,0.0,61.55320839707318
+Donna Martinez,Various/Unknown,Urban,71.4441390458647,2870.55,None,Partial,No Risk,0.0,2,51,2025-03-06,2026-04-21,64,Elder (60+),1.0,0.5,0.3,0.7,55.169351797476196
+Mr. Curtis Young,Cameroon,Rural,44.05734901973172,2344.81,Partial,None,No Risk,0.0,2,226,2024-09-12,2024-10-25,13,Child (0-17),0.5,1.0,0.7,1.0,49.83316446045974
+Michael Crane,Tajikistan,Rural,70.65226041730047,3695.92,Full,Partial,Serious Injuries,0.7,2,246,2024-08-23,2025-03-01,36,Adult (18-59),0.0,0.5,0.7,0.0,46.7595355800986
+Samantha Roman,Spain,Rural,74.04234875129933,4053.53,Partial,Partial,No Risk,0.0,2,193,2024-10-15,2025-01-21,3,Child (0-17),0.5,0.5,0.7,1.0,56.11020253174831
+Patricia Lopez,Bulgaria,Urban,65.7470178782128,3807.69,Partial,None,No Risk,0.0,2,40,2025-03-17,2026-06-29,36,Adult (18-59),0.5,1.0,0.3,0.0,48.57176282251338
+Don Myers,Various/Unknown,Rural,80.10887669023565,899.84,Partial,None,Serious Injuries,0.7,6,351,2024-05-10,2025-03-07,41,Adult (18-59),0.5,1.0,0.7,0.0,66.1853284383714
+Christopher Davis,Mozambique,Urban,52.568190854065634,2241.15,None,Partial,No Risk,0.0,1,144,2024-12-03,2025-08-09,15,Child (0-17),1.0,0.5,0.3,1.0,48.938740579782284
+Lee Owens,Cuba,Rural,90.36771776590196,6396.93,Partial,Full,No Risk,0.0,3,52,2025-03-05,2025-06-28,36,Adult (18-59),0.5,0.0,0.7,0.0,52.891997121634596
+Brett Morrison,Botswana,Urban,84.07694082119424,2241.28,Partial,Partial,No Risk,0.0,4,475,2024-01-07,2025-04-02,51,Adult (18-59),0.5,0.5,0.3,0.0,50.61925757904218
+Mathew Ayala,French Guiana,Urban,76.26395822041809,2779.11,Partial,Partial,Serious Injuries,0.7,4,1,2025-04-25,2025-10-04,41,Adult (18-59),0.5,0.5,0.3,0.0,50.91183523877254
+Victor Hays,British Virgin Islands,Rural,62.72949404304497,2763.72,None,None,No Risk,0.0,1,302,2024-06-28,2025-09-06,68,Elder (60+),1.0,1.0,0.7,0.7,66.20117645722316
+Harold Montoya,Lithuania,Rural,71.56378348037,1774.53,None,Full,No Risk,0.0,1,84,2025-02-01,2025-04-12,57,Adult (18-59),1.0,0.0,0.7,0.0,47.083584683840364
+Janice Franklin,Brunei Darussalam,Rural,55.83762245720333,2128.58,Full,Full,No Risk,0.0,2,130,2024-12-17,2025-06-06,2,Child (0-17),0.0,0.0,0.7,1.0,27.873072302991357
+Shannon Murray,Gambia,Urban,69.39720994421543,3883.67,Partial,None,No Risk,0.0,4,1,2025-04-25,2025-05-16,70,Elder (60+),0.5,1.0,0.3,0.7,54.2807402015082
+Juan Gonzales,Maldives,Urban,99.42753344704605,3544.99,None,Partial,Serious Injuries,0.7,5,159,2024-11-18,2025-04-26,36,Adult (18-59),1.0,0.5,0.3,0.0,72.98221814006509
+Laura Hernandez,Turkey,Urban,95.23458959131202,2554.92,None,None,No Risk,0.0,2,414,2024-03-08,2025-04-09,55,Adult (18-59),1.0,1.0,0.3,0.0,71.08758898505272
+Stephen Davis,Rep. of Korea,Rural,82.50411604640966,1576.95,None,Partial,Minor Injuries,0.3,3,405,2024-03-17,2025-05-31,76,Elder (60+),1.0,0.5,0.7,0.7,69.12502539730984
+Roger Roberts,Ecuador,Urban,60.42283879143105,5170.55,Partial,None,Minor Injuries,0.3,4,456,2024-01-26,2024-09-05,81,Elder (60+),0.5,1.0,0.3,0.7,60.73362259474586
+Kevin Johnson,"China, Hong Kong SAR",Rural,43.51809382898468,1538.63,Partial,None,No Risk,0.0,5,492,2023-12-21,2025-03-09,3,Child (0-17),0.5,1.0,0.7,1.0,52.55855857882005
+Joe Farmer,Mali,Rural,83.3649570936147,4778.82,Full,Full,Minor Injuries,0.3,4,281,2024-07-19,2025-12-01,25,Adult (18-59),0.0,0.0,0.7,0.0,43.32450906668427
+Justin Day,Brunei Darussalam,Urban,86.75253468553024,3867.74,None,None,No Risk,0.0,6,194,2024-10-14,2025-12-13,51,Adult (18-59),1.0,1.0,0.3,0.0,70.24063803781074
+Joy Cross,Nigeria,Rural,65.72712389048637,2807.37,None,Partial,No Risk,0.0,2,280,2024-07-20,2024-09-23,82,Elder (60+),1.0,0.5,0.7,0.7,60.226027530182755
+Brittany Griffin,Ireland,Urban,91.55340375647128,2762.63,Partial,None,No Risk,0.0,3,347,2024-05-14,2025-08-09,12,Child (0-17),0.5,1.0,0.3,1.0,64.96675951234381
+Diana Young,Tuvalu,Rural,65.37226763234091,2469.32,Partial,Full,No Risk,0.0,5,46,2025-03-11,2026-05-13,33,Adult (18-59),0.5,0.0,0.7,0.0,37.833426395923716
+Amanda Harvey,Ukraine,Urban,78.54001915403137,1767.38,Partial,None,No Risk,0.0,2,151,2024-11-26,2026-02-27,51,Adult (18-59),0.5,1.0,0.3,0.0,50.88797119440579
+Matthew Wood,Niue,Urban,65.32173508956822,1343.12,Full,Partial,No Risk,0.0,4,339,2024-05-22,2025-01-31,31,Adult (18-59),0.0,0.5,0.3,0.0,30.73200217324986
+Justin Wilkerson,Viet Nam,Urban,91.22148876302911,4278.38,Full,Partial,No Risk,0.0,4,246,2024-08-23,2025-11-16,23,Adult (18-59),0.0,0.5,0.3,0.0,44.523083252234066
+Brian Crawford,Bangladesh,Rural,80.8466858413521,2159.71,Full,None,No Risk,0.0,4,345,2024-05-16,2025-04-15,41,Adult (18-59),0.0,1.0,0.7,0.0,50.477658688653605
+Craig Henry,"China, Macao SAR",Urban,50.669052502871494,4235.26,Full,None,No Risk,0.0,1,432,2024-02-19,2024-08-22,24,Adult (18-59),0.0,1.0,0.3,0.0,37.078667720546434
+Kelly Lopez,Bulgaria,Urban,68.27843912824088,4275.57,None,Partial,No Risk,0.0,7,486,2023-12-27,2025-01-20,10,Child (0-17),1.0,0.5,0.3,1.0,65.06288993738606
+Heidi Martin,Switzerland,Rural,50.623272511528725,2418.19,Full,Partial,No Risk,0.0,1,231,2024-09-07,2024-12-25,34,Adult (18-59),0.0,0.5,0.7,0.0,29.393977526444232
+Charles Brooks MD,Bolivia (Plurinational State of),Urban,54.917049372401905,2530.24,Full,Partial,No Risk,0.0,3,101,2025-01-15,2025-11-13,38,Adult (18-59),0.0,0.5,0.3,0.0,25.994690411310955
+Tina Barber,Zimbabwe,Urban,70.75451176385123,3352.06,None,Full,No Risk,0.0,1,275,2024-07-25,2025-06-08,45,Adult (18-59),1.0,0.0,0.3,0.0,46.434403921675944
+Tara Schmidt,Estonia,Rural,45.35596741777925,1094.07,None,Full,Critical Condition,1.0,6,380,2024-04-11,2024-12-18,24,Adult (18-59),1.0,0.0,0.7,0.0,51.90422291702325
+Sabrina Romero,Solomon Islands,Urban,71.27894657037038,2243.98,None,Full,No Risk,0.0,1,100,2025-01-16,2026-05-30,19,Adult (18-59),1.0,0.0,0.3,0.0,42.95359013890111
+Michael Small,Kyrgyzstan,Urban,80.46182575253829,15121.4,Partial,Full,No Risk,0.0,7,75,2025-02-10,2026-04-27,11,Child (0-17),0.5,0.0,0.3,1.0,66.82606500368304
+Jasmine Scott,Philippines,Rural,66.26641348058057,2745.64,Full,Partial,Minor Injuries,0.3,5,54,2025-03-03,2026-07-11,29,Adult (18-59),0.0,0.5,0.7,0.0,39.22573440513285
+Julie Fox,New Zealand,Urban,72.08619849492035,2222.53,Partial,None,No Risk,0.0,3,266,2024-08-03,2025-02-23,39,Adult (18-59),0.5,1.0,0.3,0.0,50.98727168153696
+Aimee Nunez,Tunisia,Urban,53.51779305487326,3857.03,Full,Partial,No Risk,0.0,5,329,2024-06-01,2024-06-25,66,Elder (60+),0.0,0.5,0.3,0.7,34.67174320533012
+Nathaniel Hunter,Trinidad and Tobago,Rural,100.0,3415.44,Partial,None,No Risk,0.0,1,238,2024-08-31,2025-12-31,38,Adult (18-59),0.5,1.0,0.7,0.0,67.03750249025275
+Alexis Craig,Palestinian,Rural,62.03003630501373,2353.57,None,None,No Risk,0.0,6,131,2024-12-16,2025-12-30,52,Adult (18-59),1.0,1.0,0.7,0.0,62.79639286138522
+Alejandra Thompson,Pakistan,Urban,74.2690458508668,5504.84,Partial,None,No Risk,0.0,7,11,2025-04-15,2026-01-19,58,Adult (18-59),0.5,1.0,0.3,0.0,57.17425645114559
+Carla Reynolds,Bulgaria,Urban,77.98503626787951,1823.25,Partial,Full,No Risk,0.0,4,104,2025-01-12,2026-05-04,64,Elder (60+),0.5,0.0,0.3,0.7,39.920029524168484
+Christina Oliver,Tuvalu,Urban,85.857656469131,3264.5,Partial,Partial,No Risk,0.0,6,246,2024-08-23,2025-12-12,15,Child (0-17),0.5,0.5,0.3,1.0,56.8799397665649
+Shawn Mcintosh,Belarus,Urban,73.62121503978865,2962.74,Partial,Partial,No Risk,0.0,10,384,2024-04-07,2025-05-19,5,Child (0-17),0.5,0.5,0.3,1.0,55.41265717806223
+Christopher Mayo,Saint Lucia,Urban,78.46366890583661,1188.59,Partial,Full,Minor Injuries,0.3,3,185,2024-10-23,2025-10-19,53,Adult (18-59),0.5,0.0,0.3,0.0,38.749351839364245
+Laura Garza,Rep. of Moldova,Urban,61.19033989281984,1055.63,Partial,Partial,No Risk,0.0,1,157,2024-11-20,2025-05-20,27,Adult (18-59),0.5,0.5,0.3,0.0,35.211171015156445
+Jennifer Ferguson,Gabon,Urban,47.32189351224888,2459.27,Partial,Partial,No Risk,0.0,6,213,2024-09-25,2025-06-02,2,Child (0-17),0.5,0.5,0.3,1.0,40.83687799071701
+Evelyn Payne,Holy See (the),Rural,65.73776927776684,3308.79,None,Partial,No Risk,0.0,4,490,2023-12-23,2024-03-22,24,Adult (18-59),1.0,0.5,0.7,0.0,60.812455314135136
+Jillian Gomez,Cameroon,Urban,64.61290898904396,3026.53,None,Partial,No Risk,0.0,5,426,2024-02-25,2024-12-24,82,Elder (60+),1.0,0.5,0.3,0.7,58.31968371254478
+Isaac Wilson,Ghana,Urban,64.8042246170472,3067.54,Partial,Full,No Risk,0.0,6,83,2025-02-02,2026-04-26,12,Child (0-17),0.5,0.0,0.3,1.0,39.587568390363685
+Connie Romero,Liechtenstein,Urban,55.90648465844057,2669.51,Partial,Full,Minor Injuries,0.3,5,283,2024-07-17,2025-04-13,88,Elder (60+),0.5,0.0,0.3,0.7,38.535339796079995
+Courtney Long,Turkmenistan,Urban,61.27026583557895,2013.58,Partial,Partial,Minor Injuries,0.3,1,125,2024-12-22,2026-05-02,32,Adult (18-59),0.5,0.5,0.3,0.0,39.5855744517109
+William Parks,Oman,Urban,78.2150530234105,2035.84,Partial,Partial,No Risk,0.0,2,417,2024-03-05,2025-03-25,47,Adult (18-59),0.5,0.5,0.3,0.0,46.393792668084686
+Sharon Larson,Timor-Leste,Urban,52.060945172150184,2681.63,None,None,Minor Injuries,0.3,3,285,2024-07-15,2025-11-20,7,Child (0-17),1.0,1.0,0.3,1.0,62.53690176097658
+Jacob Hanson,Mali,Urban,68.52821227972092,2551.32,None,None,No Risk,0.0,6,306,2024-06-24,2024-07-02,54,Adult (18-59),1.0,1.0,0.3,0.0,62.30372622777731
+Janet Spears,Cambodia,Urban,76.57042165592753,1543.88,Partial,Partial,No Risk,0.0,3,446,2024-02-05,2025-01-15,23,Adult (18-59),0.5,0.5,0.3,0.0,45.77354254627739
+Calvin Webster,Burundi,Rural,75.75468060965896,1790.09,Partial,Partial,No Risk,0.0,6,187,2024-10-21,2025-02-25,57,Adult (18-59),0.5,0.5,0.7,0.0,49.97507120638736
+Kathy Hicks,Myanmar,Urban,93.04836608973096,2878.49,None,None,Minor Injuries,0.3,4,331,2024-05-30,2025-07-23,35,Adult (18-59),1.0,1.0,0.3,0.0,74.118944879459
+Wayne Pierce,Belize,Rural,87.59158111110301,4290.52,Full,Partial,Minor Injuries,0.3,6,130,2024-12-17,2025-03-19,63,Elder (60+),0.0,0.5,0.7,0.7,54.646996581787235
+John Bryan,Malta,Rural,86.69017533551762,1553.96,None,Full,No Risk,0.0,1,202,2024-10-06,2024-12-11,36,Adult (18-59),1.0,0.0,0.7,0.0,53.49883426586363
+Adam Rollins,China,Urban,59.65981368675749,3581.51,Full,Full,Minor Injuries,0.3,4,225,2024-09-13,2024-11-20,46,Adult (18-59),0.0,0.0,0.3,0.0,26.87878675024164
+Jose Nelson,Lesotho,Rural,57.92232232948881,3773.51,None,Partial,Serious Injuries,0.7,6,304,2024-06-26,2024-12-15,29,Adult (18-59),1.0,0.5,0.7,0.0,64.968178916699
+Matthew Johnson,Martinique,Urban,64.8487145705849,3248.52,Partial,None,No Risk,0.0,5,441,2024-02-10,2024-05-12,67,Elder (60+),0.5,1.0,0.3,0.7,56.443043395555236
+Heather Moreno,Kyrgyzstan,Rural,70.09014185923111,1601.52,Partial,Partial,No Risk,0.0,5,70,2025-02-15,2026-01-01,79,Elder (60+),0.5,0.5,0.7,0.7,49.31778178428391
+Nicole Sullivan,Namibia,Rural,86.4584949626744,857.55,Full,Partial,No Risk,0.0,8,111,2025-01-05,2025-08-03,54,Adult (18-59),0.0,0.5,0.7,0.0,42.68145351951889
+Matthew Roberts,Guatemala,Urban,79.84413961175817,2016.22,None,Partial,No Risk,0.0,3,132,2024-12-15,2025-07-26,21,Adult (18-59),1.0,0.5,0.3,0.0,54.670361451782334
+Steven Rowe,Trinidad and Tobago,Urban,79.64506940802347,2992.49,Full,Partial,No Risk,0.0,6,472,2024-01-10,2024-01-11,0,Child (0-17),0.0,0.5,0.3,1.0,46.35963740799033
+Heather Ramirez,Liechtenstein,Urban,90.42705934226792,2968.44,None,Full,No Risk,0.0,1,483,2023-12-30,2024-07-05,0,Child (0-17),1.0,0.0,0.3,1.0,60.15493303179136
+Christopher Davis,Saudi Arabia,Urban,74.37869271051125,4075.69,Full,Partial,Minor Injuries,0.3,1,182,2024-10-26,2025-03-22,51,Adult (18-59),0.0,0.5,0.3,0.0,38.60808815064597
+Mrs. Brittany Hickman,New Caledonia,Urban,54.561904567926696,4959.99,Partial,Full,No Risk,0.0,5,60,2025-02-25,2025-06-23,64,Elder (60+),0.5,0.0,0.3,0.7,36.7862810629082
+Brian Castro,Nicaragua,Rural,65.41124610469419,1926.56,Full,None,Serious Injuries,0.7,5,327,2024-06-03,2025-10-01,31,Adult (18-59),0.0,1.0,0.7,0.0,51.71470180307784
+Ronnie Bailey,Italy,Urban,72.65650503553037,2946.12,Partial,Full,No Risk,0.0,3,59,2025-02-26,2026-05-12,30,Adult (18-59),0.5,0.0,0.3,0.0,35.38655390044163
+Joseph Reeves,Ecuador,Urban,100.0,5132.85,Partial,None,No Risk,0.0,6,134,2024-12-13,2025-09-17,42,Adult (18-59),0.5,1.0,0.3,0.0,66.75977779307033
+Melissa Turner,Rep. of Korea,Rural,56.67072803464366,2981.38,Partial,Partial,No Risk,0.0,3,400,2024-03-22,2025-07-05,65,Elder (60+),0.5,0.5,0.7,0.7,48.92006408712074
+Amanda Smith,Rep. of Korea,Urban,70.13143088798918,4196.63,None,Partial,Minor Injuries,0.3,4,498,2023-12-15,2024-05-13,55,Adult (18-59),1.0,0.5,0.3,0.0,62.067318248549284
+Angela Cunningham,Montenegro,Rural,64.83664343993534,824.54,None,Partial,No Risk,0.0,5,428,2024-02-23,2025-01-09,0,Child (0-17),1.0,0.5,0.7,1.0,61.096192048053744
+Jared Becker,Saint Kitts and Nevis,Rural,75.5249066357584,3112.9,None,None,No Risk,0.0,4,60,2025-02-25,2025-11-06,26,Adult (18-59),1.0,1.0,0.7,0.0,67.30737842857894
+Claire Hardy DDS,Pakistan,Urban,74.67725899821141,4675.11,Partial,Partial,No Risk,0.0,1,226,2024-09-12,2025-09-02,52,Adult (18-59),0.5,0.5,0.3,0.0,47.20065369094337
+Bradley Ewing,Dem. People's Rep. of Korea,Urban,80.63646655810018,4747.77,Partial,Partial,No Risk,0.0,4,226,2024-09-12,2025-08-23,37,Adult (18-59),0.5,0.5,0.3,0.0,51.20707892879728
+Katrina Carter,Côte d'Ivoire,Urban,75.48253826062354,4230.65,Partial,Partial,No Risk,0.0,7,55,2025-03-02,2025-06-01,27,Adult (18-59),0.5,0.5,0.3,0.0,48.350722279621706
+Janet Figueroa,Burkina Faso,Rural,73.27576461860811,3607.9,None,Partial,No Risk,0.0,3,148,2024-11-29,2026-01-31,3,Child (0-17),1.0,0.5,0.7,1.0,65.15660647416247
+James Rice,Viet Nam,Rural,74.93879911619216,2304.9,None,Partial,Minor Injuries,0.3,2,23,2025-04-03,2025-12-26,28,Adult (18-59),1.0,0.5,0.7,0.0,59.704429141456195
+Adam Miller,New Zealand,Urban,93.02917808346776,1724.05,Partial,Partial,No Risk,0.0,4,148,2024-11-29,2025-10-01,83,Elder (60+),0.5,0.5,0.3,0.7,53.2756436581978
+Scott Taylor,Tibetan,Rural,73.5652545965719,5491.37,Full,None,No Risk,0.0,4,252,2024-08-17,2024-12-08,35,Adult (18-59),0.0,1.0,0.7,0.0,52.63276521268406
+Mary Miller,Saudi Arabia,Urban,81.68006610934567,2074.52,Full,Full,No Risk,0.0,4,320,2024-06-10,2025-09-17,45,Adult (18-59),0.0,0.0,0.3,0.0,30.389167524155113
+Anne Bird,Qatar,Urban,93.33791370208552,2734.35,Partial,Full,No Risk,0.0,10,454,2024-01-28,2024-05-24,33,Adult (18-59),0.5,0.0,0.3,0.0,50.539342892505324
+Travis Austin,Kuwait,Rural,52.55452464289811,8139.3,Full,Partial,Minor Injuries,0.3,6,65,2025-02-20,2025-02-27,30,Adult (18-59),0.0,0.5,0.7,0.0,44.17118689255087
+Erika Watkins,Bahrain,Rural,68.6446699989536,6715.54,Partial,None,No Risk,0.0,3,119,2024-12-28,2025-10-12,7,Child (0-17),0.5,1.0,0.7,1.0,66.04685557599463
+Jennifer Armstrong,Tonga,Urban,71.13071301447901,2093.94,Partial,None,Minor Injuries,0.3,6,82,2025-02-03,2026-05-17,3,Child (0-17),0.5,1.0,0.3,1.0,58.23557000049886
+Alexis Wood DVM,Sao Tome and Principe,Urban,65.10215792734508,2482.24,None,Full,No Risk,0.0,3,273,2024-07-27,2025-11-21,47,Adult (18-59),1.0,0.0,0.3,0.0,43.91443785692571
+Kevin Rich,Morocco,Rural,75.753672225087,3600.11,None,None,No Risk,0.0,5,45,2025-03-12,2026-06-05,2,Child (0-17),1.0,1.0,0.7,1.0,73.64457533143931
+Juan Pope,Algeria,Urban,48.838728908339405,7148.8,None,None,Minor Injuries,0.3,3,59,2025-02-26,2026-05-28,11,Child (0-17),1.0,1.0,0.3,1.0,66.84304260310428
+Corey Ramirez,Hungary,Rural,49.489668501375505,3911.54,Partial,Partial,No Risk,0.0,3,332,2024-05-29,2025-05-07,44,Adult (18-59),0.5,0.5,0.7,0.0,43.689150598067314
+Vanessa Villanueva,Zambia,Urban,60.05241377608066,1671.66,None,None,No Risk,0.0,1,68,2025-02-17,2025-07-19,23,Adult (18-59),1.0,1.0,0.3,0.0,52.46902985138549
+Andrea Cole,Armenia,Rural,76.89317902950481,2886.35,None,Partial,No Risk,0.0,2,132,2024-12-15,2025-10-31,35,Adult (18-59),1.0,0.5,0.7,0.0,59.53080276589125
+Denise Steele,Serbia and Kosovo (S/RES/1244 (1999)),Rural,46.754637283951,2126.76,None,None,Minor Injuries,0.3,1,84,2025-02-01,2025-11-03,53,Adult (18-59),1.0,1.0,0.7,0.0,56.48056582580081
+Lindsay Hughes,China,Urban,88.36093269819705,3969.56,None,Full,No Risk,0.0,5,389,2024-04-02,2025-01-30,24,Adult (18-59),1.0,0.0,0.3,0.0,57.4094483258321
+Andrew Gomez,Bangladesh,Urban,54.590277829191635,1309.79,None,None,No Risk,0.0,3,0,2025-04-26,2026-07-12,10,Child (0-17),1.0,1.0,0.3,1.0,55.24242871860861
+Diane Guerra,Cook Islands,Rural,56.86037623393878,1351.56,None,Full,No Risk,0.0,3,213,2024-09-25,2025-10-08,19,Adult (18-59),1.0,0.0,0.7,0.0,43.28822258124851
+Cassandra Jones,Slovenia,Urban,56.05972321038581,2142.08,Partial,None,No Risk,0.0,5,257,2024-08-12,2025-04-09,16,Child (0-17),0.5,1.0,0.3,1.0,50.91569633631001
+Matthew Scott,South Africa,Urban,46.60213947096313,3905.95,Full,None,No Risk,0.0,4,332,2024-05-29,2025-02-01,37,Adult (18-59),0.0,1.0,0.3,0.0,35.66244681233749
+Joyce Mclaughlin,Niger,Urban,70.44103374811137,4735.8,Partial,None,No Risk,0.0,3,476,2024-01-06,2024-03-15,34,Adult (18-59),0.5,1.0,0.3,0.0,56.84372582926444
+Marc Salazar,Qatar,Urban,50.36668936218777,4914.25,Partial,Partial,Minor Injuries,0.3,5,275,2024-07-25,2024-07-29,12,Child (0-17),0.5,0.5,0.3,1.0,49.29852191466744
+Marie Allen,Vanuatu,Urban,95.55677422251722,2992.26,Partial,None,No Risk,0.0,7,345,2024-05-16,2024-09-19,82,Elder (60+),0.5,1.0,0.3,0.7,67.5550441458248
+Mike Salinas,Italy,Urban,57.49811147288401,4783.23,Partial,None,No Risk,0.0,4,24,2025-04-02,2025-11-06,25,Adult (18-59),0.5,1.0,0.3,0.0,48.154179816350606
+Michael Ponce,Mexico,Urban,74.41267656010442,3630.56,None,Partial,No Risk,0.0,1,441,2024-02-10,2024-12-17,9,Child (0-17),1.0,0.5,0.3,1.0,62.437168767876116
+Michael Peterson,"China, Macao SAR",Urban,100.0,3372.3,Full,None,No Risk,0.0,4,415,2024-03-07,2025-01-21,39,Adult (18-59),0.0,1.0,0.3,0.0,55.399200906338464
+Joel Allen,Finland,Urban,65.60005352113915,2384.25,None,None,No Risk,0.0,2,215,2024-09-23,2024-12-05,25,Adult (18-59),1.0,1.0,0.3,0.0,57.793534847860506
+Larry York,Singapore,Rural,65.77485831943997,1984.85,Partial,Partial,Minor Injuries,0.3,5,411,2024-03-11,2025-04-14,58,Adult (18-59),0.5,0.5,0.7,0.0,51.29105785507883
+Diane Pittman,Luxembourg,Urban,64.39536141915725,5684.99,Full,Partial,No Risk,0.0,6,428,2024-02-23,2025-05-09,31,Adult (18-59),0.0,0.5,0.3,0.0,39.93427788577297
+Kevin Evans,Iceland,Rural,60.21958182170535,4174.64,None,None,No Risk,0.0,2,335,2024-05-26,2024-06-21,41,Adult (18-59),1.0,1.0,0.7,0.0,65.10633141474125
+Shelly Keith,Philippines,Urban,69.2247930749676,3737.17,Partial,Full,No Risk,0.0,4,169,2024-11-08,2025-07-02,47,Adult (18-59),0.5,0.0,0.3,0.0,37.14211140019282
+Katherine Tanner,Albania,Rural,60.69868604022117,6284.11,None,Partial,No Risk,0.0,4,394,2024-03-28,2025-02-13,63,Elder (60+),1.0,0.5,0.7,0.7,66.65121659608995
+Timothy Ayers,Dem. People's Rep. of Korea,Urban,63.29130775438648,2788.22,None,Partial,Minor Injuries,0.3,6,445,2024-02-06,2024-12-20,57,Adult (18-59),1.0,0.5,0.3,0.0,57.66021042479932
+Misty Bradley,Viet Nam,Rural,79.956166542506,5932.01,Full,Partial,No Risk,0.0,8,117,2024-12-30,2025-03-06,49,Adult (18-59),0.0,0.5,0.7,0.0,49.14457035835055
+Mrs. Kelly Marshall,Poland,Urban,52.58525612087763,7793.57,Partial,None,No Risk,0.0,4,293,2024-07-07,2025-11-18,13,Child (0-17),0.5,1.0,0.3,1.0,59.250684639193196
+Christopher Rowe,Côte d'Ivoire,Urban,61.626438155985994,4920.06,Full,Partial,No Risk,0.0,3,368,2024-04-23,2024-12-19,4,Child (0-17),0.0,0.5,0.3,1.0,40.309833575707295
+Anthony Stevens,Dem. People's Rep. of Korea,Rural,68.97549605110362,2707.44,Full,Partial,No Risk,0.0,7,484,2023-12-29,2024-08-31,6,Child (0-17),0.0,0.5,0.7,1.0,47.57672480936953
+Joseph Barrett,Angola,Rural,81.45743351088814,2453.89,Partial,Full,No Risk,0.0,2,202,2024-10-06,2025-02-15,16,Child (0-17),0.5,0.0,0.7,1.0,48.67462696359897
+Robert Young,Cameroon,Rural,75.51654890577348,4500.29,None,Full,No Risk,0.0,1,402,2024-03-20,2025-05-02,2,Child (0-17),1.0,0.0,0.7,1.0,61.468599508770424
+Karen Matthews,Côte d'Ivoire,Rural,79.54604901397599,3650.03,Full,Partial,No Risk,0.0,5,77,2025-02-08,2025-11-13,30,Adult (18-59),0.0,0.5,0.7,0.0,42.95996795611866
+Dustin Sanders,French Guiana,Rural,63.98605021984231,3389.08,Partial,None,No Risk,0.0,4,227,2024-09-11,2025-01-30,14,Child (0-17),0.5,1.0,0.7,1.0,60.17132313092224
+Antonio Yang,Cuba,Urban,57.34026878240715,2262.96,None,Full,No Risk,0.0,1,469,2024-01-13,2024-04-15,11,Child (0-17),1.0,0.0,0.3,1.0,46.49918457095712
+John Gardner,Ecuador,Rural,76.60299751906093,2545.29,None,None,No Risk,0.0,1,39,2025-03-18,2025-06-29,41,Adult (18-59),1.0,1.0,0.7,0.0,64.84477147991343
+Christopher Clark,Somalia,Urban,72.41985724760596,1347.66,None,Full,Minor Injuries,0.3,6,109,2025-01-07,2025-03-25,9,Child (0-17),1.0,0.0,0.3,1.0,52.6875325729542
+Rita Medina,Cabo Verde,Urban,67.18304268274046,5652.42,Partial,Partial,Minor Injuries,0.3,3,389,2024-04-02,2024-06-18,44,Adult (18-59),0.5,0.5,0.3,0.0,51.856469002926175
+Jennifer Silva,Palestinian,Rural,60.01283408473818,3889.17,None,Partial,Minor Injuries,0.3,2,90,2025-01-26,2025-10-01,24,Adult (18-59),1.0,0.5,0.7,0.0,57.5834500962795
+James Jones,Somalia,Rural,64.62079772727206,2983.21,Partial,None,Minor Injuries,0.3,3,392,2024-03-30,2024-07-11,16,Child (0-17),0.5,1.0,0.7,1.0,63.79622174521027
+James Summers,Palau,Urban,77.88942655289692,7895.16,None,Full,No Risk,0.0,2,165,2024-11-12,2025-10-14,43,Adult (18-59),1.0,0.0,0.3,0.0,56.435108165763204
+Lee Fox,Stateless,Urban,82.2311901619119,1370.23,Partial,Partial,Minor Injuries,0.3,5,181,2024-10-27,2025-03-24,32,Adult (18-59),0.5,0.5,0.3,0.0,49.03552489294921
+Laura Ramirez,Bahamas,Urban,60.50917519535538,1850.74,Full,Partial,No Risk,0.0,3,72,2025-02-13,2025-02-25,25,Adult (18-59),0.0,0.5,0.3,0.0,26.60100402344495
+Andrew Allen,Saint Kitts and Nevis,Urban,56.93874536240256,3671.11,Partial,Full,No Risk,0.0,4,180,2024-10-28,2024-12-01,8,Child (0-17),0.5,0.0,0.3,1.0,37.573777857323485
+Mike Herrera,Sudan,Urban,100.0,5021.29,Full,Partial,No Risk,0.0,4,248,2024-08-21,2025-09-24,79,Elder (60+),0.0,0.5,0.3,0.7,52.59479885546848
+Samantha Jones,Central African Rep.,Urban,75.14983935686985,1960.91,None,None,Critical Condition,1.0,3,80,2025-02-05,2026-02-04,70,Elder (60+),1.0,1.0,0.3,0.7,73.31059127779328
+Damon Golden,Ireland,Rural,69.62537175707602,3634.02,Full,None,No Risk,0.0,5,78,2025-02-07,2025-03-28,5,Child (0-17),0.0,1.0,0.7,1.0,51.757205069094844
+Michelle Osborne,United Kingdom,Rural,32.92823072537029,3514.39,Full,None,No Risk,0.0,5,303,2024-06-27,2025-05-12,5,Child (0-17),0.0,1.0,0.7,1.0,40.16851052222643
+Nathan Mcmillan,Colombia,Rural,73.41710356748986,2207.28,None,None,No Risk,0.0,5,358,2024-05-03,2025-07-05,42,Adult (18-59),1.0,1.0,0.7,0.0,68.48623348422318
+Cody Simpson,Monaco,Rural,80.46166354317273,1879.46,Partial,Partial,No Risk,0.0,6,149,2024-11-28,2025-06-24,68,Elder (60+),0.5,0.5,0.7,0.7,54.998741359783665
+George Stewart,Senegal,Urban,80.03857019030467,1366.37,None,Partial,No Risk,0.0,5,429,2024-02-22,2025-04-23,68,Elder (60+),1.0,0.5,0.3,0.7,61.194389264852376
+Sherri Hayes,Austria,Urban,77.15337744690038,842.98,None,None,Minor Injuries,0.3,3,277,2024-07-23,2025-07-18,5,Child (0-17),1.0,1.0,0.3,1.0,68.58205906222143
+Brooke Hart,Sierra Leone,Rural,79.02935813077343,2037.84,Partial,Full,Minor Injuries,0.3,4,299,2024-07-01,2024-09-01,58,Adult (18-59),0.5,0.0,0.7,0.0,47.130845218206645
+Justin Day,Côte d'Ivoire,Urban,69.52523233921082,3111.62,Full,Partial,No Risk,0.0,4,475,2024-01-07,2024-01-21,7,Child (0-17),0.0,0.5,0.3,1.0,41.726632307942694
+Michael Bowman,Cambodia,Urban,100.0,3277.07,Partial,Partial,No Risk,0.0,2,116,2024-12-31,2026-05-09,51,Adult (18-59),0.5,0.5,0.3,0.0,53.632600075644056
+Henry Maldonado MD,Tonga,Urban,40.94259101223699,3110.12,None,Partial,Serious Injuries,0.7,7,87,2025-01-29,2026-05-20,7,Child (0-17),1.0,0.5,0.3,1.0,55.893942994309064
+Joan Murphy,Dominica,Rural,53.053234716006045,1962.67,None,Partial,No Risk,0.0,8,301,2024-06-29,2025-05-14,43,Adult (18-59),1.0,0.5,0.7,0.0,54.093854686853994
+Michelle Wood,Curaçao,Urban,52.31421166475347,2552.76,None,Partial,No Risk,0.0,6,81,2025-02-04,2026-06-12,10,Child (0-17),1.0,0.5,0.3,1.0,51.53369288148656
+Philip Martinez,Papua New Guinea,Urban,93.17675562982969,3337.76,Full,None,Critical Condition,1.0,5,154,2024-11-23,2026-01-05,83,Elder (60+),0.0,1.0,0.3,0.7,64.25030421082509
+Jacqueline Turner,Venezuela (Bolivarian Republic of),Urban,63.86372894781763,2446.03,None,None,No Risk,0.0,6,114,2025-01-02,2026-04-24,1,Child (0-17),1.0,1.0,0.3,1.0,63.468176532632015
+Mr. Joshua Johnson,Cuba,Rural,55.32459514032076,5889.04,Partial,Partial,No Risk,0.0,3,456,2024-01-26,2025-02-21,58,Adult (18-59),0.5,0.5,0.7,0.0,50.53295766865873
+Christopher Spencer,Venezuela (Bolivarian Republic of),Urban,66.66156803981465,3881.43,Partial,None,No Risk,0.0,3,178,2024-10-30,2025-05-03,18,Adult (18-59),0.5,1.0,0.3,0.0,50.9751639235627
+Jessica Potts,Chile,Rural,73.47424666892519,4103.6,None,Partial,No Risk,0.0,4,107,2025-01-09,2025-03-19,25,Adult (18-59),1.0,0.5,0.7,0.0,61.23730868064582
+Mrs. Katie Stevens,Kiribati,Urban,78.94377377737592,3836.82,Partial,Partial,Minor Injuries,0.3,4,209,2024-09-29,2024-12-13,24,Adult (18-59),0.5,0.5,0.3,0.0,51.82530476344718
+Beverly Johnson,Somalia,Urban,82.84544341358463,2116.81,None,Partial,Minor Injuries,0.3,6,87,2025-01-29,2026-05-01,70,Elder (60+),1.0,0.5,0.3,0.7,63.676638040516956
+Mark Bishop,Bulgaria,Rural,96.49504947456715,1230.69,Partial,Partial,No Risk,0.0,9,40,2025-03-17,2025-06-09,0,Child (0-17),0.5,0.5,0.7,1.0,61.903430322159245
+Alice Hall,Turkey,Urban,82.04703309280187,4511.16,Partial,Full,No Risk,0.0,2,64,2025-02-21,2025-03-08,50,Adult (18-59),0.5,0.0,0.3,0.0,41.08873085600042
+Charles Johnson,Mongolia,Urban,25.955181472143096,2001.61,Partial,Full,No Risk,0.0,4,78,2025-02-07,2026-05-18,3,Child (0-17),0.5,0.0,0.3,1.0,22.143988775412865
+Kayla Anderson,Eritrea,Rural,100.0,3776.58,None,None,No Risk,0.0,4,336,2024-05-25,2025-01-04,48,Adult (18-59),1.0,1.0,0.7,0.0,80.3117545536464
+Kara Christian,South Sudan,Urban,100.0,2277.95,Partial,Partial,Serious Injuries,0.7,2,398,2024-03-24,2025-02-02,19,Adult (18-59),0.5,0.5,0.3,0.0,61.71633956288485
+Katie Torres,Cameroon,Urban,69.50202018936915,1355.03,Full,Partial,No Risk,0.0,7,204,2024-10-04,2025-11-16,51,Adult (18-59),0.0,0.5,0.3,0.0,32.6220929149734
+Karen Walker,Saint-Pierre-et-Miquelon,Urban,58.886061857198094,2234.88,None,Partial,No Risk,0.0,5,409,2024-03-13,2025-04-26,11,Child (0-17),1.0,0.5,0.3,1.0,56.146779739323684
+Victor Haley,Bermuda,Rural,42.42925256874673,3154.68,Partial,Partial,No Risk,0.0,2,319,2024-06-11,2025-02-12,19,Adult (18-59),0.5,0.5,0.7,0.0,39.06580737335826
+Angel Thomas,Costa Rica,Urban,67.73218284106532,3008.11,Partial,Partial,No Risk,0.0,4,192,2024-10-16,2025-02-06,80,Elder (60+),0.5,0.5,0.3,0.7,46.550742567901146
+Raymond Ayala,United States of America,Rural,72.73758005011403,2932.86,Partial,None,No Risk,0.0,3,371,2024-04-20,2024-10-20,54,Adult (18-59),0.5,1.0,0.7,0.0,58.5136253484161
+Gregory Williams,Burundi,Urban,83.89145638687306,2821.16,None,Full,No Risk,0.0,5,352,2024-05-09,2025-07-24,9,Child (0-17),1.0,0.0,0.3,1.0,58.38362624246932
+Patrick Monroe,Austria,Urban,90.33774338114652,3225.8,Partial,Partial,Minor Injuries,0.3,2,281,2024-07-19,2024-09-13,57,Adult (18-59),0.5,0.5,0.3,0.0,54.60455060075091
+Jose Munoz,Ecuador,Urban,79.56364695541419,2324.93,Partial,Partial,Minor Injuries,0.3,4,307,2024-06-23,2025-10-12,12,Child (0-17),0.5,0.5,0.3,1.0,55.40820376668363
+Marc Jones,Kuwait,Urban,74.24212538673055,6288.74,None,Partial,No Risk,0.0,3,463,2024-01-19,2025-01-28,62,Elder (60+),1.0,0.5,0.3,0.7,66.8242882784225
+Holly Sanchez,Albania,Urban,60.94081231295599,2123.49,Partial,None,No Risk,0.0,4,420,2024-03-02,2025-05-10,38,Adult (18-59),0.5,1.0,0.3,0.0,48.77086922545253
+Joseph Conrad,Montenegro,Rural,43.264882228257385,3494.76,None,None,No Risk,0.0,1,313,2024-06-17,2024-09-25,42,Adult (18-59),1.0,1.0,0.7,0.0,56.85162602284559
+Ryan Taylor,Nicaragua,Urban,55.69237430048258,7465.28,None,Partial,Serious Injuries,0.7,3,217,2024-09-21,2025-10-19,2,Child (0-17),1.0,0.5,0.3,1.0,68.01873947072386
+Jose Frazier,Wallis and Futuna Islands ,Rural,67.37987143258721,2452.97,Partial,Partial,No Risk,0.0,5,88,2025-01-28,2026-04-09,46,Adult (18-59),0.5,0.5,0.7,0.0,46.470718801967095
+Jason Anderson,Thailand,Urban,54.36276116981567,3294.87,Full,Partial,No Risk,0.0,9,64,2025-02-21,2026-01-13,57,Adult (18-59),0.0,0.5,0.3,0.0,30.08090487266939
+Rebecca Bentley,Lithuania,Urban,66.68636880201716,1735.72,Full,Partial,No Risk,0.0,9,471,2024-01-11,2024-01-16,66,Elder (60+),0.0,0.5,0.3,0.7,39.51891638072024
+Laurie Martin,Bhutan,Rural,64.60781273714717,1337.72,Partial,Full,Minor Injuries,0.3,4,491,2023-12-22,2025-03-10,21,Adult (18-59),0.5,0.0,0.7,0.0,42.477438465184555
+Melissa Dickson,Malaysia,Urban,99.09643085569674,5801.34,None,Partial,No Risk,0.0,4,223,2024-09-15,2025-01-12,24,Adult (18-59),1.0,0.5,0.3,0.0,69.86473962984635
+Eric Harris,Denmark,Urban,62.86689241268227,2089.87,Full,Partial,No Risk,0.0,9,251,2024-08-18,2025-04-12,76,Elder (60+),0.0,0.5,0.3,0.7,36.51564657958137
+Mark Woods,Yemen,Urban,87.46872798526351,3688.01,None,Partial,Minor Injuries,0.3,3,371,2024-04-20,2024-09-04,3,Child (0-17),1.0,0.5,0.3,1.0,70.79766158120756
+Sheri Tran,Nicaragua,Urban,58.69119964573642,4233.48,Partial,Partial,No Risk,0.0,10,485,2023-12-28,2024-09-26,85,Elder (60+),0.5,0.5,0.3,0.7,51.585324438475496
+Corey Shelton,Nepal,Urban,65.15641696501103,4225.1,Partial,Full,No Risk,0.0,5,309,2024-06-21,2025-01-28,8,Child (0-17),0.5,0.0,0.3,1.0,43.43442724429701
+Chelsea Smith,Cyprus,Urban,70.25644376937106,1806.26,Partial,Partial,No Risk,0.0,3,225,2024-09-13,2025-03-20,21,Adult (18-59),0.5,0.5,0.3,0.0,41.674237007369726
+Rebecca Velazquez,Namibia,Urban,57.49844452996491,1761.34,Partial,None,Minor Injuries,0.3,4,414,2024-03-08,2024-06-18,53,Adult (18-59),0.5,1.0,0.3,0.0,49.80289400594361
+Peter Preston,Belize,Rural,63.77592967688007,2523.31,Partial,None,Serious Injuries,0.7,10,193,2024-10-15,2025-08-17,57,Adult (18-59),0.5,1.0,0.7,0.0,63.582082946972726
+Patrick Choi,Bosnia and Herzegovina,Rural,37.42431687878105,1739.88,Partial,Full,Minor Injuries,0.3,10,426,2024-02-25,2024-07-21,35,Adult (18-59),0.5,0.0,0.7,0.0,35.76259126514725
+Michelle Stone,Maldives,Urban,75.09664619964988,2082.03,None,None,Minor Injuries,0.3,4,47,2025-03-10,2025-09-29,30,Adult (18-59),1.0,1.0,0.3,0.0,63.22686983950598
+Tristan Martinez,New Caledonia,Urban,38.087732784247706,4068.36,None,Partial,Minor Injuries,0.3,3,143,2024-12-04,2025-10-25,31,Adult (18-59),1.0,0.5,0.3,0.0,45.836530600369336
+Michael Edwards,Guyana,Urban,57.43138319758892,5837.88,Partial,None,Minor Injuries,0.3,1,313,2024-06-17,2025-04-12,57,Adult (18-59),0.5,1.0,0.3,0.0,54.1854875473188
+Edward Henderson,Somalia,Rural,100.0,2637.14,Partial,Full,No Risk,0.0,5,264,2024-08-05,2024-11-04,34,Adult (18-59),0.5,0.0,0.7,0.0,53.167202936231384
+John Valentine,Maldives,Rural,65.97874170836691,1756.21,Partial,Partial,No Risk,0.0,6,115,2025-01-01,2025-03-09,41,Adult (18-59),0.5,0.5,0.7,0.0,45.56501569685675
+Roger Stevens,British Virgin Islands,Urban,50.67945567235145,2296.52,Partial,Partial,No Risk,0.0,6,352,2024-05-09,2025-05-28,89,Elder (60+),0.5,0.5,0.3,0.7,41.69118712199086
+Andrea Church,Singapore,Urban,74.49617654008614,2423.66,None,Full,No Risk,0.0,1,90,2025-01-26,2025-01-31,33,Adult (18-59),1.0,0.0,0.3,0.0,44.3608455677182
+Nancy Dickerson,United Arab Emirates,Rural,53.734406163190414,5473.6,Partial,Partial,No Risk,0.0,5,457,2024-01-25,2024-08-10,43,Adult (18-59),0.5,0.5,0.7,0.0,50.34146088167193
+Shawn Sanders,Bolivia (Plurinational State of),Rural,45.31571814798653,2098.56,Partial,Partial,No Risk,0.0,3,498,2023-12-15,2024-01-10,52,Adult (18-59),0.5,0.5,0.7,0.0,40.64819848708894
+Regina Myers,Burundi,Urban,77.16335757274022,3947.52,None,Partial,Minor Injuries,0.3,10,425,2024-02-26,2024-04-29,9,Child (0-17),1.0,0.5,0.3,1.0,71.84969281917742
+Michael Kidd,Bulgaria,Rural,49.59076735645857,5981.88,Partial,Partial,No Risk,0.0,3,143,2024-12-04,2025-08-08,15,Child (0-17),0.5,0.5,0.7,1.0,50.434518470558906
+Adrian Moore,Algeria,Rural,69.33033093196674,3506.65,Partial,Partial,Minor Injuries,0.3,3,321,2024-06-09,2025-05-09,42,Adult (18-59),0.5,0.5,0.7,0.0,53.24516157698335
+Emily Cole,Maldives,Urban,73.36891995344862,5391.65,Partial,None,No Risk,0.0,2,19,2025-04-07,2025-05-14,46,Adult (18-59),0.5,1.0,0.3,0.0,53.945435076785564
+Lauren Bishop,Marshall Islands,Urban,81.5577562667776,2765.6,None,Partial,No Risk,0.0,5,287,2024-07-13,2025-01-12,20,Adult (18-59),1.0,0.5,0.3,0.0,59.2702440088531
+Matthew Berry,Western Sahara,Rural,56.550471436507365,2011.16,None,None,Critical Condition,1.0,3,195,2024-10-13,2025-05-25,37,Adult (18-59),1.0,1.0,0.7,0.0,69.13935753313774
+Amy Garza,Czech Rep.,Urban,56.87886826955726,1570.6,Partial,Partial,No Risk,0.0,2,224,2024-09-14,2025-03-23,11,Child (0-17),0.5,0.5,0.3,1.0,40.73018118654342
+Jessica Campbell,Martinique,Urban,79.98878899993876,2764.2,Partial,None,No Risk,0.0,2,295,2024-07-05,2024-08-10,86,Elder (60+),0.5,1.0,0.3,0.7,58.09836652125334
+Anthony Salazar,Madagascar,Urban,64.31828669900179,6037.4,Full,Partial,No Risk,0.0,3,306,2024-06-24,2024-09-15,35,Adult (18-59),0.0,0.5,0.3,0.0,37.63139704204788
+Sandy Johnson,Iraq,Urban,71.22928272496559,5121.65,None,None,Serious Injuries,0.7,3,258,2024-08-11,2025-05-07,20,Adult (18-59),1.0,1.0,0.3,0.0,72.62703956965989
+Rachel Brown,Thailand,Urban,62.35202625577031,2027.88,Partial,Partial,Minor Injuries,0.3,3,72,2025-02-13,2025-07-14,29,Adult (18-59),0.5,0.5,0.3,0.0,40.5933455390285
+Jade Allen,Belarus,Urban,78.55313079258615,3547.52,Partial,Full,No Risk,0.0,5,99,2025-01-17,2025-09-24,38,Adult (18-59),0.5,0.0,0.3,0.0,40.13301713123231
+Zachary Smith,Monaco,Urban,84.97804305817918,2225.43,None,None,No Risk,0.0,5,137,2024-12-10,2025-01-10,8,Child (0-17),1.0,1.0,0.3,1.0,70.60197499156168
+Steven Barnett,Sudan,Urban,63.10951043160695,741.88,Partial,None,Serious Injuries,0.7,4,346,2024-05-15,2025-04-23,14,Child (0-17),0.5,1.0,0.3,1.0,58.43546372007488
+Keith Payne,China,Rural,76.39308813650925,1306.5,None,Partial,No Risk,0.0,4,56,2025-03-01,2025-09-15,5,Child (0-17),1.0,0.5,0.7,1.0,61.9507127236483
+Katherine Sullivan,Equatorial Guinea,Urban,74.28916629680037,1459.47,Partial,Partial,No Risk,0.0,3,206,2024-10-02,2025-03-06,54,Adult (18-59),0.5,0.5,0.3,0.0,42.37950518373062
+Victor Flores,Italy,Rural,77.2047214194178,5220.14,Partial,Full,Serious Injuries,0.7,5,391,2024-03-31,2024-05-03,52,Adult (18-59),0.5,0.0,0.7,0.0,57.458825261664536
+Jessica Hawkins,Germany,Rural,85.06625972969137,3617.6,Full,Partial,Minor Injuries,0.3,3,375,2024-04-16,2025-05-25,88,Elder (60+),0.0,0.5,0.7,0.7,53.32292990201869
+Julie Hart,Ghana,Urban,60.53132633365924,2541.13,Partial,None,No Risk,0.0,4,166,2024-11-11,2025-05-22,36,Adult (18-59),0.5,1.0,0.3,0.0,46.804540085648064
+Timothy Perry,Nauru,Urban,63.17191587235916,3715.52,None,Partial,No Risk,0.0,4,68,2025-02-17,2025-10-18,24,Adult (18-59),1.0,0.5,0.3,0.0,51.346204790360204
+Billy Pittman,Montenegro,Urban,49.52861866168555,4630.61,None,Partial,Minor Injuries,0.3,4,361,2024-04-30,2025-02-22,68,Elder (60+),1.0,0.5,0.3,0.7,57.29876630718485
+Kenneth Suarez,South Sudan,Rural,94.14250670790764,1875.2,Partial,Full,No Risk,0.0,3,7,2025-04-19,2025-08-22,86,Elder (60+),0.5,0.0,0.7,0.7,49.48629031671123
+Kiara Rojas,Ethiopia,Urban,60.140467519806414,7524.92,Partial,Partial,No Risk,0.0,7,378,2024-04-13,2024-06-16,51,Adult (18-59),0.5,0.5,0.3,0.0,51.60680524334922
+William Norris,Algeria,Urban,86.21605022544972,5029.98,Partial,Partial,No Risk,0.0,4,162,2024-11-15,2025-07-04,21,Adult (18-59),0.5,0.5,0.3,0.0,53.129983674496295
+Joshua Walker MD,Pakistan,Rural,57.28067792022886,2338.14,Full,Full,Minor Injuries,0.3,5,183,2024-10-25,2024-10-30,8,Child (0-17),0.0,0.0,0.7,1.0,33.969919370966025
+Ryan Ross,The former Yugoslav Republic of Macedonia,Urban,71.89969231177103,2655.72,Partial,Partial,No Risk,0.0,4,125,2024-12-22,2026-01-15,19,Adult (18-59),0.5,0.5,0.3,0.0,43.31634444508266
+William Rodriguez,Paraguay,Rural,65.30179172770012,3759.09,Full,Partial,No Risk,0.0,3,418,2024-03-04,2024-10-07,6,Child (0-17),0.0,0.5,0.7,1.0,45.15748679149316
+Mariah Parker,Syrian Arab Rep.,Urban,70.5073502017405,1899.66,Full,None,Serious Injuries,0.7,3,473,2024-01-09,2025-03-12,44,Adult (18-59),0.0,1.0,0.3,0.0,48.90974337104513
+Tracy Velez,Malawi,Rural,59.542983642824915,2986.41,Full,Partial,Minor Injuries,0.3,2,295,2024-07-05,2024-12-07,32,Adult (18-59),0.0,0.5,0.7,0.0,37.890121543679776
+Misty Brown,Norway,Urban,68.45604756374001,3163.01,None,Full,Minor Injuries,0.3,5,309,2024-06-21,2025-05-21,2,Child (0-17),1.0,0.0,0.3,1.0,55.81435440033078
+Terri Stephenson,Trinidad and Tobago,Rural,75.65816411696157,6019.89,Full,Partial,Minor Injuries,0.3,2,11,2025-04-15,2026-05-18,66,Elder (60+),0.0,0.5,0.7,0.7,49.80750201386529
+Allen Jackson,Iceland,Urban,71.02597589278889,4522.92,None,Full,No Risk,0.0,7,135,2024-12-12,2025-09-05,49,Adult (18-59),1.0,0.0,0.3,0.0,50.50327854201401
+Brian Ballard,Germany,Rural,70.21508186622779,4137.63,Partial,Partial,Minor Injuries,0.3,1,244,2024-08-25,2025-07-14,26,Adult (18-59),0.5,0.5,0.7,0.0,52.78919334299168
+Ashley Frazier,Kyrgyzstan,Urban,89.01999971718055,2486.76,Partial,Full,Serious Injuries,0.7,5,311,2024-06-19,2025-03-04,4,Child (0-17),0.5,0.0,0.3,1.0,56.29745781152102
+Deborah Hensley,Albania,Rural,59.91564815309543,1478.04,Full,Partial,No Risk,0.0,3,166,2024-11-11,2026-02-21,41,Adult (18-59),0.0,0.5,0.7,0.0,31.672869822452792
+Anthony Young,Guinea-Bissau,Rural,79.07234495249722,1555.69,Partial,Partial,Minor Injuries,0.3,2,305,2024-06-25,2024-12-16,38,Adult (18-59),0.5,0.5,0.7,0.0,52.7578258151867
+Phillip Perry,Sao Tome and Principe,Rural,56.93976003946137,1980.78,None,None,Serious Injuries,0.7,1,153,2024-11-24,2026-03-31,79,Elder (60+),1.0,1.0,0.7,0.7,68.20004990463607
+Matthew Roberts,Grenada,Urban,53.92792020511746,6311.45,Full,Partial,No Risk,0.0,7,284,2024-07-16,2024-11-22,23,Adult (18-59),0.0,0.5,0.3,0.0,36.25045809345198
+Mackenzie Wilson,Fiji,Urban,52.71150456989798,2893.19,None,None,No Risk,0.0,1,257,2024-08-12,2025-06-11,12,Child (0-17),1.0,1.0,0.3,1.0,58.755081531745866
+Christy White,Solomon Islands,Urban,65.5152665442053,1808.06,Partial,Partial,No Risk,0.0,5,300,2024-06-30,2025-06-10,46,Adult (18-59),0.5,0.5,0.3,0.0,41.777411114965844
+Mary Bruce,Bolivia (Plurinational State of),Urban,80.44759845052354,1294.51,Full,Full,No Risk,0.0,3,231,2024-09-07,2024-12-23,84,Elder (60+),0.0,0.0,0.3,0.7,30.630330224057506
+Steven Love,Ireland,Urban,88.96155628285229,3037.63,Partial,None,Minor Injuries,0.3,2,222,2024-09-16,2025-10-08,46,Adult (18-59),0.5,1.0,0.3,0.0,60.676379138386864
+Gregory Hampton,Armenia,Rural,83.26606102404864,1666.53,None,Full,Minor Injuries,0.3,4,389,2024-04-02,2025-02-14,9,Child (0-17),1.0,0.0,0.7,1.0,63.95926934933493
+Amber Barnett,Oman,Rural,71.5734059739631,1367.94,None,None,No Risk,0.0,3,497,2023-12-16,2025-04-01,70,Elder (60+),1.0,1.0,0.7,0.7,70.12170203667716
+Ryan Erickson,Guinea-Bissau,Rural,55.181315157286576,2908.02,Full,Full,No Risk,0.0,8,153,2024-11-24,2026-02-23,0,Child (0-17),0.0,0.0,0.7,1.0,32.54712941089318
+Anna Sweeney,Egypt,Urban,66.31244883080272,2864.89,None,Partial,No Risk,0.0,2,231,2024-09-07,2024-12-05,86,Elder (60+),1.0,0.5,0.3,0.7,55.053398559697186
+Kimberly Kelly,Liechtenstein,Rural,68.92066307621899,3513.16,Full,Partial,Minor Injuries,0.3,5,358,2024-05-03,2024-07-14,49,Adult (18-59),0.0,0.5,0.7,0.0,44.58541848480125
+James Terry,Mauritania,Rural,40.007198555478865,1836.92,Partial,None,Serious Injuries,0.7,6,398,2024-03-24,2024-07-29,26,Adult (18-59),0.5,1.0,0.7,0.0,53.38839090683534
+Jessica Adkins,Chad,Urban,67.87088441021874,2243.61,None,Full,No Risk,0.0,3,452,2024-01-30,2024-02-05,6,Child (0-17),1.0,0.0,0.3,1.0,51.31816610883344
+Cheryl Marquez,Sweden,Urban,44.66640237060882,4114.3,Partial,None,Minor Injuries,0.3,4,182,2024-10-26,2025-12-29,87,Elder (60+),0.5,1.0,0.3,0.7,50.30550424140036
+Samantha Perez,Saint Vincent and the Grenadines,Urban,66.57888781322079,1519.15,None,Partial,No Risk,0.0,5,470,2024-01-12,2024-03-21,66,Elder (60+),1.0,0.5,0.3,0.7,56.87041824112783
+Eric Calhoun,Puerto Rico,Urban,82.57897957294271,5073.77,None,None,Minor Injuries,0.3,4,374,2024-04-17,2025-03-24,63,Elder (60+),1.0,1.0,0.3,0.7,77.97512631089386
+Cheryl Smith,Uruguay,Urban,86.23999830574618,7018.21,Partial,Full,No Risk,0.0,3,52,2025-03-05,2026-02-21,79,Elder (60+),0.5,0.0,0.3,0.7,50.938449154722306
+Patrick Whitney,Rwanda,Urban,57.78315393821111,3919.02,None,Partial,Minor Injuries,0.3,2,188,2024-10-20,2025-09-27,3,Child (0-17),1.0,0.5,0.3,1.0,57.787129713024186
+Mr. Darrell Anthony Jr.,Chile,Urban,58.92433562257942,1226.15,None,Partial,Serious Injuries,0.7,4,222,2024-09-16,2024-12-17,24,Adult (18-59),1.0,0.5,0.3,0.0,53.982479936163315
+William Johnson,Bolivia (Plurinational State of),Urban,76.11354279835747,3498.0,None,Partial,Minor Injuries,0.3,5,358,2024-05-03,2025-06-23,32,Adult (18-59),1.0,0.5,0.3,0.0,62.23080010768089
+Ricardo Kline,French Polynesia,Rural,68.17827501366406,735.31,None,Full,Minor Injuries,0.3,4,212,2024-09-26,2025-09-25,10,Child (0-17),1.0,0.0,0.7,1.0,54.966790663248446
+Jason Singleton,United Arab Emirates,Urban,76.58254209113804,4893.27,None,None,Minor Injuries,0.3,3,49,2025-03-08,2026-01-01,22,Adult (18-59),1.0,1.0,0.3,0.0,68.12858023646542
+Timothy Carey,Haiti,Rural,80.80946317972113,3088.68,None,Full,Serious Injuries,0.7,4,204,2024-10-04,2025-11-23,34,Adult (18-59),1.0,0.0,0.7,0.0,62.66818724683741
+Elizabeth Austin,Saint Vincent and the Grenadines,Urban,73.10838062737179,3527.18,Partial,Partial,No Risk,0.0,4,473,2024-01-09,2025-02-04,69,Elder (60+),0.5,0.5,0.3,0.7,52.25971445382341
+Jacob Kim,Vanuatu,Rural,77.44989882350711,7450.92,Partial,Partial,Minor Injuries,0.3,8,118,2024-12-29,2025-09-23,66,Elder (60+),0.5,0.5,0.7,0.7,67.36318739294013
+Jamie Miller,Sierra Leone,Urban,71.8205130135476,4051.45,Partial,None,Serious Injuries,0.7,2,419,2024-03-03,2024-05-14,0,Child (0-17),0.5,1.0,0.3,1.0,67.04130825197223
+Noah Gibson,Viet Nam,Rural,76.15586269180716,1280.22,Partial,Partial,No Risk,0.0,9,418,2024-03-04,2025-07-12,45,Adult (18-59),0.5,0.5,0.7,0.0,53.214706259244494
+Rita Wiley,Malawi,Rural,59.48635233555754,5918.78,None,Partial,Minor Injuries,0.3,3,418,2024-03-04,2024-10-12,31,Adult (18-59),1.0,0.5,0.7,0.0,64.75048452197572
+Rachel Ballard,Mexico,Urban,38.86648306319889,2755.45,Partial,Partial,No Risk,0.0,3,254,2024-08-15,2024-12-06,12,Child (0-17),0.5,0.5,0.3,1.0,36.95422839422389
+Sonia Mcpherson,Saint-Pierre-et-Miquelon,Urban,73.37714209666288,1911.39,Partial,Partial,No Risk,0.0,3,389,2024-04-02,2025-06-07,22,Adult (18-59),0.5,0.5,0.3,0.0,44.656084451830154
+Joseph Webster,Finland,Rural,76.6824036023185,4576.54,None,None,Minor Injuries,0.3,7,113,2025-01-03,2026-02-21,29,Adult (18-59),1.0,1.0,0.7,0.0,75.47748491068275
+Chad Bishop,Costa Rica,Urban,77.32030914006603,5231.29,Partial,Partial,Serious Injuries,0.7,6,102,2025-01-14,2025-06-05,87,Elder (60+),0.5,0.5,0.3,0.7,61.18669112866459
+Paul Solomon,Grenada,Urban,69.5541247096126,4504.63,None,None,Serious Injuries,0.7,6,78,2025-02-07,2025-06-07,35,Adult (18-59),1.0,1.0,0.3,0.0,70.79923373863804
+Michelle Brooks,Antigua and Barbuda,Rural,43.24135627966714,1352.74,None,None,No Risk,0.0,9,480,2024-01-02,2025-03-10,46,Adult (18-59),1.0,1.0,0.7,0.0,59.23495153991843
+Erin Hutchinson,Sudan,Urban,60.04068176377149,2095.42,Partial,None,No Risk,0.0,2,98,2025-01-18,2025-11-14,27,Adult (18-59),0.5,1.0,0.3,0.0,44.05663345493626
+Christina Chaney DVM,Aruba,Urban,47.37602614159665,4938.31,Full,None,No Risk,0.0,5,387,2024-04-04,2024-05-02,22,Adult (18-59),0.0,1.0,0.3,0.0,38.84947982948418
+Edward Schmitt,Bosnia and Herzegovina,Urban,47.738364719075406,1616.12,Full,Full,No Risk,0.0,4,174,2024-11-03,2025-07-05,16,Child (0-17),0.0,0.0,0.3,1.0,20.525243691423988
+Christine Williams,Mongolia,Urban,58.434604368456114,4352.44,None,Full,No Risk,0.0,5,62,2025-02-23,2026-02-19,45,Adult (18-59),1.0,0.0,0.3,0.0,43.68896426496139
+Robert Willis,Sierra Leone,Rural,86.42723397871049,4171.57,Partial,Partial,No Risk,0.0,3,277,2024-07-23,2025-02-02,35,Adult (18-59),0.5,0.5,0.7,0.0,57.311134193772986
+Thomas Mullen,Israel,Urban,82.20952944481226,3644.0,None,Partial,No Risk,0.0,4,409,2024-03-13,2024-09-30,35,Adult (18-59),1.0,0.5,0.3,0.0,61.70325791100942
+Karen Hart,Timor-Leste,Urban,71.95506010898707,3080.41,Partial,None,No Risk,0.0,4,179,2024-10-29,2026-02-22,20,Adult (18-59),0.5,1.0,0.3,0.0,52.1149322213331
+Daniel Ramos,Mauritania,Rural,72.79799646977698,867.68,None,None,Serious Injuries,0.7,3,339,2024-05-22,2025-09-16,7,Child (0-17),1.0,1.0,0.7,1.0,76.62721777824493
+Phillip Bell,Mali,Urban,82.18583101216086,3492.57,Full,None,Serious Injuries,0.7,3,377,2024-04-14,2024-08-29,66,Elder (60+),0.0,1.0,0.3,0.7,58.55574629431919
+Adam Valdez,Bangladesh,Urban,91.61575744435828,1661.25,None,Partial,Serious Injuries,0.7,3,369,2024-04-22,2025-04-23,36,Adult (18-59),1.0,0.5,0.3,0.0,67.79595330012506
+Robin Rush,Anguilla,Urban,70.69369188152488,4215.83,None,Partial,No Risk,0.0,2,224,2024-09-14,2025-04-10,44,Adult (18-59),1.0,0.5,0.3,0.0,55.45841918016913
+Susan Mccullough,Uzbekistan,Urban,57.90521151071586,2348.58,Full,None,No Risk,0.0,7,224,2024-09-14,2025-02-20,6,Child (0-17),0.0,1.0,0.3,1.0,42.74115004817959
+Jeffrey Meadows,Azerbaijan,Urban,66.88334532427542,3013.81,Full,Partial,No Risk,0.0,5,444,2024-02-07,2024-05-26,1,Child (0-17),0.0,0.5,0.3,1.0,40.820910931792525
+Sean Jones,Syrian Arab Rep.,Rural,59.59813600029946,3645.9,Partial,Partial,No Risk,0.0,5,151,2024-11-26,2025-03-28,29,Adult (18-59),0.5,0.5,0.7,0.0,46.28332900103013
+Andrew Pena,Zambia,Rural,64.98608801645747,2257.76,None,Partial,Minor Injuries,0.3,1,299,2024-07-01,2025-06-10,12,Child (0-17),1.0,0.5,0.7,1.0,63.13011463825312
+Jennifer Young,Bahamas,Urban,61.60662773656512,2770.39,Partial,None,No Risk,0.0,3,83,2025-02-02,2026-05-14,37,Adult (18-59),0.5,1.0,0.3,0.0,46.21680065445709
+Albert Grant,Sudan,Rural,69.42663047815486,2563.76,None,Partial,No Risk,0.0,3,373,2024-04-18,2024-07-30,83,Elder (60+),1.0,0.5,0.7,0.7,62.66238653010413
+Kathy Chavez,Egypt,Rural,74.29451370733867,1659.86,Partial,Partial,Minor Injuries,0.3,1,209,2024-09-29,2024-12-05,10,Child (0-17),0.5,0.5,0.7,1.0,54.64861600878258
+Jeremy Becker,Papua New Guinea,Urban,60.5124957290865,3341.45,None,Partial,No Risk,0.0,5,152,2024-11-25,2025-01-27,46,Adult (18-59),1.0,0.5,0.3,0.0,51.103889099805336
+Jenna Terry,Rep. of Korea,Rural,95.83539863119576,2121.88,None,None,Minor Injuries,0.3,4,40,2025-03-17,2025-07-17,37,Adult (18-59),1.0,1.0,0.7,0.0,75.9293323981949
+Brandy Stevenson,Italy,Rural,67.0064409575111,2646.56,Partial,Full,No Risk,0.0,4,217,2024-09-21,2024-11-19,6,Child (0-17),0.5,0.0,0.7,1.0,44.9028747820296
+Cory Wright,Bosnia and Herzegovina,Urban,79.59732533486685,2982.31,None,None,Minor Injuries,0.3,1,467,2024-01-15,2024-10-13,7,Child (0-17),1.0,1.0,0.3,1.0,73.99643485012655
+Sandra Rivera PhD,Cook Islands,Urban,77.25040814700303,3044.93,Partial,Partial,No Risk,0.0,3,71,2025-02-14,2026-05-11,52,Adult (18-59),0.5,0.5,0.3,0.0,44.88462636871087
+Cheryl Coffey,Brunei Darussalam,Rural,77.01131058716823,3176.59,None,Partial,No Risk,0.0,3,379,2024-04-12,2025-04-29,44,Adult (18-59),1.0,0.5,0.7,0.0,63.10461326315203
+Christina Bryan,Yemen,Urban,81.89142793550715,2637.1,Partial,None,Serious Injuries,0.7,2,187,2024-10-21,2026-02-25,87,Elder (60+),0.5,1.0,0.3,0.7,64.5042105134374
+Marc Tyler,Curaçao,Urban,70.59243052422585,1647.32,None,Partial,No Risk,0.0,1,183,2024-10-25,2025-07-01,21,Adult (18-59),1.0,0.5,0.3,0.0,49.99172066362254
+Jill Lawson,Kuwait,Urban,57.18238040513357,4430.78,None,Full,No Risk,0.0,3,191,2024-10-17,2025-11-14,13,Child (0-17),1.0,0.0,0.3,1.0,48.538864965730575
+Joseph Shelton,Malawi,Rural,68.239438014186,6281.5,None,Full,Minor Injuries,0.3,7,326,2024-06-04,2024-07-29,52,Adult (18-59),1.0,0.0,0.7,0.0,62.43428797467383
+Donald Cortez DVM,Rep. of Korea,Urban,79.4638395214556,3782.03,None,None,No Risk,0.0,4,1,2025-04-25,2026-04-02,5,Child (0-17),1.0,1.0,0.3,1.0,69.343264718611
+Jennifer Anderson,Mozambique,Urban,83.48198700255601,3549.11,Full,Partial,No Risk,0.0,2,463,2024-01-19,2024-05-15,88,Elder (60+),0.0,0.5,0.3,0.7,44.93989014287698
+Laurie Bryant,Turkmenistan,Urban,80.75887540347573,5550.4,None,Partial,No Risk,0.0,6,495,2023-12-18,2024-02-07,19,Adult (18-59),1.0,0.5,0.3,0.0,66.44845983840688
+Noah Wiggins,Saint Kitts and Nevis,Urban,79.72243313217967,4958.36,Partial,Partial,No Risk,0.0,5,281,2024-07-19,2025-08-06,15,Child (0-17),0.5,0.5,0.3,1.0,57.339086640061346
+Christina Mccormick,Uruguay,Rural,58.77790669816267,2113.29,Partial,None,No Risk,0.0,2,193,2024-10-15,2025-08-27,6,Child (0-17),0.5,1.0,0.7,1.0,54.5686420133279
+Emily Johnson,Viet Nam,Rural,75.40272588715001,1336.02,None,None,Minor Injuries,0.3,5,185,2024-10-23,2026-02-27,5,Child (0-17),1.0,1.0,0.7,1.0,73.97970722876782
+Brandi Hoffman,Iran (Islamic Rep. of),Rural,68.12482469952519,4187.73,None,Full,No Risk,0.0,6,89,2025-01-27,2025-10-26,74,Elder (60+),1.0,0.0,0.7,0.7,56.327628315355405
+Amy Miller,Tonga,Rural,49.678807616083894,2268.94,Partial,Partial,No Risk,0.0,1,319,2024-06-11,2025-10-18,32,Adult (18-59),0.5,0.5,0.7,0.0,39.6637999332416
+Edward Salazar,Iran (Islamic Rep. of),Urban,58.65714040498857,4916.91,None,Partial,No Risk,0.0,9,422,2024-02-29,2024-03-23,28,Adult (18-59),1.0,0.5,0.3,0.0,58.07477556402099
+Kristin Pena,Bhutan,Urban,79.02742153196029,1669.7,None,None,No Risk,0.0,3,82,2025-02-03,2025-04-04,40,Adult (18-59),1.0,1.0,0.3,0.0,60.76482040640578
+Jasmine Blake,New Caledonia,Rural,62.340730201352905,7415.97,None,Partial,Serious Injuries,0.7,3,273,2024-07-27,2025-02-12,41,Adult (18-59),1.0,0.5,0.7,0.0,70.96251739717962
+Brett Martinez,Papua New Guinea,Rural,78.54108684763513,2291.02,Partial,Full,No Risk,0.0,4,184,2024-10-24,2026-02-26,45,Adult (18-59),0.5,0.0,0.7,0.0,43.23945512410186
+Gabriela Lane,Switzerland,Rural,65.21475999628643,3211.72,Full,None,No Risk,0.0,1,73,2025-02-12,2025-12-28,39,Adult (18-59),0.0,1.0,0.7,0.0,42.11283458930236
+Megan Crawford,Saudi Arabia,Rural,57.544000638500464,2805.19,Partial,None,No Risk,0.0,4,364,2024-04-27,2024-09-10,13,Child (0-17),0.5,1.0,0.7,1.0,58.13380723669067
+David Armstrong,Curaçao,Urban,71.33644215119388,2877.06,None,Full,No Risk,0.0,4,147,2024-11-30,2026-03-17,58,Adult (18-59),1.0,0.0,0.3,0.0,46.211772936431636
+Erik Kelly,Bermuda,Rural,78.99336216162578,3277.05,Partial,None,No Risk,0.0,1,177,2024-10-31,2026-03-14,41,Adult (18-59),0.5,1.0,0.7,0.0,58.38429465048605
+Gregory Bates,Tuvalu,Rural,66.39374823500384,5647.55,None,None,No Risk,0.0,2,214,2024-09-24,2025-10-09,48,Adult (18-59),1.0,1.0,0.7,0.0,68.7492745225143
+Mr. Trevor Yoder Jr.,Guyana,Urban,65.54298874336897,4780.5,None,Partial,Minor Injuries,0.3,3,24,2025-04-02,2025-07-07,36,Adult (18-59),1.0,0.5,0.3,0.0,56.082072967387006
+Jeffery Hull,Argentina,Rural,39.0556523430985,8005.01,None,Full,No Risk,0.0,6,172,2024-11-05,2026-01-06,35,Adult (18-59),1.0,0.0,0.7,0.0,49.4937918374774
+Darrell Guerra,Senegal,Rural,38.15340085675958,4264.58,None,Partial,No Risk,0.0,2,423,2024-02-28,2024-09-19,57,Adult (18-59),1.0,0.5,0.7,0.0,50.44635593176636
+Melissa Gallagher,Saint Kitts and Nevis,Urban,74.6921160030338,3158.72,None,Partial,No Risk,0.0,2,164,2024-11-13,2025-01-29,15,Child (0-17),1.0,0.5,0.3,1.0,59.506560713202305
+Melissa Walsh,Philippines,Rural,98.35454796407556,5183.55,Full,Partial,No Risk,0.0,4,299,2024-07-01,2024-09-04,70,Elder (60+),0.0,0.5,0.7,0.7,57.77558517050701
+Ebony Berry,Mali,Rural,56.87243581034889,2055.68,None,Full,Minor Injuries,0.3,1,157,2024-11-20,2025-05-20,22,Adult (18-59),1.0,0.0,0.7,0.0,45.845203415956135
+Amanda Green,Malta,Rural,73.68987019947431,2004.23,Partial,Partial,No Risk,0.0,3,85,2025-01-31,2025-12-29,76,Elder (60+),0.5,0.5,0.7,0.7,50.39358072262493
+Shawn Wallace,Central African Rep.,Urban,40.0672746010537,2718.63,Partial,Full,No Risk,0.0,1,175,2024-11-02,2025-04-29,9,Child (0-17),0.5,0.0,0.3,1.0,27.935154418879282
+Jack Stewart,Georgia,Rural,57.6689576791995,2457.62,None,None,Minor Injuries,0.3,2,182,2024-10-26,2024-12-03,4,Child (0-17),1.0,1.0,0.7,1.0,67.64510663603647
+Kevin Brooks,Switzerland,Urban,62.670183452428745,1155.63,None,None,Minor Injuries,0.3,6,165,2024-11-12,2025-11-27,62,Elder (60+),1.0,1.0,0.3,0.7,62.79240153461545
+Cynthia Ingram,Turkey,Rural,82.67129735175888,2171.73,Full,Partial,Serious Injuries,0.7,1,386,2024-04-05,2024-06-21,37,Adult (18-59),0.0,0.5,0.7,0.0,49.41961478436728
+Nathan Diaz,Svalbard and Jan Mayen,Rural,64.97241476598472,3880.34,None,Partial,No Risk,0.0,3,460,2024-01-22,2025-03-21,51,Adult (18-59),1.0,0.5,0.7,0.0,60.665849872352815
+Whitney Buckley,Belgium,Urban,51.27260645300436,4385.18,Partial,None,No Risk,0.0,4,234,2024-09-04,2025-09-09,55,Adult (18-59),0.5,1.0,0.3,0.0,47.25004818296602
+Heather Browning,Venezuela (Bolivarian Republic of),Rural,100.0,2133.8,Full,Partial,No Risk,0.0,3,102,2025-01-14,2025-05-21,30,Adult (18-59),0.0,0.5,0.7,0.0,47.06139272341856
+Elizabeth Espinoza,Bahamas,Urban,83.51367163126208,3345.15,None,Partial,Serious Injuries,0.7,8,407,2024-03-15,2024-09-02,50,Adult (18-59),1.0,0.5,0.3,0.0,70.87055282807775
+Peter Martinez V,Samoa,Urban,71.21931600174294,3727.9,Partial,Partial,No Risk,0.0,5,123,2024-12-24,2025-10-08,82,Elder (60+),0.5,0.5,0.3,0.7,48.962404147755414
+Luis Higgins,Germany,Urban,62.21110131455846,2360.58,None,Full,No Risk,0.0,6,333,2024-05-28,2024-09-16,22,Adult (18-59),1.0,0.0,0.3,0.0,44.89582963716205
+Caleb Ashley,Sri Lanka,Urban,54.77212368677562,1451.4,Partial,Partial,No Risk,0.0,4,301,2024-06-29,2024-08-27,8,Child (0-17),0.5,0.5,0.3,1.0,41.62161759123168
+Matthew Nelson,Greece,Rural,57.32027586747115,4708.74,None,Partial,No Risk,0.0,3,121,2024-12-26,2026-03-18,56,Adult (18-59),1.0,0.5,0.7,0.0,55.873120962829795
+Leroy Young,Grenada,Urban,48.45898136288989,2486.64,None,Partial,No Risk,0.0,2,94,2025-01-22,2026-01-12,3,Child (0-17),1.0,0.5,0.3,1.0,47.89457950289839
+Tristan Yoder,Palau,Rural,66.70884625505637,5412.82,None,None,No Risk,0.0,6,466,2024-01-16,2025-02-28,45,Adult (18-59),1.0,1.0,0.7,0.0,73.20062550444587
+Heather Prince,Iceland,Urban,59.011829282489515,3166.71,Partial,Full,Serious Injuries,0.7,5,23,2025-04-03,2025-06-24,70,Elder (60+),0.5,0.0,0.3,0.7,41.95281948826772
+Lisa Garcia,Poland,Urban,34.02494102024014,2143.37,Partial,Partial,No Risk,0.0,7,12,2025-04-14,2025-09-01,3,Child (0-17),0.5,0.5,0.3,1.0,33.894439676728624
+Dr. Richard Gallegos II,Lesotho,Rural,78.80895155458978,1888.23,Partial,Partial,No Risk,0.0,6,139,2024-12-08,2025-07-28,38,Adult (18-59),0.5,0.5,0.7,0.0,50.800097683251735
+Jane Ward,Belarus,Urban,59.505442037354776,1015.03,Full,None,No Risk,0.0,2,451,2024-01-31,2024-11-15,40,Adult (18-59),0.0,1.0,0.3,0.0,35.5103330803112
+Steve Diaz,Grenada,Rural,84.0673816030943,3580.58,None,None,No Risk,0.0,4,44,2025-03-13,2025-10-13,4,Child (0-17),1.0,1.0,0.7,1.0,76.13312873467706
+Lisa Flores,Haiti,Rural,59.01935695554221,2970.83,Partial,Partial,No Risk,0.0,2,145,2024-12-02,2025-09-28,4,Child (0-17),0.5,0.5,0.7,1.0,48.16855064419598
+Dr. Brian Vaughn,Zimbabwe,Rural,71.62461482920695,9339.86,None,Partial,No Risk,0.0,5,16,2025-04-10,2026-07-13,65,Elder (60+),1.0,0.5,0.7,0.7,72.79535519363306
+Deanna Thomas,Saudi Arabia,Urban,41.81191316388853,4037.89,Full,None,No Risk,0.0,5,195,2024-10-13,2025-10-02,32,Adult (18-59),0.0,1.0,0.3,0.0,33.2980025114589
+Charles Holt,Czech Rep.,Urban,79.77154856461713,2320.23,None,Partial,No Risk,0.0,1,179,2024-10-29,2026-02-03,45,Adult (18-59),1.0,0.5,0.3,0.0,54.530592556397394
+Michael Berry,Samoa,Urban,50.59160809457933,4297.31,Partial,Partial,No Risk,0.0,7,403,2024-03-19,2025-03-10,47,Adult (18-59),0.5,0.5,0.3,0.0,42.70106492272639
+Charles Dudley,Bulgaria,Urban,44.704181660919566,3196.58,Partial,Partial,Minor Injuries,0.3,2,12,2025-04-14,2026-05-04,40,Adult (18-59),0.5,0.5,0.3,0.0,34.91362146140267
+Daniel Davis,Denmark,Rural,70.99430831916169,2132.21,Partial,None,No Risk,0.0,1,387,2024-04-04,2025-05-29,25,Adult (18-59),0.5,1.0,0.7,0.0,55.523631215059076
+Donna Cortez,Eritrea,Urban,86.20455250346596,2554.98,None,Partial,No Risk,0.0,2,220,2024-09-18,2025-06-01,5,Child (0-17),1.0,0.5,0.3,1.0,63.29357216910848
+Richard Meyer,Saudi Arabia,Rural,72.94766827968733,2899.85,None,None,Minor Injuries,0.3,2,106,2025-01-10,2025-08-21,19,Adult (18-59),1.0,1.0,0.7,0.0,68.32874062018082
+Michael Walker Jr.,Sudan,Urban,57.15898575557626,2526.42,Full,None,Minor Injuries,0.3,1,324,2024-06-06,2025-03-31,10,Child (0-17),0.0,1.0,0.3,1.0,43.43968681322498
+Mary Nelson,United Kingdom,Urban,83.67786304992472,4408.28,None,None,No Risk,0.0,1,268,2024-08-01,2025-04-18,29,Adult (18-59),1.0,1.0,0.3,0.0,68.00014771021455
+Andrew Owens,Sierra Leone,Urban,58.0550206511305,2602.51,Partial,None,No Risk,0.0,6,250,2024-08-19,2025-11-27,34,Adult (18-59),0.5,1.0,0.3,0.0,47.94251662360812
+Katherine Wong,Martinique,Rural,76.740321640531,4974.0,Partial,Partial,No Risk,0.0,3,450,2024-02-01,2025-05-06,23,Adult (18-59),0.5,0.5,0.7,0.0,56.83747771201073
+Spencer Reed,Croatia,Urban,55.92771540862387,1585.92,Partial,Partial,No Risk,0.0,4,496,2023-12-17,2024-05-02,2,Child (0-17),0.5,0.5,0.3,1.0,44.234618585588144
+Victoria Shaw,Guinea-Bissau,Urban,68.06108811197608,1146.87,None,Partial,No Risk,0.0,4,158,2024-11-19,2025-07-11,88,Elder (60+),1.0,0.5,0.3,0.7,53.09846746399876
+Paul Wilkins,Tuvalu,Urban,66.37191322581262,4074.13,None,Partial,Minor Injuries,0.3,4,418,2024-03-04,2025-05-28,54,Adult (18-59),1.0,0.5,0.3,0.0,59.65800205149871
+David Sanchez,Sierra Leone,Rural,32.484339659644675,4350.11,Full,Partial,No Risk,0.0,5,487,2023-12-26,2024-02-10,76,Elder (60+),0.0,0.5,0.7,0.7,34.295937087572185
+Krystal Wilson,Norfolk Island,Urban,90.05075865600058,2251.83,Partial,Partial,No Risk,0.0,4,59,2025-02-26,2026-04-06,21,Adult (18-59),0.5,0.5,0.3,0.0,48.6965088749152
+Tim Harmon,Wallis and Futuna Islands ,Urban,97.26477492872544,2970.38,None,Partial,Critical Condition,1.0,5,459,2024-01-23,2024-12-08,33,Adult (18-59),1.0,0.5,0.3,0.0,77.18033075381382
+Robert Lopez,Portugal,Rural,64.77998980301558,3486.19,Partial,None,Minor Injuries,0.3,5,360,2024-05-01,2025-02-23,32,Adult (18-59),0.5,1.0,0.7,0.0,60.5205367307313
+Mr. William Avila,Philippines,Rural,63.96059619402476,2414.01,None,Full,No Risk,0.0,2,107,2025-01-09,2026-01-21,56,Adult (18-59),1.0,0.0,0.7,0.0,46.15629069603868
+Christopher James,Ethiopia,Rural,55.568321231366674,3382.19,Partial,Full,No Risk,0.0,5,379,2024-04-12,2025-01-27,88,Elder (60+),0.5,0.0,0.7,0.7,42.60822023059348
+Melinda Jackson,Rep. of Korea,Rural,78.48098961237065,3393.47,None,Full,Minor Injuries,0.3,5,93,2025-01-23,2025-05-12,62,Elder (60+),1.0,0.0,0.7,0.7,61.27851446471615
+Jeffrey Smith,Norway,Urban,59.779202369173035,5672.12,Partial,Partial,No Risk,0.0,4,334,2024-05-27,2024-06-20,6,Child (0-17),0.5,0.5,0.3,1.0,51.14617320310937
+Nicole Watson,Fiji,Urban,81.80645254675888,2786.76,Full,Full,No Risk,0.0,3,316,2024-06-14,2024-09-06,5,Child (0-17),0.0,0.0,0.3,1.0,36.07828038858641
+Ryan Wade,Thailand,Urban,73.06146432108821,3822.51,Full,Full,Critical Condition,1.0,4,57,2025-02-28,2026-01-21,16,Child (0-17),0.0,0.0,0.3,1.0,42.595509291788034
+Joseph Khan,Somalia,Urban,66.80002530935533,1670.78,None,None,No Risk,0.0,5,391,2024-03-31,2025-07-22,39,Adult (18-59),1.0,1.0,0.3,0.0,60.42605871576375
+Joseph Francis,Norway,Urban,64.75904709774518,3451.92,Full,Partial,No Risk,0.0,4,207,2024-10-01,2025-03-27,7,Child (0-17),0.0,0.5,0.3,1.0,37.867648151863094
+Lisa Johnson,Burundi,Urban,82.60076110079818,3225.76,Partial,None,No Risk,0.0,6,102,2025-01-14,2026-04-27,1,Child (0-17),0.5,1.0,0.3,1.0,61.66287509391057
+Holly Sanders,Libya,Urban,70.16923728213362,5135.55,None,None,Minor Injuries,0.3,4,411,2024-03-11,2024-07-22,6,Child (0-17),1.0,1.0,0.3,1.0,75.34300664152735
+Paul Gaines,Monaco,Rural,52.449835973818246,4073.75,Partial,None,No Risk,0.0,4,446,2024-02-05,2024-12-22,53,Adult (18-59),0.5,1.0,0.7,0.0,54.266118984282215
+Danielle Martin,Switzerland,Urban,51.80464882039291,2310.28,Partial,Partial,Minor Injuries,0.3,2,306,2024-06-24,2024-12-19,4,Child (0-17),0.5,0.5,0.3,1.0,43.95081914168908
+Brenda Mitchell,South Sudan,Rural,52.75137397742824,3518.51,None,None,No Risk,0.0,4,152,2024-11-25,2025-08-22,35,Adult (18-59),1.0,1.0,0.7,0.0,60.47323200685312
+Paige Brown PhD,Swaziland,Rural,41.34349500402103,4032.55,Partial,None,Minor Injuries,0.3,4,193,2024-10-15,2025-06-11,52,Adult (18-59),0.5,1.0,0.7,0.0,50.539177704176716
+Jennifer Ramirez,Belize,Urban,74.89441097687504,2969.91,None,Partial,No Risk,0.0,3,468,2024-01-14,2024-09-17,33,Adult (18-59),1.0,0.5,0.3,0.0,57.84914471980795
+Thomas Johnson,Grenada,Urban,61.85678311752824,3493.44,Full,Partial,No Risk,0.0,2,16,2025-04-10,2026-08-22,86,Elder (60+),0.0,0.5,0.3,0.7,32.34067181896776
+Randy Moore,Central African Rep.,Urban,69.57335278462821,2230.42,Partial,Partial,No Risk,0.0,6,361,2024-04-30,2025-06-07,44,Adult (18-59),0.5,0.5,0.3,0.0,45.18427695584226
+Sharon Perkins,South Sudan,Rural,68.62978733772964,4103.53,Partial,Partial,No Risk,0.0,4,443,2024-02-08,2024-11-05,4,Child (0-17),0.5,0.5,0.7,1.0,57.79775885782231
+Nathan Alvarado,Solomon Islands,Urban,45.09472086154667,1478.97,Full,None,No Risk,0.0,3,286,2024-07-14,2025-07-17,33,Adult (18-59),0.0,1.0,0.3,0.0,29.86939399228724
+Kenneth Ryan,Nigeria,Rural,60.88280426711246,2292.35,Partial,Partial,No Risk,0.0,9,59,2025-02-26,2026-03-14,45,Adult (18-59),0.5,0.5,0.7,0.0,45.710543648479614
+Steven Howard,Uzbekistan,Rural,77.72654603752156,1297.07,None,Partial,Minor Injuries,0.3,2,280,2024-07-20,2025-08-07,33,Adult (18-59),1.0,0.5,0.7,0.0,61.558514464318606
+Shawn Cooke,Lao People's Dem. Rep.,Rural,61.844458088634326,5266.37,None,Full,No Risk,0.0,6,427,2024-02-24,2025-03-17,38,Adult (18-59),1.0,0.0,0.7,0.0,55.74929563979701
+Brad Torres,Timor-Leste,Urban,58.34987917397011,2883.84,Partial,None,No Risk,0.0,6,143,2024-12-04,2026-01-14,26,Adult (18-59),0.5,1.0,0.3,0.0,47.47093140281407
+Amanda Henderson,Canada,Rural,69.14526968976968,3667.89,Full,Full,No Risk,0.0,1,92,2025-01-24,2025-07-19,9,Child (0-17),0.0,0.0,0.7,1.0,34.55551245604602
+Benjamin Schmidt,Guatemala,Urban,74.23589840519425,1387.5,Partial,Full,No Risk,0.0,1,272,2024-07-28,2025-03-26,2,Child (0-17),0.5,0.0,0.3,1.0,39.28353949314648
+Robert Shah,South Sudan,Rural,60.84465793505467,1825.57,Partial,None,No Risk,0.0,3,222,2024-09-16,2025-01-09,27,Adult (18-59),0.5,1.0,0.7,0.0,50.68187571642282
+Rebecca Anderson,Antigua and Barbuda,Urban,76.55673023361943,5570.51,None,Partial,Minor Injuries,0.3,5,429,2024-02-22,2024-10-31,48,Adult (18-59),1.0,0.5,0.3,0.0,66.7070045217933
+Shane Cuevas,Czech Rep.,Urban,58.251718764455234,7163.02,Full,Full,No Risk,0.0,3,1,2025-04-25,2025-05-28,24,Adult (18-59),0.0,0.0,0.3,0.0,26.784119207368846
+Courtney Floyd,Ecuador,Urban,63.37705822869553,6078.48,Full,None,Minor Injuries,0.3,7,8,2025-04-18,2025-12-30,38,Adult (18-59),0.0,1.0,0.3,0.0,47.095397336789844
+Richard Martin,Dem. People's Rep. of Korea,Urban,92.88863543335248,1680.21,None,None,No Risk,0.0,8,165,2024-11-12,2025-04-25,3,Child (0-17),1.0,1.0,0.3,1.0,74.53947795111532
+Kimberly Bradley,Puerto Rico,Rural,85.30983340615444,3682.46,None,Partial,No Risk,0.0,4,92,2025-01-24,2025-12-28,80,Elder (60+),1.0,0.5,0.7,0.7,68.2516716190887
+Michelle Estrada,Greece,Urban,78.18048684867664,2606.5,Partial,Full,No Risk,0.0,4,301,2024-06-29,2024-10-02,1,Child (0-17),0.5,0.0,0.3,1.0,44.82375161239678
+Danielle Evans,Puerto Rico,Rural,67.7400898252695,4843.76,Partial,Partial,No Risk,0.0,6,298,2024-07-02,2025-05-22,8,Child (0-17),0.5,0.5,0.7,1.0,58.41476444000079
+Derek Rodriguez,American Samoa,Rural,84.71031846297629,1782.72,Full,Full,No Risk,0.0,2,342,2024-05-19,2024-08-07,14,Child (0-17),0.0,0.0,0.7,1.0,40.11652767139235
+Mark Grimes,United States of America,Urban,37.09124765790028,1846.41,Partial,Partial,No Risk,0.0,3,18,2025-04-08,2026-03-17,28,Adult (18-59),0.5,0.5,0.3,0.0,27.355113737312802
+Brian Hubbard,Estonia,Rural,67.67532161664592,2450.39,None,Partial,No Risk,0.0,2,0,2025-04-26,2025-09-26,34,Adult (18-59),1.0,0.5,0.7,0.0,54.029310788455454
+James Stone,Djibouti,Urban,65.65173929665181,1502.44,Partial,None,Minor Injuries,0.3,5,247,2024-08-22,2025-10-29,51,Adult (18-59),0.5,1.0,0.3,0.0,51.266999307389625
+Brian Patel,Congo,Urban,62.784051813132855,1719.61,None,Partial,No Risk,0.0,4,240,2024-08-29,2025-09-22,43,Adult (18-59),1.0,0.5,0.3,0.0,49.45366441241703
+Samantha Lee,United States of America,Urban,76.59928609831508,2675.82,Partial,Partial,Serious Injuries,0.7,2,239,2024-08-30,2025-06-11,7,Child (0-17),0.5,0.5,0.3,1.0,57.12578216204399
+Chloe Campbell,Latvia,Urban,52.665824267389794,2316.64,None,Full,No Risk,0.0,5,242,2024-08-27,2024-10-13,74,Elder (60+),1.0,0.0,0.3,0.7,43.30841355102717
+Timothy George,Romania,Rural,71.16862300009909,1538.47,Partial,Partial,No Risk,0.0,1,38,2025-03-19,2025-05-21,5,Child (0-17),0.5,0.5,0.7,1.0,48.56658344272884
+Elizabeth Griffin,Russian Federation,Urban,67.17421819525912,2206.19,Partial,Full,No Risk,0.0,6,244,2024-08-25,2025-06-30,40,Adult (18-59),0.5,0.0,0.3,0.0,35.58103466661913
+Michael Sanchez,Malaysia,Urban,70.56991102800846,6037.81,Partial,Partial,Minor Injuries,0.3,1,391,2024-03-31,2024-06-14,47,Adult (18-59),0.5,0.5,0.3,0.0,52.69310460913415
+Megan Lewis,Suriname,Urban,63.48995101477479,3904.43,None,Full,No Risk,0.0,8,39,2025-03-18,2025-03-25,62,Elder (60+),1.0,0.0,0.3,0.7,49.72484399556994
+George Scott,Seychelles,Urban,100.0,2862.95,Partial,Partial,No Risk,0.0,6,294,2024-07-06,2024-09-24,16,Child (0-17),0.5,0.5,0.3,1.0,61.915168799243645
+Sara Robertson,Trinidad and Tobago,Urban,48.950024963263445,1180.05,None,None,Critical Condition,1.0,5,361,2024-04-30,2024-05-04,38,Adult (18-59),1.0,1.0,0.3,0.0,62.64306089519411
+Gregory Miller,American Samoa,Urban,65.07726138302748,3590.76,Full,Full,Minor Injuries,0.3,1,208,2024-09-30,2025-03-04,44,Adult (18-59),0.0,0.0,0.3,0.0,27.070453875420352
+Emily Austin,Malta,Urban,71.38989894831894,3484.12,Partial,Full,No Risk,0.0,1,82,2025-02-03,2026-04-18,42,Adult (18-59),0.5,0.0,0.3,0.0,34.96990494321781
+Dominique Garcia,Colombia,Urban,72.77547575776542,4746.71,Partial,None,Serious Injuries,0.7,3,66,2025-02-19,2025-04-24,57,Adult (18-59),0.5,1.0,0.3,0.0,60.62979131754553
+Brenda Reese,Slovenia,Rural,47.06622264017541,8428.19,None,Partial,No Risk,0.0,2,74,2025-02-11,2026-01-13,14,Child (0-17),1.0,0.5,0.7,1.0,62.50241736402398
+John Webb,Turks and Caicos Islands,Urban,71.35107632883079,3265.65,Partial,Partial,No Risk,0.0,2,266,2024-08-03,2025-01-13,34,Adult (18-59),0.5,0.5,0.3,0.0,44.471385276770356
+Donald Hicks,Serbia and Kosovo (S/RES/1244 (1999)),Rural,59.74470399937053,4973.77,None,Partial,No Risk,0.0,3,179,2024-10-29,2025-10-25,27,Adult (18-59),1.0,0.5,0.7,0.0,57.8142180730708
+Victoria Aguirre,Colombia,Rural,60.427274626741365,2257.7,Full,None,No Risk,0.0,1,424,2024-02-27,2025-01-22,4,Child (0-17),0.0,1.0,0.7,1.0,47.186682651759895
+Lindsay Curry DVM,Russian Federation,Urban,85.9283706049099,2772.81,Partial,Partial,Minor Injuries,0.3,7,454,2024-01-28,2024-04-02,32,Adult (18-59),0.5,0.5,0.3,0.0,56.68730756197197
+Michelle Hancock,American Samoa,Rural,56.32385708924219,3058.55,None,Partial,No Risk,0.0,4,60,2025-02-25,2025-09-01,23,Adult (18-59),1.0,0.5,0.7,0.0,52.5808829773156
+Justin Gibbs,Kuwait,Urban,41.73661307768019,1956.12,None,None,No Risk,0.0,1,463,2024-01-19,2025-04-04,48,Adult (18-59),1.0,1.0,0.3,0.0,50.11013218614534
+David Medina,Barbados,Urban,64.56618298754817,9096.14,Full,Partial,Minor Injuries,0.3,5,263,2024-08-06,2025-03-17,34,Adult (18-59),0.0,0.5,0.3,0.0,46.72003393755766
+Zachary Armstrong,Seychelles,Urban,56.28237534572207,2374.08,None,Partial,Serious Injuries,0.7,2,481,2024-01-01,2025-01-30,47,Adult (18-59),1.0,0.5,0.3,0.0,56.47489890618777
+Michael Ross,Nauru,Rural,74.39696644744271,1578.26,None,Full,No Risk,0.0,3,69,2025-02-16,2025-06-04,50,Adult (18-59),1.0,0.0,0.7,0.0,48.755978567231004
+Robert Davidson,Kiribati,Rural,85.08535643113831,3912.03,Partial,None,No Risk,0.0,2,217,2024-09-21,2025-01-23,52,Adult (18-59),0.5,1.0,0.7,0.0,62.70612507525502
+Kristen Jenkins,American Samoa,Rural,96.03403529594358,3314.11,None,Partial,Serious Injuries,0.7,4,79,2025-02-06,2026-04-05,38,Adult (18-59),1.0,0.5,0.7,0.0,74.96495918611143
+Kelli Fuentes,Peru,Urban,75.83007595461476,3258.9,Full,None,No Risk,0.0,4,34,2025-03-23,2025-12-19,55,Adult (18-59),0.0,1.0,0.3,0.0,42.41444796527707
+John Curry,Yemen,Rural,60.70219556567223,2882.79,Partial,None,No Risk,0.0,3,496,2023-12-17,2024-04-03,18,Adult (18-59),0.5,1.0,0.7,0.0,55.20618552740445
+Charles Murphy,Gibraltar,Rural,66.94911405007069,2799.51,Partial,Full,No Risk,0.0,6,20,2025-04-06,2026-06-06,58,Adult (18-59),0.5,0.0,0.7,0.0,39.28848730554331
+Sheila Mcdonald,Spain,Urban,91.44549395926308,4827.29,Partial,None,No Risk,0.0,4,464,2024-01-18,2024-10-17,41,Adult (18-59),0.5,1.0,0.3,0.0,65.24017802563297
+Suzanne Rivera,Martinique,Rural,86.9364371296163,2336.89,Partial,None,Minor Injuries,0.3,6,65,2025-02-20,2026-06-12,34,Adult (18-59),0.5,1.0,0.7,0.0,64.35865137932484
+Kelsey Blanchard,Madagascar,Urban,67.09843371574826,5484.38,None,Partial,Minor Injuries,0.3,5,181,2024-10-27,2026-02-13,49,Adult (18-59),1.0,0.5,0.3,0.0,60.56413472827877
+Nancy Ray,Senegal,Rural,83.15427515516598,5426.61,None,Partial,Minor Injuries,0.3,4,108,2025-01-08,2025-03-12,45,Adult (18-59),1.0,0.5,0.7,0.0,70.14197610528956
+Elizabeth Gutierrez,Saint Kitts and Nevis,Rural,79.10077738016591,1150.4,None,Partial,No Risk,0.0,3,135,2024-12-12,2026-02-25,6,Child (0-17),1.0,0.5,0.7,1.0,62.919633509635
+Antonio Trujillo,Turkey,Urban,85.68938069842363,4309.07,Partial,Full,No Risk,0.0,7,107,2025-01-09,2025-10-29,31,Adult (18-59),0.5,0.0,0.3,0.0,45.29823395101031
+Nicholas Hardy,Saint Lucia,Urban,59.877218833771934,2490.8,None,Partial,No Risk,0.0,4,311,2024-06-19,2025-02-25,4,Child (0-17),1.0,0.5,0.3,1.0,55.42411513935017
+Stacy Mcdonald,Norway,Urban,75.81833585025637,2877.48,None,Partial,Minor Injuries,0.3,4,149,2024-11-28,2025-07-15,15,Child (0-17),1.0,0.5,0.3,1.0,63.39725944235703
+Virginia Fernandez,New Caledonia,Rural,78.6586788562876,5990.81,Partial,None,No Risk,0.0,5,222,2024-09-16,2025-09-01,21,Adult (18-59),0.5,1.0,0.7,0.0,65.64814631368107
+Katrina Newman,Grenada,Urban,42.98939871650069,4007.61,Full,Partial,Minor Injuries,0.3,5,302,2024-06-28,2025-04-26,14,Child (0-17),0.0,0.5,0.3,1.0,35.25274800654698
+Melissa Miller,Antigua and Barbuda,Rural,87.90973661760333,3090.03,Partial,Partial,No Risk,0.0,9,65,2025-02-20,2025-09-17,0,Child (0-17),0.5,0.5,0.7,1.0,62.19563983621323
+Kevin Moss,Nigeria,Rural,67.83268028523932,1964.23,Partial,Full,No Risk,0.0,6,450,2024-02-01,2024-02-19,48,Adult (18-59),0.5,0.0,0.7,0.0,42.46513851262481
+Theresa Torres,Martinique,Urban,60.20168241204597,2052.65,Full,Partial,No Risk,0.0,7,496,2023-12-17,2024-05-07,45,Adult (18-59),0.0,0.5,0.3,0.0,33.29988811837532
+Pam Turner,Denmark,Urban,73.33247047030572,5332.18,Full,None,No Risk,0.0,6,245,2024-08-24,2025-02-09,79,Elder (60+),0.0,1.0,0.3,0.7,51.81077212892132
+William Ellison,Belize,Rural,73.06873394107433,5089.66,None,Partial,No Risk,0.0,6,328,2024-06-02,2024-08-27,36,Adult (18-59),1.0,0.5,0.7,0.0,66.12136093806399
+William Jackson,Marshall Islands,Urban,81.07680773804502,1474.33,Partial,None,No Risk,0.0,6,140,2024-12-07,2025-03-31,33,Adult (18-59),0.5,1.0,0.3,0.0,53.433200030722226
+Valerie Walsh,Bahrain,Urban,66.463826136285,2113.3,Partial,None,No Risk,0.0,3,102,2025-01-14,2025-07-11,41,Adult (18-59),0.5,1.0,0.3,0.0,47.06907635891002
+Andrew Allison,Paraguay,Rural,53.373006418722866,3444.16,None,Partial,No Risk,0.0,4,236,2024-09-02,2024-10-30,6,Child (0-17),1.0,0.5,0.7,1.0,58.91492677437199
+Jeremy Thomas,Kenya,Urban,68.9786710372843,1632.42,Full,Full,Minor Injuries,0.3,2,242,2024-08-27,2026-01-07,55,Adult (18-59),0.0,0.0,0.3,0.0,26.011967593771097
+Angela Johnson,South Sudan,Urban,72.81435334140578,2350.93,None,None,No Risk,0.0,6,41,2025-03-16,2025-06-09,27,Adult (18-59),1.0,1.0,0.3,0.0,60.897536721771864
+Melissa Nelson,Tibetan,Urban,48.43569067821123,1795.74,None,Partial,No Risk,0.0,3,6,2025-04-20,2026-09-01,6,Child (0-17),1.0,0.5,0.3,1.0,46.36084500540105
+Tracey Hanson,Zambia,Urban,61.10752797012072,2884.47,None,Partial,No Risk,0.0,3,334,2024-05-27,2024-10-15,23,Adult (18-59),1.0,0.5,0.3,0.0,51.23966186689293
+Katie Martin,Bhutan,Rural,65.65212431734912,2355.79,Full,Partial,Minor Injuries,0.3,3,37,2025-03-20,2026-05-29,73,Elder (60+),0.0,0.5,0.7,0.7,40.53897410685502
+Thomas Johnson,Israel,Rural,77.58557803375128,3048.44,Partial,Partial,No Risk,0.0,4,39,2025-03-18,2025-09-16,45,Adult (18-59),0.5,0.5,0.7,0.0,50.250777221541064
+Jonathan Singleton,Ireland,Rural,90.1260133622163,3563.34,Partial,None,Minor Injuries,0.3,1,406,2024-03-16,2024-07-29,35,Adult (18-59),0.5,1.0,0.7,0.0,68.30692350886395
+Paige Brennan,United Rep. of Tanzania,Urban,63.28000305720127,6176.28,Full,None,No Risk,0.0,6,351,2024-05-10,2025-06-28,27,Adult (18-59),0.0,1.0,0.3,0.0,47.10374740347417
+Alexandra Hanson,China,Urban,94.86188270198318,2277.17,None,None,No Risk,0.0,4,74,2025-02-11,2025-06-16,57,Adult (18-59),1.0,1.0,0.3,0.0,68.17759057166742
+Amanda Robbins,Ukraine,Urban,55.30772416291677,2256.53,Full,None,Serious Injuries,0.7,4,438,2024-02-13,2024-04-25,29,Adult (18-59),0.0,1.0,0.3,0.0,44.0897079514263
+Austin Sanchez,Comoros,Rural,56.0271064262322,4715.63,Partial,Partial,No Risk,0.0,5,184,2024-10-24,2026-01-06,58,Adult (18-59),0.5,0.5,0.7,0.0,47.145869999973286
+Alan Smith,Guinea-Bissau,Urban,69.29156538106984,5282.22,Partial,None,No Risk,0.0,3,63,2025-02-22,2026-02-07,55,Adult (18-59),0.5,1.0,0.3,0.0,53.236329861057655
+Bradley Knight,Dominican Rep.,Rural,81.82911384600614,4583.46,Partial,Full,No Risk,0.0,5,316,2024-06-14,2025-10-07,62,Elder (60+),0.5,0.0,0.7,0.7,53.82009569872277
+Richard Valenzuela,Dominica,Rural,69.93343190363193,3081.97,None,Partial,No Risk,0.0,1,67,2025-02-18,2026-05-07,8,Child (0-17),1.0,0.5,0.7,1.0,61.08006200654516
+Anthony Berry,Argentina,Rural,70.94410093355668,3298.02,None,Partial,Minor Injuries,0.3,2,234,2024-09-04,2025-05-17,83,Elder (60+),1.0,0.5,0.7,0.7,65.55647040561433
+Kenneth Briggs,Turkmenistan,Rural,69.17207397597825,2686.72,Partial,None,No Risk,0.0,4,329,2024-06-01,2024-09-23,40,Adult (18-59),0.5,1.0,0.7,0.0,56.897068132546245
+Pamela Garza,Dominica,Urban,71.22624464612181,3459.63,None,None,Serious Injuries,0.7,6,157,2024-11-20,2024-12-08,10,Child (0-17),1.0,1.0,0.3,1.0,75.39433642113505
+Janice Guzman,Costa Rica,Urban,79.84950441392881,3128.71,None,Partial,Minor Injuries,0.3,3,434,2024-02-17,2024-06-01,60,Elder (60+),1.0,0.5,0.3,0.7,66.12562789507041
+Julie Walters,Anguilla,Rural,64.45322671767406,7471.97,Partial,Partial,No Risk,0.0,5,452,2024-01-30,2025-02-25,48,Adult (18-59),0.5,0.5,0.7,0.0,57.745611402201746
+Timothy Cabrera,United States of America,Rural,96.43819900215048,2365.4,None,None,No Risk,0.0,2,302,2024-06-28,2025-10-31,43,Adult (18-59),1.0,1.0,0.7,0.0,75.08531229530585
+Deborah Carey,Palestinian,Urban,61.60691338194256,2845.75,Full,Partial,No Risk,0.0,6,236,2024-09-02,2025-08-19,38,Adult (18-59),0.0,0.5,0.3,0.0,32.04453325827068
+Jeffrey Mitchell,Ethiopia,Urban,68.9575554307578,1219.47,None,None,Minor Injuries,0.3,2,76,2025-02-09,2026-04-12,48,Adult (18-59),1.0,1.0,0.3,0.0,58.626504118683854
+Matthew Hopkins,Malaysia,Urban,61.82747375651407,3913.79,Partial,Full,No Risk,0.0,4,392,2024-03-30,2024-03-31,37,Adult (18-59),0.5,0.0,0.3,0.0,36.9313761765678
+Tyler Sanchez,Guyana,Rural,79.6296827935099,5650.47,Partial,None,No Risk,0.0,4,36,2025-03-21,2025-04-22,10,Child (0-17),0.5,1.0,0.7,1.0,68.0018215326825
+Robert Davis,Timor-Leste,Urban,77.84491937274049,1824.91,None,Full,Serious Injuries,0.7,6,406,2024-03-16,2024-05-04,27,Adult (18-59),1.0,0.0,0.3,0.0,57.50198028302977
+Chase Fox,Bulgaria,Rural,75.50597656424917,1613.96,Partial,None,No Risk,0.0,3,401,2024-03-21,2024-08-03,37,Adult (18-59),0.5,1.0,0.7,0.0,57.549948884173006
+Christopher Ruiz,Hungary,Urban,80.72104559383517,2218.45,None,Partial,Minor Injuries,0.3,1,368,2024-04-23,2025-08-05,20,Adult (18-59),1.0,0.5,0.3,0.0,59.59640192225819
+Anna Sanders,Niger,Urban,89.17128141116564,2009.39,Full,None,No Risk,0.0,9,2,2025-04-24,2026-01-24,35,Adult (18-59),0.0,1.0,0.3,0.0,47.65630347353624
+Kathryn White,Libya,Urban,60.56441728977295,2684.5,Partial,None,Minor Injuries,0.3,5,427,2024-02-24,2024-10-26,7,Child (0-17),0.5,1.0,0.3,1.0,58.23153387999732
+Heather Coleman,Netherlands,Rural,88.54525535986829,3055.65,None,None,No Risk,0.0,3,22,2025-04-04,2026-01-10,15,Child (0-17),1.0,1.0,0.7,1.0,76.10861866136472
+Wesley Murray,Luxembourg,Rural,81.33087456944524,2048.28,None,None,Minor Injuries,0.3,4,275,2024-07-25,2025-11-16,2,Child (0-17),1.0,1.0,0.7,1.0,77.76386405623465
+Mrs. Sandra Ferguson,Tuvalu,Rural,62.96807204029023,1901.54,Partial,Full,No Risk,0.0,1,2,2025-04-24,2025-10-17,47,Adult (18-59),0.5,0.0,0.7,0.0,33.29150639507713
+Krystal Paul,Gibraltar,Urban,62.774320763794975,2382.13,None,None,Minor Injuries,0.3,3,234,2024-09-04,2025-01-26,61,Elder (60+),1.0,1.0,0.3,0.7,63.98581482840204
+Kelly Dixon,France,Urban,90.44740768225265,5003.73,Partial,None,No Risk,0.0,3,14,2025-04-12,2025-11-22,83,Elder (60+),0.5,1.0,0.3,0.7,63.62050847597579
+Daniel Rivera,American Samoa,Urban,62.70763742422524,2225.73,Full,Partial,No Risk,0.0,2,113,2025-01-03,2025-11-24,57,Adult (18-59),0.0,0.5,0.3,0.0,27.92370006318813

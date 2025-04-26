@@ -1,0 +1,57 @@
+{
+  "request_format": {
+    "individuals": [
+      {
+        "name": "John Doe",
+        "origin": "Syria",
+        "location_type": "Urban",
+        "event_severity": 75.0,
+        "economic_loss_usd": 3500.0,
+        "shelter_status": "Partial",
+        "food_water_access": "Partial",
+        "health_risk": "Low Risk",
+        "health_severity_score": 25.0,
+        "family_size": 4,
+        "time_since_displacement_days": 120,
+        "displacement_start_date": "2024-01-15",
+        "displacement_end_date": null,
+        "age": 34,
+        "age_group": "Adult (18-59)"
+      },
+      {
+        "name": "Emma Smith",
+        "origin": "Ukraine",
+        "location_type": "Rural",
+        "event_severity": 85.0,
+        "economic_loss_usd": 7800.0,
+        "shelter_status": "None",
+        "food_water_access": "Partial",
+        "health_risk": "Medium Risk",
+        "health_severity_score": 45.0,
+        "family_size": 3,
+        "time_since_displacement_days": 60,
+        "displacement_start_date": "2024-03-10",
+        "displacement_end_date": null,
+        "age": 8,
+        "age_group": "Child (0-17)"
+      },
+      {
+        "name": "Ahmed Hassan",
+        "origin": "Yemen",
+        "location_type": "Rural",
+        "event_severity": 92.0,
+        "economic_loss_usd": 5200.0,
+        "shelter_status": "None",
+        "food_water_access": "None",
+        "health_risk": "High Risk",
+        "health_severity_score": 75.0,
+        "family_size": 6,
+        "time_since_displacement_days": 250,
+        "displacement_start_date": "2023-09-05",
+        "displacement_end_date": null,
+        "age": 72,
+        "age_group": "Elder (60+)"
+      }
+    ]
+  }
+} 
