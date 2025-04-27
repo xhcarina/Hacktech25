@@ -18,7 +18,6 @@ import type * as auth from "../auth.js";
 import type * as donations from "../donations.js";
 import type * as generators_createSampleRegions from "../generators/createSampleRegions.js";
 import type * as http from "../http.js";
-import type * as organizations from "../organizations.js";
 import type * as regions from "../regions.js";
 import type * as users from "../users.js";
 
@@ -36,7 +35,6 @@ declare const fullApi: ApiFromModules<{
   donations: typeof donations;
   "generators/createSampleRegions": typeof generators_createSampleRegions;
   http: typeof http;
-  organizations: typeof organizations;
   regions: typeof regions;
   users: typeof users;
 }>;

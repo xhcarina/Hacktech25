@@ -6,6 +6,7 @@ import { Area, AreaChart, Bar, BarChart, CartesianGrid, Label, Pie, PieChart, Ce
 import * as React from "react";
 import { motion } from "framer-motion";
 import { ClientOnly } from "@/components/util/ClientOnly";
+import { auth0 } from "@/lib/auth0";
 
 import {
   Card,
@@ -21,7 +22,6 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from "@/components/ui/chart";
-import { useAuth } from "@/hooks/use-auth";
 import { Loader2 } from "lucide-react";
 
 // Format currency for display
@@ -76,8 +76,25 @@ const donationTypeConfig = {
   },
 } satisfies ChartConfig;
 
-export default function ProtectedPage() {
-  const { user, isLoading: authLoading } = useAuth();
+export default async function ProtectedPage() {
+  const session = await auth0.getSession();
+
+  // If no session, show sign-up and login buttons
+  if (!session) {
+    return (
+      <main>
+        <a href="/auth/login?screen_hint=signup">
+          <button>Sign up</button>
+        </a>
+        <a href="/auth/login">
+          <button>Log in</button>
+        </a>
+      </main>
+    );
+  }
+
+  const user = session.user;
+
   const regions = useQuery(api.regions.listRegions);
   const userDonationsQuery = useQuery(
     api.donations.listUserDonations, 
@@ -151,7 +168,7 @@ export default function ProtectedPage() {
   }, [userDonations]);
   
   // Loading state
-  if (authLoading || !regions) {
+  if (!regions) {
     return (
       <div className="container flex items-center justify-center min-h-[600px]">
         <Loader2 className="h-12 w-12 animate-spin text-muted-foreground" />

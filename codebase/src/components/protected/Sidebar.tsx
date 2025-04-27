@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import { useIsMobile } from "@/hooks/use-mobile";
 import Link from 'next/link';
-import { UserButton } from '../auth/UserButton';
 import { Button } from "@/components/ui/button";
 
 // Define menu item interface
@@ -137,7 +136,6 @@ const Sidebar: React.FC<SidebarProps> = ({
         
         {/* User information and button */}
         <div className="px-4 py-3 border-t border-border flex items-center">
-          <UserButton size={9} />
           <div className="ml-3 overflow-hidden">
             <p className="text-sm font-medium m-0 truncate">{displayName}</p>
             <p className="text-xs text-muted-foreground m-0 truncate">{userEmail || "No email provided"}</p>
