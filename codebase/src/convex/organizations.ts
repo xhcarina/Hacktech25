@@ -15,9 +15,9 @@ export const listOrganizations = query({
         .query("organizations")
         .withSearchIndex("search_name", q => {
           if (args.verifiedOnly) {
-            return q.search("name", args.searchQuery).eq("verified", true);
+            return q.search("name", args.searchQuery!).eq("verified", true);
           }
-          return q.search("name", args.searchQuery);
+          return q.search("name", args.searchQuery!);
         })
         .collect();
     }
