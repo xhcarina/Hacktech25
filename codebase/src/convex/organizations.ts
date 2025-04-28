@@ -1,5 +1,5 @@
 import { v } from "convex/values";
-import { query, mutation } from "./_generated/server";
+import { query, mutation, internalQuery } from "./_generated/server";
 import { Id } from "./_generated/dataModel";
 
 // Get all organizations with optional filters
@@ -9,29 +9,26 @@ export const listOrganizations = query({
     searchQuery: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
-    // If searching by name, use search index
-    if (args.searchQuery) {
-      return await ctx.db
-        .query("organizations")
-        .withSearchIndex("search_name", q => {
-          if (args.verifiedOnly) {
-            return q.search("name", args.searchQuery).eq("verified", true);
-          }
-          return q.search("name", args.searchQuery);
-        })
-        .collect();
-    }
-
-    // Otherwise use verified index if needed
-    if (args.verifiedOnly) {
-      return await ctx.db
-        .query("organizations")
-        .withIndex("by_verified", q => q.eq("verified", true))
-        .collect();
-    }
-
-    // No filters, return all
-    return await ctx.db.query("organizations").collect();
+    // Get all organizations first
+    const organizations = await ctx.db.query("organizations").collect();
+    
+    // Filter in memory
+    return organizations.filter(org => {
+      // Apply search filter if provided
+      if (args.searchQuery && args.searchQuery.length > 0) {
+        const searchLower = args.searchQuery.toLowerCase();
+        const nameMatch = org.NGO_Name.toLowerCase().includes(searchLower);
+        const missionMatch = org.Mission_Statement.toLowerCase().includes(searchLower);
+        if (!nameMatch && !missionMatch) return false;
+      }
+      
+      // Apply verified filter if needed
+      if (args.verifiedOnly && !org.verified) {
+        return false;
+      }
+      
+      return true;
+    });
   },
 });
 
@@ -48,13 +45,36 @@ export const getOrganization = query({
 export const getOrganizationsByRegion = query({
   args: { regionId: v.id("regions") },
   handler: async (ctx, args) => {
-    // Since we can't query arrays directly, we need to fetch all and filter
+    const region = await ctx.db.get(args.regionId);
+    if (!region) {
+      throw new Error("Region not found");
+    }
+    
     const organizations = await ctx.db
       .query("organizations")
       .collect();
-    
+      
     return organizations.filter(org => 
-      org.regionIds.some(id => id === args.regionId)
+      org.Regions && org.Regions.includes(args.regionId)
+    );
+  },
+});
+
+// Internal version for use by other Convex functions
+export const getOrganizationsByRegionInternal = internalQuery({
+  args: { regionId: v.id("regions") },
+  handler: async (ctx, args) => {
+    const region = await ctx.db.get(args.regionId);
+    if (!region) {
+      throw new Error("Region not found");
+    }
+    
+    const organizations = await ctx.db
+      .query("organizations")
+      .collect();
+      
+    return organizations.filter(org => 
+      org.Regions && org.Regions.includes(args.regionId)
     );
   },
 });
@@ -62,25 +82,25 @@ export const getOrganizationsByRegion = query({
 // Create a new organization
 export const createOrganization = mutation({
   args: {
-    name: v.string(),
-    description: v.string(),
-    regionIds: v.array(v.id("regions")),
-    website: v.optional(v.string()),
-    contactEmail: v.string(),
+    NGO_Name: v.string(),
+    Mission_Statement: v.string(),
+    Regions: v.array(v.id("regions")),
+    Email: v.string(),
+    Emergency_Fund_USD: v.number(),
+    Field_Hospitals_Setup: v.number(),
+    Food_Stock_Tons: v.number(),
+    Medical_Supply_Units: v.number(),
+    Shelter_Capacity: v.number(),
+    Transport_Vehicles: v.number(),
+    Volunteers_Available: v.number(),
+    Water_Stock_Liters: v.number(),
   },
   handler: async (ctx, args) => {
-    // Verify all regions exist
-    for (const regionId of args.regionIds) {
-      const region = await ctx.db.get(regionId);
-      if (!region) {
-        throw new Error(`Region ${regionId} not found`);
-      }
-    }
-
-    // Create organization with verified set to false by default
     const organizationId = await ctx.db.insert("organizations", {
       ...args,
       verified: false,
+      name: args.NGO_Name, // For backward compatibility
+      description: args.Mission_Statement, // For backward compatibility
     });
 
     return ctx.db.get(organizationId);
@@ -91,32 +111,27 @@ export const createOrganization = mutation({
 export const updateOrganization = mutation({
   args: {
     organizationId: v.id("organizations"),
-    name: v.optional(v.string()),
-    description: v.optional(v.string()),
-    regionIds: v.optional(v.array(v.id("regions"))),
-    website: v.optional(v.string()),
-    contactEmail: v.optional(v.string()),
+    NGO_Name: v.optional(v.string()),
+    Mission_Statement: v.optional(v.string()),
+    Regions: v.optional(v.array(v.id("regions"))),
+    Email: v.optional(v.string()),
+    Emergency_Fund_USD: v.optional(v.number()),
+    Field_Hospitals_Setup: v.optional(v.number()),
+    Food_Stock_Tons: v.optional(v.number()),
+    Medical_Supply_Units: v.optional(v.number()),
+    Shelter_Capacity: v.optional(v.number()),
+    Transport_Vehicles: v.optional(v.number()),
+    Volunteers_Available: v.optional(v.number()),
+    Water_Stock_Liters: v.optional(v.number()),
   },
   handler: async (ctx, args) => {
     const { organizationId, ...updates } = args;
 
-    // Verify organization exists
     const existing = await ctx.db.get(organizationId);
     if (!existing) {
       throw new Error("Organization not found");
     }
 
-    // Verify all regions exist if updating regions
-    if (updates.regionIds) {
-      for (const regionId of updates.regionIds) {
-        const region = await ctx.db.get(regionId);
-        if (!region) {
-          throw new Error(`Region ${regionId} not found`);
-        }
-      }
-    }
-
-    // Update organization
     await ctx.db.patch(organizationId, updates);
     return ctx.db.get(organizationId);
   },
@@ -131,13 +146,11 @@ export const setOrganizationVerification = mutation({
   handler: async (ctx, args) => {
     const { organizationId, verified } = args;
 
-    // Verify organization exists
     const existing = await ctx.db.get(organizationId);
     if (!existing) {
       throw new Error("Organization not found");
     }
 
-    // Update verification status
     await ctx.db.patch(organizationId, { verified });
     return ctx.db.get(organizationId);
   },
@@ -147,21 +160,17 @@ export const setOrganizationVerification = mutation({
 export const getOrganizationStats = query({
   args: { organizationId: v.id("organizations") },
   handler: async (ctx, args) => {
-    // Get organization details
     const organization = await ctx.db.get(args.organizationId);
     if (!organization) {
       throw new Error("Organization not found");
     }
 
-    // Get all donations and filter by organization ID since we don't have an index
     const donations = await ctx.db
       .query("donations")
+      .withIndex("by_organization", q => q.eq("organizationId", args.organizationId))
       .collect();
-    
-    const orgDonations = donations.filter(d => d.organizationId === args.organizationId);
 
-    // Calculate statistics
-    const stats = orgDonations.reduce((acc, donation) => {
+    const stats = donations.reduce((acc, donation) => {
       acc.totalDonations++;
       acc.totalAmount += donation.amount;
       acc.byType[donation.type] = {
@@ -173,7 +182,6 @@ export const getOrganizationStats = query({
       totalDonations: 0,
       totalAmount: 0,
       byType: {} as Record<string, { count: number; amount: number }>,
-      regionsServed: organization.regionIds.length,
       verified: organization.verified,
     });
 

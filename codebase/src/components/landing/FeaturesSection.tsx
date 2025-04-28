@@ -1,4 +1,3 @@
-// Updated text to reflect AidSight app marketing
 import React, { useEffect } from "react";
 import { BarChart3Icon, GlobeIcon, HeartHandshakeIcon } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -86,12 +85,12 @@ export function FeaturesSection() {
         variants={headerVariants}
         className="mx-auto max-w-2xl text-center"
       >
-        <h3 className="text-sm font-semibold bg-gradient-to-r from-pink-600 via-purple-600 to-blue-600 bg-clip-text text-transparent">Humanitarian Impact</h3>
+        <h3 className="text-sm font-semibold bg-gradient-to-r from-primary via-accent to-[var(--chart-5)] bg-clip-text text-transparent">Humanitarian Impact</h3>
         <h2 className="mt-2 text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
           Driving Efficient Aid Through Data
         </h2>
         <p className="mt-6 text-lg text-muted-foreground">
-          AidSight provides powerful tools to analyze, visualize, and optimize humanitarian aid for displaced populations in conflict regions around the world.
+          Live Aid provides powerful tools to analyze, visualize, and optimize humanitarian aid for displaced populations in conflict regions around the world.
         </p>
       </motion.div>
 
@@ -107,7 +106,7 @@ export function FeaturesSection() {
             <Card className="border-0 shadow-none bg-transparent">
               <CardHeader className="p-0">
                 <div className="flex items-center gap-x-3">
-                  <feature.icon className="h-5 w-5 text-pink-600" aria-hidden="true" />
+                  <feature.icon className="h-5 w-5 text-primary" aria-hidden="true" />
                   <CardTitle className="text-lg font-semibold text-foreground">
                     {feature.name}
                   </CardTitle>
@@ -116,7 +115,7 @@ export function FeaturesSection() {
               <CardContent className="mt-4 p-0">
                 <p className="text-muted-foreground">{feature.description}</p>
                 <div className="mt-6">
-                  <Button variant="link" className="p-0 text-purple-600 hover:text-blue-600" asChild>
+                  <Button variant="link" className="p-0 text-accent hover:text-primary" asChild>
                     <a href={feature.href}>
                       Learn more <span aria-hidden="true">→</span>
                     </a>

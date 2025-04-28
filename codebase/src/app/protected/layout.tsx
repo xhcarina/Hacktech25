@@ -17,14 +17,13 @@ export default function ProtectedLayout({
   // Updated menu items to reflect the AidSight app pages
   const protectedMenuItems: MenuItem[] = [
     { label: "Dashboard", href: "/protected/", section: "Main", icon: "dashboard" },
-    { label: "Map View", href: "/protected/map", section: "Main", icon: "map" },
-    { label: "Region Details", href: "/protected/regions", section: "Main", icon: "chart" },
+    { label: "Regions Map", href: "/protected/map", section: "Main", icon: "map" },
     { label: "Organizations", href: "/protected/organizations", section: "Main", icon: "building" },
+    { label: "Predictions Table", href: "/protected/predictions-table", section: "Main", icon: "bar-chart-2" },
     { label: "Donor Contributions", href: "/protected/donate", section: "Donations", icon: "heart" },
     { label: "Account", href: "/protected/account", section: "User", icon: "user" },
-    { label: "Home Page", href: "/", section: "Navigation", icon: "home" },
-    { label: "Learn More", href: "https://vly.ai", section: "crack.diy" },
-    { label: 'Discord', href: 'https://discord.gg/2gSmB9DxJW', section: 'crack.diy' }
+    { label: "Learn More", href: "https://vly.ai", section: "Live Aid" },
+    { label: 'Discord', href: 'https://discord.gg/2gSmB9DxJW', section: 'Live Aid' }
   ];
 
   const { isLoading, isAuthenticated, user } = useAuth();
@@ -52,7 +51,7 @@ export default function ProtectedLayout({
         </div>
       </AuthLoading>
       <Authenticated>
-        <Sidebar menuItems={protectedMenuItems} userEmail={user?.email} userName={user?.name}>
+        <Sidebar menuItems={protectedMenuItems} userEmail={user?.email} userName={user?.name} logoName="Live Aid">
           {children}
         </Sidebar>
       </Authenticated>

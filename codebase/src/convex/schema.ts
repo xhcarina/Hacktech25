@@ -69,22 +69,63 @@ const schema = defineSchema({
     .index("by_user", ["userId"])
     .index("by_region", ["regionId"])
     .index("by_date", ["date"])
-    .index("by_organization", ["organizationId"]), // Add index for organization queries
+    .index("by_organization", ["organizationId"]),
 
   organizations: defineTable({
-    name: v.string(),
-    description: v.string(),
-    regionIds: v.array(v.id("regions")),
-    website: v.optional(v.string()),
-    contactEmail: v.string(),
-    verified: v.boolean(),
+    NGO_Name: v.string(),
+    Mission_Statement: v.string(),
+    Regions: v.array(v.id("regions")), // Changed to array of region IDs
+    Email: v.string(), // Added email field
+    Emergency_Fund_USD: v.number(),
+    Field_Hospitals_Setup: v.number(),
+    Food_Stock_Tons: v.number(),
+    Medical_Supply_Units: v.number(),
+    Shelter_Capacity: v.number(),
+    Transport_Vehicles: v.number(),
+    Volunteers_Available: v.number(),
+    Water_Stock_Liters: v.number(),
+    verified: v.optional(v.boolean()),
+    name: v.optional(v.string()), // Optional for backward compatibility
+    description: v.optional(v.string()), // Optional for backward compatibility
   })
-    .index("by_name", ["name"])
+    .index("by_name", ["name"]) 
     .index("by_verified", ["verified"])
     .searchIndex("search_name", {
       searchField: "name",
-      filterFields: ["verified"],
-    }), // Add search index for name search
+      filterFields: ["Email"],
+    }),
+
+  individuals: defineTable({
+    Name: v.string(),
+    Origin: v.string(),
+    Location_Type: v.string(),
+    Location_Type_Num: v.number(),
+    Economic_Loss_USD: v.number(),
+    Shelter_Status: v.string(),
+    Shelter_Status_Num: v.number(),
+    Food_Water_Access: v.string(),
+    Food_Water_Access_Num: v.number(),
+    Health_Risk: v.string(),
+    Health_Severity_Score: v.number(),
+    Family_Size: v.number(),
+    Time_Since_Displacement_Days: v.number(),
+    Displacement_Start_Date: v.string(),
+    Displacement_End_Date: v.optional(v.string()), // Made optional
+    Age: v.number(),
+    Age_Group: v.string(),
+    Age_Group_Num: v.number(),
+    Event_Severity: v.number(),
+    Urgency_Score: v.number(),
+    regionId: v.id("regions"),
+  })
+    .index("by_urgency", ["Urgency_Score"])
+    .index("by_severity", ["Event_Severity"])
+    .index("by_age", ["Age"])
+    .index("by_region", ["regionId"])
+    .searchIndex("search_name", {
+      searchField: "Name",
+      filterFields: ["Origin", "Location_Type"],
+    }),
 },
 {
   schemaValidation: false

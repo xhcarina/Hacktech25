@@ -178,8 +178,8 @@ export default function ProtectedPage() {
                   <p className="text-2xl font-bold">{formatCurrency(totalEconomicLoss)}</p>
                   <p className="text-xs text-muted-foreground mt-1">Across {regions.length} regions</p>
                 </div>
-                <div className="p-2 bg-red-500/10 rounded-full">
-                  <AlertTriangle className="h-5 w-5 text-red-500" />
+                <div className="p-2 bg-primary/10 rounded-full">
+                  <AlertTriangle className="h-5 w-5 text-primary" />
                 </div>
               </div>
             </CardContent>
@@ -193,8 +193,8 @@ export default function ProtectedPage() {
                   <p className="text-2xl font-bold">{formatCurrency(totalDonations)}</p>
                   <p className="text-xs text-muted-foreground mt-1">{userDonations?.length || 0} contributions</p>
                 </div>
-                <div className="p-2 bg-blue-500/10 rounded-full">
-                  <DollarSign className="h-5 w-5 text-blue-500" />
+                <div className="p-2 bg-accent/10 rounded-full">
+                  <DollarSign className="h-5 w-5 text-accent" />
                 </div>
               </div>
             </CardContent>
@@ -208,8 +208,8 @@ export default function ProtectedPage() {
                   <p className="text-2xl font-bold">{(totalEconomicLoss / 15000).toLocaleString()}</p>
                   <p className="text-xs text-muted-foreground mt-1">Estimated impact</p>
                 </div>
-                <div className="p-2 bg-purple-500/10 rounded-full">
-                  <Users className="h-5 w-5 text-purple-500" />
+                <div className="p-2 bg-[hsl(var(--chart-5))]/10 rounded-full">
+                  <Users className="h-5 w-5 text-[hsl(var(--chart-5))]" />
                 </div>
               </div>
             </CardContent>
@@ -225,8 +225,8 @@ export default function ProtectedPage() {
                   </p>
                   <p className="text-xs text-muted-foreground mt-1">Scale of 1-10</p>
                 </div>
-                <div className="p-2 bg-orange-500/10 rounded-full">
-                  <TrendingUp className="h-5 w-5 text-orange-500" />
+                <div className="p-2 bg-[hsl(var(--chart-4))]/10 rounded-full">
+                  <TrendingUp className="h-5 w-5 text-[hsl(var(--chart-4))]" />
                 </div>
               </div>
             </CardContent>

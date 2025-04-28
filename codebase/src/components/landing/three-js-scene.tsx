@@ -2,7 +2,7 @@
 
 import { useRef, useState, useEffect } from "react"
 import { Canvas, useFrame, useThree, extend } from "@react-three/fiber"
-import { OrbitControls, TorusKnot, Plane, Circle } from "@react-three/drei"
+import { OrbitControls, TorusKnot } from "@react-three/drei"
 import * as THREE from "three"
 import { RectAreaLightHelper } from "three/examples/jsm/helpers/RectAreaLightHelper.js"
 import { RectAreaLightUniformsLib } from "three/examples/jsm/lights/RectAreaLightUniformsLib.js"
@@ -15,89 +15,72 @@ extend({ RectAreaLight: THREE.RectAreaLight, RectAreaLightHelper })
 RectAreaLightUniformsLib.init()
 
 function Scene() {
-  const knot = useRef<THREE.Mesh>(null)
-  const redLightRef = useRef<THREE.RectAreaLight>(null)
-  const greenLightRef = useRef<THREE.RectAreaLight>(null)
-  const blueLightRef = useRef<THREE.RectAreaLight>(null)
+  const torusKnotRef = useRef<THREE.Mesh>(null)
+  const lightRef = useRef<THREE.RectAreaLight>(null)
   const { viewport } = useThree()
   const isMobile = viewport.width < 7.5 // Roughly equivalent to lg breakpoint
 
-  useFrame(({ clock }) => {
-    if (knot.current) {
-      knot.current.rotation.y = clock.getElapsedTime() * 0.5
-    }
-  })
-
-  // Create helpers after the lights are initialized
+  // Create helper after the light is initialized
   useEffect(() => {
-    if (redLightRef.current) {
-      const helper = new RectAreaLightHelper(redLightRef.current)
-      redLightRef.current.add(helper)
-    }
-    if (greenLightRef.current) {
-      const helper = new RectAreaLightHelper(greenLightRef.current)
-      greenLightRef.current.add(helper)
-    }
-    if (blueLightRef.current) {
-      const helper = new RectAreaLightHelper(blueLightRef.current)
-      blueLightRef.current.add(helper)
+    if (lightRef.current) {
+      const helper = new RectAreaLightHelper(lightRef.current)
+      lightRef.current.add(helper)
     }
 
     return () => {
-      // Clean up helpers on unmount
-      if (redLightRef.current) {
-        const helper = redLightRef.current.children.find((child) => child instanceof RectAreaLightHelper)
-        if (helper) redLightRef.current.remove(helper)
-      }
-      if (greenLightRef.current) {
-        const helper = greenLightRef.current.children.find((child) => child instanceof RectAreaLightHelper)
-        if (helper) greenLightRef.current.remove(helper)
-      }
-      if (blueLightRef.current) {
-        const helper = blueLightRef.current.children.find((child) => child instanceof RectAreaLightHelper)
-        if (helper) blueLightRef.current.remove(helper)
+      // Clean up helper on unmount
+      if (lightRef.current) {
+        const helper = lightRef.current.children.find((child) => child instanceof RectAreaLightHelper)
+        if (helper) lightRef.current.remove(helper)
       }
     }
   }, [])
 
+  useFrame(({ clock }) => {
+    if (torusKnotRef.current) {
+      // Rotate the torus knot
+      torusKnotRef.current.rotation.x = clock.getElapsedTime() * 0.5
+      torusKnotRef.current.rotation.y = clock.getElapsedTime() * 0.3
+    }
+  })
+
   return (
     <>
-      {/* Lights */}
+      {/* Light */}
       <rectAreaLight
-        ref={redLightRef}
-        color="#ec4899"
-        intensity={3.5}
-        width={4}
+        ref={lightRef}
+        color="#0e7490"
+        intensity={1.5}
+        width={10}
         height={10}
-        position={[-5, 5, 5]}
-        lookAt={[0, 5, 0]}
-      />
-      <rectAreaLight
-        ref={greenLightRef}
-        color="#a855f7"
-        intensity={3.5}
-        width={4}
-        height={10}
-        position={[0, 5, 5]}
-        lookAt={[0, 5, 0]}
-      />
-      <rectAreaLight
-        ref={blueLightRef}
-        color="#3b82f6"
-        intensity={3.5}
-        width={4}
-        height={10}
-        position={[5, 5, 5]}
-        lookAt={[0, 5, 0]}
+        position={[0, 0, 5]}
+        lookAt={[0, 0, 0]}
       />
 
+      {/* Ambient light for better visibility */}
+      <ambientLight intensity={0.2} />
+
       {/* Torus Knot */}
-      <TorusKnot ref={knot} args={[1.5, 0.5, 200, 16]} position={[0, 5, 0]}>
-        <meshStandardMaterial color="#ffffff" roughness={0} metalness={0} />
+      <TorusKnot
+        ref={torusKnotRef}
+        args={[1, 0.3, 128, 32]}
+        position={[0, 0, 0]}
+      >
+        <meshStandardMaterial
+          color="#0f172a"
+          roughness={0.1}
+          metalness={0.8}
+        />
       </TorusKnot>
 
       {/* Controls */}
-      <OrbitControls enablePan={false} enableZoom={false} minDistance={5} maxDistance={20} target={[0, 5, 0]}/>
+      <OrbitControls
+        enablePan={false}
+        enableZoom={false}
+        minDistance={5}
+        maxDistance={20}
+        target={[0, 0, 0]}
+      />
     </>
   )
 }
@@ -120,7 +103,7 @@ export function ThreeJsScene() {
     >
       <Canvas
         gl={{ alpha: true }} // Transparent background
-        camera={{ position: [0, 5, -10], fov: 45 }}
+        camera={{ position: [0, 0, 10], fov: 45 }}
         style={{ background: "transparent" }}
       >
         <Scene />

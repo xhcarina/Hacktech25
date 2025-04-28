@@ -5,7 +5,7 @@ export function Footer() {
     <footer className="bg-background text-foreground">
       <div className="container mx-auto px-4 py-8 mt-16">
         <div className="flex justify-center mb-4">
-          <Link href="https://crack.diy" className="text-2xl font-serif font-extrabold">
+          <Link href="/" className="text-2xl font-serif font-extrabold">
             crack.diy
           </Link>
         </div>
@@ -16,4 +16,3 @@ export function Footer() {
     </footer>
   );
 }
-

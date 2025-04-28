@@ -1,592 +1,486 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { useState } from "react"
+import { useRouter } from "next/navigation"
 import { useQuery } from "convex/react"
 import { api } from "@/convex/_generated/api"
-import { Id } from "@/convex/_generated/dataModel"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { MapContainer, TileLayer, CircleMarker, Tooltip, ZoomControl } from "react-leaflet"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { BarChart, Bar, LineChart, Line, PieChart, Pie, Cell, XAxis, YAxis, CartesianGrid, Tooltip as RechartsTooltip, Legend, ResponsiveContainer } from "recharts"
-import { Loader2, ArrowLeft, AlertTriangle, TrendingUp, Building, Home, Briefcase, Package, Calculator } from "lucide-react"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { useRouter } from "next/navigation"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Loader2, ArrowLeft, AlertTriangle, DollarSign, Users, Home, Tent, TrendingUp, PieChart, BarChart3 } from "lucide-react"
 import { motion } from "framer-motion"
-import "leaflet/dist/leaflet.css"
+import { ClientOnly } from "@/components/util/ClientOnly"
+import { 
+  LineChart, Line, BarChart, Bar, PieChart as ReChartPie, Pie, Cell, 
+  XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer 
+} from "recharts"
 
-// Define severity color scale
-const getSeverityColor = (level: number) => {
-  if (level >= 8) return "#ef4444" // Red - Severe
-  if (level >= 6) return "#f97316" // Orange - High
-  if (level >= 4) return "#facc15" // Yellow - Moderate
-  if (level >= 2) return "#22c55e" // Green - Low
-  return "#3b82f6" // Blue - Very Low
+type RegionDetailsPageProps = {
+  params: {
+    regionId: string
+  }
 }
 
-// Format currency for display
-const formatCurrency = (value: number) => {
-  return new Intl.NumberFormat('en-US', {
-    style: 'currency',
-    currency: 'USD',
-    notation: 'compact',
-    maximumFractionDigits: 1
-  }).format(value)
-}
-
-// Format large numbers
-const formatNumber = (value: number) => {
-  return new Intl.NumberFormat('en-US', {
-    notation: 'compact',
-    maximumFractionDigits: 1
-  }).format(value)
-}
-
-export default function RegionDetailsPage({ params }: { params: { regionId: string } }) {
+export default function RegionDetailsPage({ params }: RegionDetailsPageProps) {
   const router = useRouter()
-  const regionId = params.regionId as Id<"regions">
-  const region = useQuery(api.regions.getRegion, { regionId })
+  const region = useQuery(api.regions.getRegion, { 
+    regionId: params.regionId as any 
+  })
   
-  // Generate monthly data for the trend chart (simulated historical data)
-  const generateMonthlyData = () => {
-    if (!region) return []
+  const [activeTab, setActiveTab] = useState("trends")
+  
+  const formatCurrency = (value: number) => {
+    return new Intl.NumberFormat('en-US', {
+      style: 'currency',
+      currency: 'USD',
+      notation: 'compact',
+      maximumFractionDigits: 1
+    }).format(value)
+  }
+  
+  const formatNumber = (value: number) => {
+    return new Intl.NumberFormat('en-US').format(value)
+  }
+  
+  const getSeverityText = (level: number) => {
+    if (level >= 8) return "Severe"
+    if (level >= 6) return "High"
+    if (level >= 4) return "Moderate"
+    if (level >= 2) return "Low"
+    return "Very Low"
+  }
+  
+  const getSeverityColor = (level: number) => {
+    if (level >= 8) return "#ef4444" // red
+    if (level >= 6) return "#f97316" // orange
+    if (level >= 4) return "#facc15" // yellow
+    if (level >= 2) return "#22c55e" // green
+    return "#3b82f6" // blue
+  }
+
+  const generateHistoricalData = () => {
+    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'];
+    const baseValue = region ? region.economicLoss.total / 6 : 1000000;
     
-    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-    const currentMonth = new Date().getMonth()
-    
-    // Create data for the last 12 months with a general upward trend
     return months.map((month, index) => {
-      // Adjust index to start from 12 months ago
-      const adjustedIndex = (currentMonth - 11 + index) % 12
-      const adjustedMonth = months[adjustedIndex]
-      
-      // Base value that increases over time
-      const baseValue = region.economicLoss.total / 15 * (1 + index * 0.08)
-      
-      // Add some randomness
-      const randomFactor = 0.8 + Math.random() * 0.4
-      
+      const growthFactor = 1 + (index * 0.15);
       return {
-        month: adjustedMonth,
-        loss: Math.round(baseValue * randomFactor),
-      }
-    })
-  }
+        month,
+        loss: Math.round(baseValue * growthFactor)
+      };
+    });
+  };
   
-  // Generate breakdown data for the pie chart
-  const generateBreakdownData = () => {
-    if (!region) return []
+  const generateLossBreakdownData = () => {
+    if (!region) return [];
     
     return [
-      { name: 'Housing', value: region.economicLoss.housing, color: '#3b82f6' },
-      { name: 'Income', value: region.economicLoss.income, color: '#8b5cf6' },
-      { name: 'Assets', value: region.economicLoss.assets, color: '#ec4899' },
-    ]
-  }
+      { name: 'Housing', value: region.economicLoss.housing, color: '#ef4444' }, // red
+      { name: 'Income', value: region.economicLoss.income, color: '#f97316' }, // orange
+      { name: 'Assets', value: region.economicLoss.assets, color: '#3b82f6' } // blue
+    ];
+  };
   
-  // Generate comparison data for the bar chart
-  const generateComparisonData = () => {
-    if (!region) return []
+  const generatePredictionData = () => {
+    if (!region) return [];
     
     return [
-      { name: 'Current', value: region.economicLoss.total, color: '#3b82f6' },
-      { name: 'Predicted', value: region.predictedLoss, color: '#f97316' },
-    ]
-  }
+      { name: 'Current', loss: region.economicLoss.total },
+      { name: 'Predicted', loss: region.predictedLoss }
+    ];
+  };
   
-  // Generate impact metrics
-  const generateImpactMetrics = () => {
-    if (!region) return []
+  const calculatePopulationMetrics = () => {
+    if (!region) return { total: 0, displaced: 0, homeless: 0 };
     
-    // Estimate affected population based on economic loss
-    const estimatedPopulation = Math.round(region.economicLoss.total / 15000)
-    const displacedPercentage = 20 + region.severityLevel * 5
-    const displacedPopulation = Math.round(estimatedPopulation * displacedPercentage / 100)
-    const homelessPercentage = region.severityLevel * 3
-    const homelessPopulation = Math.round(estimatedPopulation * homelessPercentage / 100)
-    const jobsLost = Math.round(region.economicLoss.income / 25000)
+    const totalAffected = Math.round(region.economicLoss.total / 15000);
+    const displacedPercent = region.severityLevel * 5;
+    const homelessPercent = region.severityLevel * 3;
     
-    return [
-      { 
-        title: "Estimated Population Affected", 
-        value: formatNumber(estimatedPopulation),
-        icon: <AlertTriangle className="h-5 w-5 text-amber-500" />,
-        description: "Total population impacted by the conflict"
-      },
-      { 
-        title: "Displaced Persons", 
-        value: formatNumber(displacedPopulation),
-        percentage: `${displacedPercentage}%`,
-        icon: <Building className="h-5 w-5 text-purple-500" />,
-        description: "People forced to leave their homes"
-      },
-      { 
-        title: "Homeless", 
-        value: formatNumber(homelessPopulation),
-        percentage: `${homelessPercentage}%`,
-        icon: <Home className="h-5 w-5 text-blue-500" />,
-        description: "People without adequate shelter"
-      },
-      { 
-        title: "Jobs Lost", 
-        value: formatNumber(jobsLost),
-        icon: <Briefcase className="h-5 w-5 text-pink-500" />,
-        description: "Estimated employment positions eliminated"
-      }
-    ]
+    return {
+      total: totalAffected,
+      displaced: Math.round(totalAffected * (displacedPercent / 100)),
+      displacedPercent,
+      homeless: Math.round(totalAffected * (homelessPercent / 100)),
+      homelessPercent
+    };
+  };
+
+  const historicalData = generateHistoricalData();
+  const lossBreakdownData = generateLossBreakdownData();
+  const predictionData = generatePredictionData();
+  const populationMetrics = calculatePopulationMetrics();
+
+  if (!region) {
+    return (
+      <div className="container flex items-center justify-center min-h-[600px]">
+        <div className="text-center">
+          <Loader2 className="h-12 w-12 animate-spin text-muted-foreground mx-auto mb-4" />
+          <p className="text-muted-foreground">Loading region details...</p>
+        </div>
+      </div>
+    )
   }
-  
-  const monthlyData = region ? generateMonthlyData() : []
-  const breakdownData = region ? generateBreakdownData() : []
-  const comparisonData = region ? generateComparisonData() : []
-  const impactMetrics = region ? generateImpactMetrics() : []
 
   return (
-    <div className="container pb-12">
+    <div className="container py-8">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        {/* Back button and title */}
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
-          <div>
-            <Button 
-              variant="ghost" 
-              size="sm" 
-              className="mb-2"
-              onClick={() => router.back()}
-            >
-              <ArrowLeft className="mr-2 h-4 w-4" />
-              Back to Map
-            </Button>
-            <h2 className="text-2xl font-bold tracking-tight">
-              {region ? region.name : "Loading Region Details..."}
-            </h2>
+        <Button 
+          variant="ghost" 
+          className="mb-6" 
+          onClick={() => router.push('/protected/map')}
+        >
+          <ArrowLeft className="mr-2 h-4 w-4" />
+          Back to Map
+        </Button>
+        
+        <div className="grid grid-cols-1 gap-6">
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-2xl">{region.name}</CardTitle>
+              <CardDescription>
+                Detailed information about economic impact and severity
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <div className="space-y-2">
+                <div className="flex justify-between items-center">
+                  <span className="text-sm font-medium">Severity Level:</span>
+                  <span className="font-medium px-3 py-1 rounded-full text-white text-sm" 
+                    style={{ backgroundColor: getSeverityColor(region.severityLevel) }}>
+                    {region.severityLevel}/10 - {getSeverityText(region.severityLevel)}
+                  </span>
+                </div>
+                
+                <div className="w-full bg-secondary h-3 rounded-full overflow-hidden">
+                  <div 
+                    className="h-full rounded-full" 
+                    style={{
+                      width: `${region.severityLevel * 10}%`,
+                      backgroundColor: getSeverityColor(region.severityLevel)
+                    }}
+                  ></div>
+                </div>
+              </div>
+              
+              <div className="p-4 border rounded-lg bg-muted/30">
+                <h3 className="text-lg font-medium mb-3">Description</h3>
+                <p className="text-muted-foreground">{region.description}</p>
+              </div>
+            </CardContent>
+          </Card>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <Card>
+              <CardContent className="pt-6">
+                <div className="flex items-start justify-between">
+                  <div>
+                    <p className="text-sm font-medium text-muted-foreground">Total Affected Population</p>
+                    <p className="text-2xl font-bold">{formatNumber(populationMetrics.total)}</p>
+                    <p className="text-xs text-muted-foreground mt-1">Estimated impact</p>
+                  </div>
+                  <div className="p-2 bg-primary/10 rounded-full">
+                    <AlertTriangle className="h-5 w-5 text-primary" />
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+            
+            <Card>
+              <CardContent className="pt-6">
+                <div className="flex items-start justify-between">
+                  <div>
+                    <p className="text-sm font-medium text-muted-foreground">Displaced Persons</p>
+                    <p className="text-2xl font-bold">{formatNumber(populationMetrics.displaced)}</p>
+                    <p className="text-xs text-muted-foreground mt-1">{populationMetrics.displacedPercent}% of affected population</p>
+                  </div>
+                  <div className="p-2 bg-[#f97316]/10 rounded-full">
+                    <Home className="h-5 w-5 text-[#f97316]" />
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+            
+            <Card>
+              <CardContent className="pt-6">
+                <div className="flex items-start justify-between">
+                  <div>
+                    <p className="text-sm font-medium text-muted-foreground">Homeless Population</p>
+                    <p className="text-2xl font-bold">{formatNumber(populationMetrics.homeless)}</p>
+                    <p className="text-xs text-muted-foreground mt-1">{populationMetrics.homelessPercent}% of affected population</p>
+                  </div>
+                  <div className="p-2 bg-[#3b82f6]/10 rounded-full">
+                    <Tent className="h-5 w-5 text-[#3b82f6]" />
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
           
-          {region && (
-            <div className="flex items-center gap-2 px-4 py-2 bg-secondary/50 rounded-lg">
-              <div className="text-sm">Severity Level:</div>
-              <div className="font-semibold flex items-center gap-1">
-                <span 
-                  className="inline-block w-3 h-3 rounded-full" 
-                  style={{ backgroundColor: getSeverityColor(region.severityLevel) }}
-                ></span>
-                {region.severityLevel}/10
-              </div>
-            </div>
-          )}
-        </div>
-        
-        {/* Loading state */}
-        {!region && (
-          <div className="h-[400px] flex items-center justify-center">
-            <Loader2 className="h-12 w-12 animate-spin text-muted-foreground" />
-          </div>
-        )}
-        
-        {/* Region content */}
-        {region && (
-          <>
-            {/* Overview section */}
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
-              {/* Map and description */}
-              <Card className="lg:col-span-2">
-                <CardHeader>
-                  <CardTitle>Region Overview</CardTitle>
-                  <CardDescription>
-                    Geographic location and general information
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-6">
-                  {/* Small map */}
-                  <div className="h-[300px] w-full rounded-md overflow-hidden border">
-                    <MapContainer
-                      center={[region.coordinates.lat, region.coordinates.lng]}
-                      zoom={6}
-                      style={{ height: "100%", width: "100%" }}
-                      zoomControl={false}
-                    >
-                      <TileLayer
-                        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                      />
-                      <ZoomControl position="bottomright" />
-                      
-                      <CircleMarker
-                        center={[region.coordinates.lat, region.coordinates.lng]}
-                        radius={20}
-                        pathOptions={{
-                          fillColor: getSeverityColor(region.severityLevel),
-                          fillOpacity: 0.7,
-                          color: "white",
-                          weight: 1,
-                        }}
-                      >
-                        <Tooltip>
-                          <div>
-                            <strong>{region.name}</strong>
-                            <div>Severity: {region.severityLevel}/10</div>
-                          </div>
-                        </Tooltip>
-                      </CircleMarker>
-                    </MapContainer>
-                  </div>
+          <Card>
+            <CardHeader>
+              <CardTitle>Impact Analysis</CardTitle>
+              <CardDescription>
+                Detailed breakdown of economic impact data
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <Tabs value={activeTab} onValueChange={setActiveTab} className="space-y-6">
+                <TabsList className="grid w-full grid-cols-3">
+                  <TabsTrigger value="trends">
+                    <TrendingUp className="h-4 w-4 mr-2" />
+                    Historical Trends
+                  </TabsTrigger>
+                  <TabsTrigger value="breakdown">
+                    <PieChart className="h-4 w-4 mr-2" />
+                    Loss Breakdown
+                  </TabsTrigger>
+                  <TabsTrigger value="prediction">
+                    <BarChart3 className="h-4 w-4 mr-2" />
+                    Prediction Analysis
+                  </TabsTrigger>
+                </TabsList>
+                
+                <TabsContent value="trends" className="space-y-4">
+                  <h3 className="text-lg font-medium">Monthly Economic Losses</h3>
+                  <p className="text-sm text-muted-foreground mb-4">
+                    Trend of economic losses over the past 6 months
+                  </p>
                   
-                  {/* Description */}
-                  <div>
-                    <h3 className="text-lg font-medium mb-2">Situation Overview</h3>
-                    <p className="text-muted-foreground">{region.description}</p>
-                    <p className="text-sm text-muted-foreground mt-4">
-                      Last updated: {new Date(region.lastUpdated).toLocaleDateString()} at {new Date(region.lastUpdated).toLocaleTimeString()}
-                    </p>
+                  <div className="h-[300px]">
+                    <ClientOnly fallback={<div className="h-[300px] flex items-center justify-center"><Loader2 className="h-8 w-8 animate-spin text-muted-foreground" /></div>}>
+                      <ResponsiveContainer width="100%" height="100%">
+                        <LineChart
+                          data={historicalData}
+                          margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
+                        >
+                          <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
+                          <XAxis dataKey="month" tick={{ fill: '#374151' }} />
+                          <YAxis 
+                            tickFormatter={(value) => formatCurrency(value)}
+                            tick={{ fill: '#374151' }}
+                          />
+                          <Tooltip 
+                            formatter={(value: number) => [formatCurrency(value), "Economic Loss"]}
+                            contentStyle={{
+                              backgroundColor: '#ffffff',
+                              border: '1px solid #e5e7eb',
+                              borderRadius: '0.5rem',
+                              color: '#374151'
+                            }}
+                          />
+                          <Legend />
+                          <Line 
+                            type="monotone" 
+                            dataKey="loss" 
+                            name="Economic Loss" 
+                            stroke="#3b82f6" 
+                            strokeWidth={2}
+                            activeDot={{ r: 8 }}
+                          />
+                        </LineChart>
+                      </ResponsiveContainer>
+                    </ClientOnly>
                   </div>
-                </CardContent>
-              </Card>
-              
-              {/* Economic summary */}
-              <Card>
-                <CardHeader>
-                  <CardTitle>Economic Impact</CardTitle>
-                  <CardDescription>
-                    Summary of financial losses
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-6">
-                  {/* Total loss */}
-                  <div className="p-4 bg-primary/10 rounded-md">
-                    <div className="text-sm text-muted-foreground mb-1">Total Economic Loss</div>
-                    <div className="text-3xl font-bold">{formatCurrency(region.economicLoss.total)}</div>
-                    <div className="flex items-center gap-1 text-sm text-green-600 mt-1">
-                      <TrendingUp className="h-4 w-4" />
-                      <span>Predicted to reach {formatCurrency(region.predictedLoss)}</span>
-                    </div>
-                  </div>
+                </TabsContent>
+                
+                <TabsContent value="breakdown" className="space-y-4">
+                  <h3 className="text-lg font-medium">Economic Loss Breakdown</h3>
+                  <p className="text-sm text-muted-foreground mb-4">
+                    Distribution of economic losses by category
+                  </p>
                   
-                  {/* Breakdown */}
-                  <div className="space-y-3">
-                    <h4 className="font-medium">Loss Breakdown</h4>
-                    
-                    <div className="space-y-2">
-                      <div className="flex justify-between items-center">
-                        <div className="flex items-center gap-2">
-                          <Home className="h-4 w-4 text-blue-500" />
-                          <span className="text-sm">Housing</span>
-                        </div>
-                        <span className="font-medium">{formatCurrency(region.economicLoss.housing)}</span>
-                      </div>
-                      <div className="w-full bg-secondary h-2 rounded-full overflow-hidden">
-                        <div 
-                          className="h-full bg-blue-500 rounded-full" 
-                          style={{
-                            width: `${(region.economicLoss.housing / region.economicLoss.total) * 100}%`,
-                          }}
-                        ></div>
-                      </div>
-                    </div>
-                    
-                    <div className="space-y-2">
-                      <div className="flex justify-between items-center">
-                        <div className="flex items-center gap-2">
-                          <Briefcase className="h-4 w-4 text-purple-500" />
-                          <span className="text-sm">Income</span>
-                        </div>
-                        <span className="font-medium">{formatCurrency(region.economicLoss.income)}</span>
-                      </div>
-                      <div className="w-full bg-secondary h-2 rounded-full overflow-hidden">
-                        <div 
-                          className="h-full bg-purple-500 rounded-full" 
-                          style={{
-                            width: `${(region.economicLoss.income / region.economicLoss.total) * 100}%`,
-                          }}
-                        ></div>
-                      </div>
-                    </div>
-                    
-                    <div className="space-y-2">
-                      <div className="flex justify-between items-center">
-                        <div className="flex items-center gap-2">
-                          <Package className="h-4 w-4 text-pink-500" />
-                          <span className="text-sm">Assets</span>
-                        </div>
-                        <span className="font-medium">{formatCurrency(region.economicLoss.assets)}</span>
-                      </div>
-                      <div className="w-full bg-secondary h-2 rounded-full overflow-hidden">
-                        <div 
-                          className="h-full bg-pink-500 rounded-full" 
-                          style={{
-                            width: `${(region.economicLoss.assets / region.economicLoss.total) * 100}%`,
-                          }}
-                        ></div>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  {/* Prediction */}
-                  <div className="space-y-2">
-                    <div className="flex justify-between items-center">
-                      <div className="flex items-center gap-2">
-                        <Calculator className="h-4 w-4 text-orange-500" />
-                        <span className="text-sm">Predicted Future Loss</span>
-                      </div>
-                      <span className="font-medium">{formatCurrency(region.predictedLoss)}</span>
-                    </div>
-                    <div className="w-full bg-secondary h-2 rounded-full overflow-hidden">
-                      <div 
-                        className="h-full bg-orange-500 rounded-full" 
-                        style={{
-                          width: `${(region.predictedLoss / (region.predictedLoss * 1.2)) * 100}%`,
-                        }}
-                      ></div>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-            
-            {/* Impact metrics */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-              {impactMetrics.map((metric, index) => (
-                <Card key={index}>
-                  <CardContent className="pt-6">
-                    <div className="flex items-start justify-between">
-                      <div>
-                        <p className="text-sm font-medium text-muted-foreground">{metric.title}</p>
-                        <div className="flex items-baseline gap-2">
-                          <p className="text-2xl font-bold">{metric.value}</p>
-                          {metric.percentage && (
-                            <p className="text-sm text-muted-foreground">{metric.percentage}</p>
-                          )}
-                        </div>
-                        <p className="text-xs text-muted-foreground mt-1">{metric.description}</p>
-                      </div>
-                      <div className="p-2 bg-secondary/50 rounded-full">
-                        {metric.icon}
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-            
-            {/* Detailed analysis tabs */}
-            <Card>
-              <CardHeader>
-                <CardTitle>Detailed Analysis</CardTitle>
-                <CardDescription>
-                  Comprehensive data visualizations and trends
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <Tabs defaultValue="trends">
-                  <TabsList className="mb-4">
-                    <TabsTrigger value="trends">Historical Trends</TabsTrigger>
-                    <TabsTrigger value="breakdown">Loss Breakdown</TabsTrigger>
-                    <TabsTrigger value="prediction">Prediction Analysis</TabsTrigger>
-                  </TabsList>
-                  
-                  {/* Historical trends tab */}
-                  <TabsContent value="trends">
-                    <div className="space-y-4">
-                      <h3 className="text-lg font-medium">Economic Loss Over Time</h3>
-                      <p className="text-sm text-muted-foreground">
-                        Monthly trend of total economic losses in the region over the past year
-                      </p>
-                      
-                      <div className="h-[400px] w-full">
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <div className="h-[300px]">
+                      <ClientOnly fallback={<div className="h-[300px] flex items-center justify-center"><Loader2 className="h-8 w-8 animate-spin text-muted-foreground" /></div>}>
                         <ResponsiveContainer width="100%" height="100%">
-                          <LineChart
-                            data={monthlyData}
-                            margin={{ top: 20, right: 30, left: 20, bottom: 20 }}
-                          >
-                            <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
-                            <XAxis dataKey="month" tick={{ fill: 'var(--foreground)' }} />
-                            <YAxis 
-                              tickFormatter={(value) => formatCurrency(value)}
-                              tick={{ fill: 'var(--foreground)' }}
-                            />
-                            <RechartsTooltip
-                              formatter={(value: number) => [formatCurrency(value), "Economic Loss"]}
-                              labelFormatter={(label) => `Month: ${label}`}
-                              contentStyle={{ 
-                                backgroundColor: 'var(--background)',
-                                border: '1px solid var(--border)',
-                                borderRadius: '0.5rem',
-                                color: 'var(--foreground)'
-                              }}
-                            />
-                            <Line 
-                              type="monotone" 
-                              dataKey="loss" 
-                              stroke="#3b82f6" 
-                              strokeWidth={2}
-                              dot={{ fill: '#3b82f6', r: 4 }}
-                              activeDot={{ r: 6, fill: '#3b82f6' }}
-                            />
-                          </LineChart>
-                        </ResponsiveContainer>
-                      </div>
-                      
-                      <p className="text-sm text-muted-foreground">
-                        Note: This chart shows the estimated progression of economic losses based on available data and trend analysis.
-                      </p>
-                    </div>
-                  </TabsContent>
-                  
-                  {/* Breakdown tab */}
-                  <TabsContent value="breakdown">
-                    <div className="space-y-4">
-                      <h3 className="text-lg font-medium">Loss Category Breakdown</h3>
-                      <p className="text-sm text-muted-foreground">
-                        Distribution of economic losses across different categories
-                      </p>
-                      
-                      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                        <div className="h-[400px]">
-                          <ResponsiveContainer width="100%" height="100%">
-                            <PieChart>
-                              <Pie
-                                data={breakdownData}
-                                cx="50%"
-                                cy="50%"
-                                innerRadius={80}
-                                outerRadius={120}
-                                paddingAngle={2}
-                                dataKey="value"
-                                label={({ name, percent }) => `${name} ${(percent * 100).toFixed(0)}%`}
-                                labelLine={false}
-                              >
-                                {breakdownData.map((entry, index) => (
-                                  <Cell key={`cell-${index}`} fill={entry.color} />
-                                ))}
-                              </Pie>
-                              <RechartsTooltip
-                                formatter={(value: number) => [formatCurrency(value), "Economic Loss"]}
-                                contentStyle={{ 
-                                  backgroundColor: 'var(--background)',
-                                  border: '1px solid var(--border)',
-                                  borderRadius: '0.5rem',
-                                  color: 'var(--foreground)'
-                                }}
-                              />
-                              <Legend />
-                            </PieChart>
-                          </ResponsiveContainer>
-                        </div>
-                        
-                        <div className="h-[400px]">
-                          <ResponsiveContainer width="100%" height="100%">
-                            <BarChart
-                              data={breakdownData}
-                              layout="vertical"
-                              margin={{ top: 20, right: 30, left: 60, bottom: 20 }}
+                          <ReChartPie>
+                            <Pie
+                              data={lossBreakdownData}
+                              cx="50%"
+                              cy="50%"
+                              innerRadius={60}
+                              outerRadius={100}
+                              paddingAngle={5}
+                              dataKey="value"
+                              label={({name, percent}) => `${name}: ${(percent * 100).toFixed(0)}%`}
                             >
-                              <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
-                              <XAxis 
-                                type="number" 
-                                tickFormatter={(value) => formatCurrency(value)}
-                                tick={{ fill: 'var(--foreground)' }}
-                              />
-                              <YAxis 
-                                type="category" 
-                                dataKey="name"
-                                tick={{ fill: 'var(--foreground)' }}
-                              />
-                              <RechartsTooltip
-                                formatter={(value: number) => [formatCurrency(value), "Economic Loss"]}
-                                contentStyle={{ 
-                                  backgroundColor: 'var(--background)',
-                                  border: '1px solid var(--border)',
-                                  borderRadius: '0.5rem',
-                                  color: 'var(--foreground)'
-                                }}
-                              />
-                              <Bar dataKey="value" radius={[0, 4, 4, 0]}>
-                                {breakdownData.map((entry, index) => (
-                                  <Cell key={`cell-${index}`} fill={entry.color} />
-                                ))}
-                              </Bar>
-                            </BarChart>
-                          </ResponsiveContainer>
-                        </div>
-                      </div>
-                      
-                      <div className="mt-6 space-y-2">
-                        <h4 className="font-medium">Key Insights:</h4>
-                        <ul className="list-disc pl-5 space-y-1 text-sm text-muted-foreground">
-                          <li>Housing losses represent {((region.economicLoss.housing / region.economicLoss.total) * 100).toFixed(1)}% of total economic impact</li>
-                          <li>Income losses affect the long-term recovery prospects of the region</li>
-                          <li>Asset destruction has immediate and lasting effects on local economy</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </TabsContent>
-                  
-                  {/* Prediction tab */}
-                  <TabsContent value="prediction">
-                    <div className="space-y-4">
-                      <h3 className="text-lg font-medium">Current vs. Predicted Losses</h3>
-                      <p className="text-sm text-muted-foreground">
-                        Machine learning model predictions for future economic impact
-                      </p>
-                      
-                      <div className="h-[400px]">
-                        <ResponsiveContainer width="100%" height="100%">
-                          <BarChart
-                            data={comparisonData}
-                            margin={{ top: 20, right: 30, left: 20, bottom: 20 }}
-                          >
-                            <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
-                            <XAxis dataKey="name" tick={{ fill: 'var(--foreground)' }} />
-                            <YAxis 
-                              tickFormatter={(value) => formatCurrency(value)}
-                              tick={{ fill: 'var(--foreground)' }}
-                            />
-                            <RechartsTooltip
-                              formatter={(value: number) => [formatCurrency(value), "Economic Loss"]}
-                              contentStyle={{ 
-                                backgroundColor: 'var(--background)',
-                                border: '1px solid var(--border)',
-                                borderRadius: '0.5rem',
-                                color: 'var(--foreground)'
-                              }}
-                            />
-                            <Bar dataKey="value" radius={[4, 4, 0, 0]}>
-                              {comparisonData.map((entry, index) => (
+                              {lossBreakdownData.map((entry, index) => (
                                 <Cell key={`cell-${index}`} fill={entry.color} />
                               ))}
-                            </Bar>
-                          </BarChart>
+                            </Pie>
+                            <Tooltip 
+                              formatter={(value: number) => [formatCurrency(value), "Loss"]}
+                              contentStyle={{
+                                backgroundColor: '#ffffff',
+                                border: '1px solid #e5e7eb',
+                                borderRadius: '0.5rem',
+                                color: '#374151'
+                              }}
+                            />
+                            <Legend />
+                          </ReChartPie>
                         </ResponsiveContainer>
+                      </ClientOnly>
+                    </div>
+                    
+                    <div className="space-y-4">
+                      <div className="p-4 bg-muted/50 rounded-md border">
+                        <div className="flex justify-between items-center">
+                          <div className="flex items-center">
+                            <DollarSign className="h-5 w-5 mr-2 text-[#3b82f6]" />
+                            <div className="text-lg font-medium">Total Economic Loss</div>
+                          </div>
+                          <div className="text-2xl font-bold">{formatCurrency(region.economicLoss.total)}</div>
+                        </div>
                       </div>
                       
-                      <div className="p-4 bg-amber-500/10 rounded-md mt-6">
-                        <h4 className="font-medium flex items-center gap-2">
-                          <AlertTriangle className="h-5 w-5 text-amber-500" />
-                          Prediction Analysis
-                        </h4>
-                        <p className="text-sm mt-2">
-                          Our machine learning model predicts an additional {formatCurrency(region.predictedLoss - region.economicLoss.total)} in economic losses 
-                          if the current situation continues. This represents a {((region.predictedLoss / region.economicLoss.total - 1) * 100).toFixed(1)}% increase 
-                          from current levels.
-                        </p>
-                        <p className="text-sm mt-2">
-                          These predictions are based on historical data from similar conflict regions, current economic indicators, 
-                          and trend analysis of the ongoing situation.
+                      <h4 className="font-medium">Key Insights</h4>
+                      <ul className="space-y-2 text-sm">
+                        <li className="flex items-start gap-2">
+                          <div className="h-5 w-5 rounded-full bg-[#ef4444] mt-0.5 flex-shrink-0" />
+                          <div>
+                            <span className="font-medium">Housing:</span> {formatCurrency(region.economicLoss.housing)} 
+                            ({Math.round(region.economicLoss.housing / region.economicLoss.total * 100)}% of total)
+                          </div>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <div className="h-5 w-5 rounded-full bg-[#f97316] mt-0.5 flex-shrink-0" />
+                          <div>
+                            <span className="font-medium">Income:</span> {formatCurrency(region.economicLoss.income)}
+                            ({Math.round(region.economicLoss.income / region.economicLoss.total * 100)}% of total)
+                          </div>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <div className="h-5 w-5 rounded-full bg-[#3b82f6] mt-0.5 flex-shrink-0" />
+                          <div>
+                            <span className="font-medium">Assets:</span> {formatCurrency(region.economicLoss.assets)}
+                            ({Math.round(region.economicLoss.assets / region.economicLoss.total * 100)}% of total)
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </TabsContent>
+                
+                <TabsContent value="prediction" className="space-y-4">
+                  <h3 className="text-lg font-medium">Predicted Economic Impact</h3>
+                  <p className="text-sm text-muted-foreground mb-4">
+                    Comparison of current vs. predicted economic losses
+                  </p>
+                  
+                  <div className="h-[300px]">
+                    <ClientOnly fallback={<div className="h-[300px] flex items-center justify-center"><Loader2 className="h-8 w-8 animate-spin text-muted-foreground" /></div>}>
+                      <ResponsiveContainer width="100%" height="100%">
+                        <BarChart
+                          data={predictionData}
+                          margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
+                        >
+                          <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
+                          <XAxis dataKey="name" tick={{ fill: '#374151' }} />
+                          <YAxis 
+                            tickFormatter={(value) => formatCurrency(value)}
+                            tick={{ fill: '#374151' }}
+                          />
+                          <Tooltip 
+                            formatter={(value: number) => [formatCurrency(value), "Economic Loss"]}
+                            contentStyle={{
+                              backgroundColor: '#ffffff',
+                              border: '1px solid #e5e7eb',
+                              borderRadius: '0.5rem',
+                              color: '#374151'
+                            }}
+                          />
+                          <Legend />
+                          <Bar 
+                            dataKey="loss" 
+                            name="Economic Loss" 
+                            fill="#3b82f6" 
+                            radius={[4, 4, 0, 0]}
+                          />
+                        </BarChart>
+                      </ResponsiveContainer>
+                    </ClientOnly>
+                  </div>
+                  
+                  <div className="p-4 bg-primary/10 rounded-md border border-primary/20 mt-4">
+                    <div className="flex items-start gap-3">
+                      <AlertTriangle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      <div>
+                        <h4 className="font-medium text-primary">Projected Increase Warning</h4>
+                        <p className="text-sm mt-1">
+                          Economic losses are projected to increase by 
+                          <span className="font-bold"> {Math.round((region.predictedLoss / region.economicLoss.total - 1) * 100)}%</span> if 
+                          current conditions persist. This prediction is based on conflict intensity, 
+                          displacement patterns, and infrastructure damage assessments.
                         </p>
                       </div>
                     </div>
-                  </TabsContent>
-                </Tabs>
+                  </div>
+                </TabsContent>
+              </Tabs>
+            </CardContent>
+          </Card>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <Card className="lg:col-span-2">
+              <CardHeader>
+                <CardTitle>Location Information</CardTitle>
+                <CardDescription>Geographic coordinates and map data</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="p-4 border rounded-lg">
+                  <h4 className="text-sm font-medium mb-2">Coordinates</h4>
+                  <p className="text-sm">Latitude: {region.coordinates.lat.toFixed(4)}</p>
+                  <p className="text-sm">Longitude: {region.coordinates.lng.toFixed(4)}</p>
+                </div>
+                
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <Button 
+                    className="w-full" 
+                    onClick={() => router.push(`/protected/map?regionId=${params.regionId}`)}
+                  >
+                    View on Map
+                  </Button>
+                  
+                  <Button 
+                    variant="outline" 
+                    className="w-full" 
+                    onClick={() => router.push('/protected/donate')}
+                  >
+                    Make a Donation
+                  </Button>
+                </div>
               </CardContent>
-              <CardFooter className="border-t pt-6">
-                <p className="text-sm text-muted-foreground">
-                  Data sources: UN Economic Impact Reports, World Bank Development Indicators, and proprietary AidSight ML models.
-                </p>
-              </CardFooter>
             </Card>
-          </>
-        )}
+            
+            <Card>
+              <CardHeader>
+                <CardTitle>Last Updated</CardTitle>
+                <CardDescription>Data freshness information</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="text-center p-4">
+                  <p className="text-sm text-muted-foreground">This data was last updated on:</p>
+                  <p className="text-xl font-semibold mt-2">
+                    {new Date(region.lastUpdated).toLocaleDateString('en-US', {
+                      year: 'numeric',
+                      month: 'long',
+                      day: 'numeric'
+                    })}
+                  </p>
+                  <p className="text-sm text-muted-foreground mt-4">
+                    Data is refreshed as new information becomes available from field assessments and partner organizations.
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
       </motion.div>
     </div>
   )

@@ -36,7 +36,7 @@ const defaultMenuItems: MenuItem[] = [
 const Sidebar: React.FC<SidebarProps> = ({ 
   children, 
   menuItems = defaultMenuItems, // Use default items if not provided
-  logoName = "crack.diy", // Default page name if not provided
+  logoName = "Live Aid", // Changed default from "crack.diy" to "Live Aid"
   pageTitle, // Page title shown in the navigation bar
   currentPath = "", // Current path for highlighting active menu item
   userEmail = "", // User email
@@ -144,10 +144,10 @@ const Sidebar: React.FC<SidebarProps> = ({
           </div>
         </div>
         
-        {/* Credit text */}
+        {/* Credit text - Updated to show Live Aid but still link to landing page */}
         <div className="px-4 py-3 text-xs text-center border-t border-border">
-          Cooked on <Link href="https://crack.diy" className="underline">
-            crack.diy
+          <Link href="/" className="underline">
+            Live Aid
           </Link>
         </div>
       </div>

@@ -18,7 +18,6 @@ import { Toaster } from "@/components/ui/sonner"
 import { motion } from "framer-motion"
 import { ClientOnly } from "@/components/util/ClientOnly"
 
-// Format currency for display
 const formatCurrency = (value: number) => {
   return new Intl.NumberFormat('en-US', {
     style: 'currency',
@@ -28,7 +27,6 @@ const formatCurrency = (value: number) => {
   }).format(value)
 }
 
-// Format date for display
 const formatDate = (timestamp: number) => {
   return new Date(timestamp).toLocaleDateString('en-US', {
     year: 'numeric',
@@ -37,7 +35,6 @@ const formatDate = (timestamp: number) => {
   })
 }
 
-// Get icon for donation type
 const getDonationTypeIcon = (type: string) => {
   switch (type) {
     case "money":
@@ -59,14 +56,12 @@ export default function AccountPage() {
   const [isUpdating, setIsUpdating] = useState<boolean>(false)
   const [displayName, setDisplayName] = useState<string>(user?.name || "")
   
-  // Queries
   const userDonationsQuery = useQuery(
     api.donations.listUserDonations, 
     user ? { userId: user._id } : "skip"
   );
   const userDonations = user ? userDonationsQuery : undefined;
   
-  // Calculate donation statistics
   const totalDonations = userDonations?.length || 0
   const totalAmount = userDonations?.reduce((sum, donation) => 
     donation.type === "money" ? sum + donation.amount : sum, 0) || 0
@@ -76,15 +71,11 @@ export default function AccountPage() {
     return acc
   }, {} as Record<string, number>) || {}
   
-  // Handle profile update
   const handleProfileUpdate = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsUpdating(true)
     
     try {
-      // In a real app, we would call a mutation to update the user profile
-      // await updateUserProfile({ name: displayName })
-      
       toast.success("Profile updated", {
         description: "Your profile information has been updated successfully."
       })
@@ -97,7 +88,6 @@ export default function AccountPage() {
     }
   }
   
-  // Handle sign out
   const handleSignOut = async () => {
     try {
       await signOut()
@@ -109,7 +99,6 @@ export default function AccountPage() {
     }
   }
   
-  // Loading state
   if (authLoading) {
     return (
       <div className="container flex items-center justify-center min-h-[600px]">
@@ -118,7 +107,6 @@ export default function AccountPage() {
     )
   }
   
-  // Get user initials for avatar fallback
   const getInitials = () => {
     if (!user?.name) return "U"
     return user.name
@@ -146,7 +134,6 @@ export default function AccountPage() {
             <TabsTrigger value="settings">Settings</TabsTrigger>
           </TabsList>
           
-          {/* Profile Tab */}
           <TabsContent value="profile">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
               <Card className="lg:col-span-2">
@@ -265,7 +252,6 @@ export default function AccountPage() {
             </div>
           </TabsContent>
           
-          {/* Activity Tab */}
           <TabsContent value="activity">
             <Card>
               <CardHeader>
@@ -287,13 +273,18 @@ export default function AccountPage() {
                             <div 
                               className="p-2 rounded-full"
                               style={{ 
-                                backgroundColor: donation.type === "money" ? "rgba(59, 130, 246, 0.1)" :
-                                              donation.type === "food" ? "rgba(249, 115, 22, 0.1)" :
-                                              donation.type === "supplies" ? "rgba(139, 92, 246, 0.1)" :
-                                              "rgba(236, 72, 153, 0.1)"
+                                backgroundColor: donation.type === "money" ? "hsla(var(--primary)/0.1)" :
+                                              donation.type === "food" ? "hsla(var(--chart-4)/0.1)" :
+                                              donation.type === "supplies" ? "hsla(var(--chart-5)/0.1)" :
+                                              "hsla(var(--chart-3)/0.1)"
                               }}
                             >
-                              {getDonationTypeIcon(donation.type)}
+                              <span className={donation.type === "money" ? "text-primary" : 
+                                            donation.type === "food" ? "text-[hsl(var(--chart-4))]" :
+                                            donation.type === "supplies" ? "text-[hsl(var(--chart-5))]" :
+                                            "text-[hsl(var(--chart-3))]"}>
+                                {getDonationTypeIcon(donation.type)}
+                              </span>
                             </div>
                             <div>
                               <div className="font-medium capitalize">{donation.type} Donation</div>
@@ -317,7 +308,7 @@ export default function AccountPage() {
                     </div>
                   ) : (
                     <div className="text-center py-12">
-                      <Heart className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
+                      <Heart className="h-12 w-12 text-accent mx-auto mb-4" />
                       <h3 className="text-lg font-medium mb-2">No activity yet</h3>
                       <p className="text-sm text-muted-foreground mb-6">
                         Make your first contribution to help displaced populations
@@ -332,7 +323,6 @@ export default function AccountPage() {
             </Card>
           </TabsContent>
           
-          {/* Settings Tab */}
           <TabsContent value="settings">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
               <Card className="lg:col-span-2">
@@ -345,7 +335,7 @@ export default function AccountPage() {
                 <CardContent className="space-y-6">
                   <div className="space-y-4">
                     <h3 className="text-sm font-medium flex items-center gap-2">
-                      <Bell className="h-4 w-4" />
+                      <Bell className="h-4 w-4 text-[hsl(var(--chart-4))]" />
                       Notifications
                     </h3>
                     
@@ -372,7 +362,7 @@ export default function AccountPage() {
                   
                   <div className="space-y-4">
                     <h3 className="text-sm font-medium flex items-center gap-2">
-                      <Shield className="h-4 w-4" />
+                      <Shield className="h-4 w-4 text-[hsl(var(--chart-1))]" />
                       Privacy & Security
                     </h3>
                     
@@ -412,7 +402,7 @@ export default function AccountPage() {
                       description: "This feature is not yet implemented."
                     })}
                   >
-                    <User className="mr-2 h-4 w-4" />
+                    <User className="mr-2 h-4 w-4 text-primary" />
                     Change Password
                   </Button>
                   
@@ -423,7 +413,7 @@ export default function AccountPage() {
                       description: "This feature is not yet implemented."
                     })}
                   >
-                    <Settings className="mr-2 h-4 w-4" />
+                    <Settings className="mr-2 h-4 w-4 text-[hsl(var(--chart-5))]" />
                     Advanced Settings
                   </Button>
                   

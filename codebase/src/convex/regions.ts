@@ -1,5 +1,5 @@
 import { v } from "convex/values";
-import { query, mutation } from "./_generated/server";
+import { query, mutation, internalQuery } from "./_generated/server";
 import { Id } from "./_generated/dataModel";
 
 // Get all regions ordered by severity level
@@ -15,8 +15,17 @@ export const listRegions = query({
   },
 });
 
-// Get a specific region by ID
+// Get a specific region by ID (public version)
 export const getRegion = query({
+  args: { regionId: v.id("regions") },
+  handler: async (ctx, args) => {
+    const region = await ctx.db.get(args.regionId);
+    return region;
+  },
+});
+
+// Internal version of getRegion for use by other Convex functions
+export const getRegionInternal = internalQuery({
   args: { regionId: v.id("regions") },
   handler: async (ctx, args) => {
     const region = await ctx.db.get(args.regionId);
