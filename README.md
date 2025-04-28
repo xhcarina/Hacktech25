@@ -1,4 +1,4 @@
-# Live Aid 🌎 for HackTech 2025 (Caltech)
+# Live Aid for HackTech 2025 (Caltech)
 
 **Financial Impact Dashboard for Conflict Zones**  
 Winner of the Wolfram Alpha Prize (sponsored)
