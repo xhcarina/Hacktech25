@@ -1,7 +1,7 @@
 # Live Aid for HackTech 2025 (Caltech)
 
 **Financial Impact Dashboard for Conflict Zones**  
-Winner of the Wolfram Alpha Prize (sponsored)
+** Winner of the Wolfram Alpha Prize (sponsored)
 
 ## Website
 - [Live Demo](https://dyzlq9-3000.csb.app)
@@ -13,7 +13,7 @@ Winner of the Wolfram Alpha Prize (sponsored)
 - **Next.js** (App Router) – server-side rendering, routing
 - **Tailwind CSS** + **ShadCN** – styling and UI components
 - **React Query** – data fetching and caching
-- **Vly.ai** – visual development platform (sponsored)
+- **Vly.ai** – sponsor
 
 ### Backend
 - **Convex** – serverless backend/database
