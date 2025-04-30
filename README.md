@@ -2,7 +2,7 @@
 
 
 ## Winner of the Wolfram Alpha Prize (sponsored)
-## Winner of Vly.ai challenge
+## Winner of Vly.ai challenge (Vly.ai Prize)
 
 ## Website
 - [Live Demo](https://dyzlq9-3000.csb.app)
