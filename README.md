@@ -1,7 +1,8 @@
 # Live Aid for HackTech 2025 (Caltech)
 
-**Financial Impact Dashboard for Conflict Zones**  
-Winner of the Wolfram Alpha Prize (sponsored)
+
+## Winner of the Wolfram Alpha Prize (sponsored)
+## Winner of Vly.ai challenge
 
 ## Website
 - [Live Demo](https://dyzlq9-3000.csb.app)
